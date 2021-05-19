@@ -19,7 +19,7 @@ namespace market
         MarketSatisEntities db = new MarketSatisEntities();
 
         private void BarkodText_KeyDown(object sender, KeyEventArgs e)
-        {
+        {//asdasdsadasdasd
             if (e.KeyCode == Keys.Enter)
             {
                 string barkod = BarkodText.Text.Trim();
