@@ -1,0 +1,17 @@
+C:\Users\tarik\OneDrive\Masaüstü\market\market\obj\Debug\market.csprojAssemblyReference.cache
+C:\Users\tarik\OneDrive\Masaüstü\market\market\obj\Debug\market.Properties.Resources.resources
+C:\Users\tarik\OneDrive\Masaüstü\market\market\obj\Debug\market.satis.resources
+C:\Users\tarik\OneDrive\Masaüstü\market\market\obj\Debug\market.csproj.GenerateResource.cache
+C:\Users\tarik\OneDrive\Masaüstü\market\market\obj\Debug\market.csproj.CoreCompileInputs.cache
+C:\Users\tarik\OneDrive\Masaüstü\market\market\bin\Debug\market.exe.config
+C:\Users\tarik\OneDrive\Masaüstü\market\market\bin\Debug\market.exe
+C:\Users\tarik\OneDrive\Masaüstü\market\market\bin\Debug\market.pdb
+C:\Users\tarik\OneDrive\Masaüstü\market\market\obj\Debug\market.exe
+C:\Users\tarik\OneDrive\Masaüstü\market\market\obj\Debug\market.pdb
+C:\Users\tarik\OneDrive\Masaüstü\market\market\bin\Debug\MarketSatis.mdf
+C:\Users\tarik\OneDrive\Masaüstü\market\market\bin\Debug\MarketSatis_log.ldf
+C:\Users\tarik\OneDrive\Masaüstü\market\market\bin\Debug\EntityFramework.dll
+C:\Users\tarik\OneDrive\Masaüstü\market\market\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\tarik\OneDrive\Masaüstü\market\market\bin\Debug\EntityFramework.xml
+C:\Users\tarik\OneDrive\Masaüstü\market\market\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\tarik\OneDrive\Masaüstü\market\market\obj\Debug\market.csproj.CopyComplete

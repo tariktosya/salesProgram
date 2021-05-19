@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MarketSatisModelStoreContainer" CdmEntityContainer="MarketSatisEntities">
+    <EntitySetMapping Name="Urun">
+      <EntityTypeMapping TypeName="MarketSatisModel.Urun">
+        <MappingFragment StoreEntitySet="Urun">
+          <ScalarProperty Name="dUrunId" ColumnName="dUrunId" />
+          <ScalarProperty Name="dBarkod" ColumnName="dBarkod" />
+          <ScalarProperty Name="dUrunAd" ColumnName="dUrunAd" />
+          <ScalarProperty Name="dAciklama" ColumnName="dAciklama" />
+          <ScalarProperty Name="dUrunGrup" ColumnName="dUrunGrup" />
+          <ScalarProperty Name="dAlisFiyat" ColumnName="dAlisFiyat" />
+          <ScalarProperty Name="dSatisFiyat" ColumnName="dSatisFiyat" />
+          <ScalarProperty Name="dKdvOrani" ColumnName="dKdvOrani" />
+          <ScalarProperty Name="dKdvTutari" ColumnName="dKdvTutari" />
+          <ScalarProperty Name="dBirim" ColumnName="dBirim" />
+          <ScalarProperty Name="dMiktar" ColumnName="dMiktar" />
+          <ScalarProperty Name="dTarih" ColumnName="dTarih" />
+          <ScalarProperty Name="dKullanici" ColumnName="dKullanici" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Terazi">
+      <EntityTypeMapping TypeName="MarketSatisModel.Terazi">
+        <MappingFragment StoreEntitySet="Terazi">
+          <ScalarProperty Name="TeraziOnEk" ColumnName="TeraziOnEk" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

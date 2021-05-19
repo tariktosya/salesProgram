@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MarketSatisModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Urun">
+    <Key>
+      <PropertyRef Name="dUrunId" />
+    </Key>
+    <Property Name="dUrunId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dBarkod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dUrunAd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dAciklama" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dUrunGrup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dAlisFiyat" Type="Double" />
+    <Property Name="dSatisFiyat" Type="Double" />
+    <Property Name="dKdvOrani" Type="Double" />
+    <Property Name="dKdvTutari" Type="Double" />
+    <Property Name="dBirim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dMiktar" Type="Double" />
+    <Property Name="dTarih" Type="DateTime" Precision="3" />
+    <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="MarketSatisEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Urun" EntityType="Self.Urun" />
+    <EntitySet Name="Terazi" EntityType="MarketSatisModel.Terazi" />
+  </EntityContainer>
+  <EntityType Name="Terazi">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeraziOnEk" Type="Int32" />
+  </EntityType>
+</Schema>
