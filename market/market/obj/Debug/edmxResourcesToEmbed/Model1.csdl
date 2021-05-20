@@ -21,6 +21,7 @@
   <EntityContainer Name="MarketSatisEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Urun" EntityType="Self.Urun" />
     <EntitySet Name="Terazi" EntityType="MarketSatisModel.Terazi" />
+    <EntitySet Name="HizliUrun" EntityType="MarketSatisModel.HizliUrun" />
   </EntityContainer>
   <EntityType Name="Terazi">
     <Key>
@@ -28,5 +29,14 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TeraziOnEk" Type="Int32" />
+  </EntityType>
+  <EntityType Name="HizliUrun">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dBarkod" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="dUrunAd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dFiyat" Type="Double" />
   </EntityType>
 </Schema>

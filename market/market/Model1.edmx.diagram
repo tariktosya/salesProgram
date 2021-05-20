@@ -7,6 +7,7 @@
       <Diagram DiagramId="f052ec69343d4bdcb9e364939e10a925" Name="Diagram1">
         <EntityTypeShape EntityType="MarketSatisModel.Urun" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="MarketSatisModel.Terazi" Width="1.5" PointX="3.25" PointY="1" />
+        <EntityTypeShape EntityType="MarketSatisModel.HizliUrun" Width="1.5" PointX="3.375" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

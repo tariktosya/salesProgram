@@ -94,6 +94,13 @@ namespace market
                 gridSatisListesi.Rows[satirsayisi].Cells["AlisFiyat"].Value = urun.dAlisFiyat;
                 gridSatisListesi.Rows[satirsayisi].Cells["KdvTutari"].Value = urun.dKdvTutari;
             }
+            MiktarText.Text = "1";
+            if (odenenText.Text != "")
+            {
+                GenelToplam();
+                double sonuc = islemler.DoubleYap(odenenText.Text) - islemler.DoubleYap(genelToplam.Text);
+                paraustuText.Text = sonuc.ToString("C2");
+            }
         }
 
         private void GenelToplam()
@@ -107,7 +114,6 @@ namespace market
                 genelToplam.Text = toplam.ToString("C2");
             }
         
-
         private void gridSatisListesi_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == 7)
@@ -115,8 +121,225 @@ namespace market
                 gridSatisListesi.Rows.Remove(gridSatisListesi.CurrentRow);
                 gridSatisListesi.ClearSelection();
                 GenelToplam();
+                if (odenenText.Text != "")
+                {
+                    
+                    double sonuc = islemler.DoubleYap(odenenText.Text) - islemler.DoubleYap(genelToplam.Text);
+                    paraustuText.Text = sonuc.ToString("C2");
+                }
                 BarkodText.Focus();
             }
+        }
+
+        private void satis_Load(object sender, EventArgs e)
+        {
+            HizliButonEkle();
+            b5.Text = 5.ToString("C2");
+            b10.Text = 10.ToString("C2");
+            b20.Text = 20.ToString("C2");
+            b50.Text = 50.ToString("C2");
+            b100.Text = 100.ToString("C2");
+            b200.Text = 200.ToString("C2");
+        }
+        private void HizliButonEkle() {
+            var hizliurun = db.HizliUrun.ToList();
+            foreach(var item in hizliurun)
+            {
+                Button bh = this.Controls.Find("bh" + item.Id, true).FirstOrDefault() as Button;
+                if(bh != null)
+                {
+                    
+                    double fiyat = islemler.DoubleYap(item.dFiyat.ToString());
+                    bh.Text = item.dUrunAd + "\n" + fiyat.ToString("C2");
+                }
+            }
+        }
+        private void HizliButonClick(object sender, EventArgs e)
+        {
+            Button button = (Button)sender;//gelen nesneyi buton olarak aç
+            int butonid = Convert.ToInt32(button.Name.ToString().Substring(2, button.Name.Length - 2));
+            if (button.Text.ToString().StartsWith("-")){
+                hizliButonaEkleme f = new hizliButonaEkleme();
+                f.butonId.Text = butonid.ToString();
+                f.ShowDialog();
+            }
+            else {
+                
+                var urunBarkod = db.HizliUrun.Where(a => a.Id == butonid).Select(a => a.dBarkod).FirstOrDefault();
+                var urun = db.Urun.Where(a => a.dBarkod == urunBarkod).FirstOrDefault();
+                UrunGetirListe(urun, urunBarkod, Convert.ToDouble(MiktarText.Text));
+                
+                GenelToplam();
+            }
+        }
+        
+        private void RightClick(object sender, MouseEventArgs e)
+        {
+            if(e.Button == MouseButtons.Right)
+            {
+                Button button = (Button)sender;//gelecek nesnemiz buton olacak
+                if (!button.Text.StartsWith("-"))
+                {
+                    int butonid = Convert.ToInt16(button.Name.ToString().Substring(2, button.Name.Length - 2));//şimdilik 9 buton var ama ileride 2 haneli rakamlara çıkarsa burası dinamik işe yarar
+                    ContextMenuStrip s = new ContextMenuStrip();
+                    ToolStripMenuItem sil = new ToolStripMenuItem();
+                    sil.Text = "Temizle - Buton no:" + butonid.ToString();
+                    sil.Click += Sil_Click;
+                    s.Items.Add(sil);
+                    this.ContextMenuStrip = s;
+                }
+                else
+                {
+                    MessageBox.Show("Buton Temiz!");
+                }
+            }
+        }
+
+        private void Sil_Click(object sender, EventArgs e)
+        {
+            int butonid = Convert.ToInt16(sender.ToString().Substring(19, sender.ToString().Length - 19));
+            var guncelle = db.HizliUrun.Find(butonid);
+            guncelle.dBarkod = "-";
+            guncelle.dFiyat = 0;
+            guncelle.dUrunAd = "-";
+            db.SaveChanges(); 
+            Button b = this.Controls.Find("bh" + butonid, true).FirstOrDefault() as Button;//Tıklanan butonu buluyorum
+            b.Text = "-" + "\n" + (0.ToString("C2"));
+            
+        }
+
+        private void bNx_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            if(b.Text ==",")
+            {
+                int vrgl = numbers.Text.Count(x => x == ',');
+                if (vrgl < 1)
+                {
+                    numbers.Text += b.Text;
+                }
+            }
+            else if (b.Text == "<")
+            {
+                if (numbers.Text.Length > 0)
+                {
+                    numbers.Text = numbers.Text.Substring(0, numbers.Text.Length - 1);
+                }
+            }
+            else
+            {
+                numbers.Text += b.Text;
+            }
+        }
+
+        private void bAdet_Click(object sender, EventArgs e)
+        {
+            if (numbers.Text != "")
+            {
+                MiktarText.Text = numbers.Text;
+                numbers.Clear();
+                BarkodText.Clear();
+                BarkodText.Focus();
+            }
+        }
+
+        private void bOdenen_Click(object sender, EventArgs e)
+        {
+            if(numbers.Text != "")
+            {
+                double sonuc = islemler.DoubleYap(numbers.Text) - islemler.DoubleYap(genelToplam.Text);
+                paraustuText.Text = sonuc.ToString("C2");
+                odenenText.Text =islemler.DoubleYap(numbers.Text).ToString("C2");
+                numbers.Clear();
+                BarkodText.Focus();
+            }
+        }
+
+        private void bBarkod_Click(object sender, EventArgs e)
+        {
+            if (numbers.Text != "")
+            {
+                if(db.Urun.Any(a=> a.dBarkod == numbers.Text))
+                {
+                    var urun = db.Urun.Where(a => a.dBarkod == numbers.Text).FirstOrDefault();
+                    UrunGetirListe(urun, numbers.Text, Convert.ToDouble(MiktarText.Text));
+                    numbers.Clear();
+                    BarkodText.Focus();
+                }
+                else
+                {
+                    MessageBox.Show("Ürün Bulunamadı");
+                    numbers.Clear();
+                    BarkodText.Focus();
+                }
+            }
+        }
+
+        private void ParaUstu_Click(object sender, EventArgs e)
+        {
+            Button b = (Button)sender;
+            double sonuc = islemler.DoubleYap(b.Text)- islemler.DoubleYap(genelToplam.Text);
+            paraustuText.Text = sonuc.ToString("C2");
+            odenenText.Text = islemler.DoubleYap(b.Text).ToString("C2");
+            numbers.Clear();
+            BarkodText.Focus();
+        }
+
+        private void bDigerUrun_Click(object sender, EventArgs e)
+        {
+            if(numbers.Text != "")
+            {
+                int satirsayisi = gridSatisListesi.Rows.Count;
+                gridSatisListesi.Rows.Add();
+                gridSatisListesi.Rows[satirsayisi].Cells["Barkod"].Value = "1111111111116";
+                gridSatisListesi.Rows[satirsayisi].Cells["UrunAdi"].Value = "Barkodsuz Ürün";
+                gridSatisListesi.Rows[satirsayisi].Cells["UrunGrup"].Value = "Barkodsuz Ürün";
+                gridSatisListesi.Rows[satirsayisi].Cells["Birim"].Value = "Adet";
+                gridSatisListesi.Rows[satirsayisi].Cells["miktar"].Value = "1";
+                gridSatisListesi.Rows[satirsayisi].Cells["fiyat"].Value = Convert.ToDouble(numbers.Text);
+                gridSatisListesi.Rows[satirsayisi].Cells["KdvTutari"].Value = 0;
+                gridSatisListesi.Rows[satirsayisi].Cells["toplam"].Value = Convert.ToDouble(numbers.Text);
+                numbers.Text = "";
+                GenelToplam();
+                if (odenenText.Text != "")
+                {
+                    
+                    double sonuc = islemler.DoubleYap(odenenText.Text) - islemler.DoubleYap(genelToplam.Text);
+                    paraustuText.Text = sonuc.ToString("C2");
+                }
+                BarkodText.Focus();
+            }
+        }
+
+        private void bIade_Click(object sender, EventArgs e)
+        {
+            if (SatisIade.Checked)
+            {
+                SatisIade.Checked = false;
+                SatisIade.Text = "İADE İŞLEMİ";
+               
+            }
+            else
+            {
+                SatisIade.Checked = true;
+                SatisIade.Text = "SATIŞ YAPILIYOR";
+            }
+        }
+
+        private void bTemizle_Click(object sender, EventArgs e)
+        {
+            Temizle();
+        }
+        private void Temizle()
+        {
+            MiktarText.Text = "1";
+            BarkodText.Clear();
+            odenenText.Clear();
+            paraustuText.Clear();
+            genelToplam.Text = 0.ToString("C2");
+            numbers.Clear();
+            gridSatisListesi.Rows.Clear();
+            BarkodText.Focus();
         }
     }
 }

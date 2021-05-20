@@ -28,5 +28,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="HizliUrun">
+      <EntityTypeMapping TypeName="MarketSatisModel.HizliUrun">
+        <MappingFragment StoreEntitySet="HizliUrun">
+          <ScalarProperty Name="dFiyat" ColumnName="dFiyat" />
+          <ScalarProperty Name="dUrunAd" ColumnName="dUrunAd" />
+          <ScalarProperty Name="dBarkod" ColumnName="dBarkod" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
