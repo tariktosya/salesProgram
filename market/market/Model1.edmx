@@ -14,6 +14,50 @@
           <Property Name="dUrunAd" Type="nvarchar" MaxLength="100" />
           <Property Name="dFiyat" Type="float" />
         </EntityType>
+        <EntityType Name="Islem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dIslemNo" Type="int" />
+        </EntityType>
+        <EntityType Name="IslemOzet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dIslemNo" Type="int" />
+          <Property Name="dIade" Type="bit" />
+          <Property Name="dOdemeSekli" Type="nvarchar" MaxLength="50" />
+          <Property Name="dNakit" Type="float" />
+          <Property Name="dKart" Type="float" />
+          <Property Name="dGelir" Type="bit" />
+          <Property Name="dGider" Type="bit" />
+          <Property Name="dAlisFiyatToplam" Type="float" />
+          <Property Name="dAciklama" Type="nvarchar" MaxLength="500" />
+          <Property Name="dTarih" Type="datetime" />
+          <Property Name="dKullanici" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Satislar">
+          <Key>
+            <PropertyRef Name="SatisId" />
+          </Key>
+          <Property Name="SatisId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dIslemNo" Type="int" />
+          <Property Name="dUrunAd" Type="nvarchar" MaxLength="50" />
+          <Property Name="dBarkod" Type="nvarchar" MaxLength="50" />
+          <Property Name="dUrunGrup" Type="nvarchar" MaxLength="50" />
+          <Property Name="dBirim" Type="nvarchar" MaxLength="50" />
+          <Property Name="dAlisFiyat" Type="float" />
+          <Property Name="dSatisFiyat" Type="float" />
+          <Property Name="dMikar" Type="float" />
+          <Property Name="dToplam" Type="float" />
+          <Property Name="dKdvTutari" Type="float" />
+          <Property Name="dOdemeSekli" Type="nvarchar" MaxLength="50" />
+          <Property Name="dIade" Type="bit" />
+          <Property Name="dTarih" Type="datetime" />
+          <Property Name="dKullanici" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="Terazi">
           <Key>
             <PropertyRef Name="Id" />
@@ -41,6 +85,9 @@
         </EntityType>
         <EntityContainer Name="MarketSatisModelStoreContainer">
           <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Islem" EntityType="Self.Islem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Satislar" EntityType="Self.Satislar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Terazi" EntityType="Self.Terazi" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Urun" EntityType="Self.Urun" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
@@ -70,6 +117,9 @@
           <EntitySet Name="Urun" EntityType="Self.Urun" />
           <EntitySet Name="Terazi" EntityType="MarketSatisModel.Terazi" />
           <EntitySet Name="HizliUrun" EntityType="MarketSatisModel.HizliUrun" />
+          <EntitySet Name="Islem" EntityType="MarketSatisModel.Islem" />
+          <EntitySet Name="IslemOzet" EntityType="MarketSatisModel.IslemOzet" />
+          <EntitySet Name="Satislar" EntityType="MarketSatisModel.Satislar" />
         </EntityContainer>
         <EntityType Name="Terazi">
           <Key>
@@ -86,6 +136,50 @@
           <Property Name="dBarkod" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
           <Property Name="dUrunAd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="dFiyat" Type="Double" />
+        </EntityType>
+        <EntityType Name="Islem">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dIslemNo" Type="Int32" />
+        </EntityType>
+        <EntityType Name="IslemOzet">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dIslemNo" Type="Int32" />
+          <Property Name="dIade" Type="Boolean" />
+          <Property Name="dOdemeSekli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dNakit" Type="Double" />
+          <Property Name="dKart" Type="Double" />
+          <Property Name="dGelir" Type="Boolean" />
+          <Property Name="dGider" Type="Boolean" />
+          <Property Name="dAlisFiyatToplam" Type="Double" />
+          <Property Name="dAciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="dTarih" Type="DateTime" Precision="3" />
+          <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Satislar">
+          <Key>
+            <PropertyRef Name="SatisId" />
+          </Key>
+          <Property Name="SatisId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dIslemNo" Type="Int32" />
+          <Property Name="dUrunAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dBarkod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dUrunGrup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dBirim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dAlisFiyat" Type="Double" />
+          <Property Name="dSatisFiyat" Type="Double" />
+          <Property Name="dMikar" Type="Double" />
+          <Property Name="dToplam" Type="Double" />
+          <Property Name="dKdvTutari" Type="Double" />
+          <Property Name="dOdemeSekli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dIade" Type="Boolean" />
+          <Property Name="dTarih" Type="DateTime" Precision="3" />
+          <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -127,6 +221,53 @@
                 <ScalarProperty Name="dUrunAd" ColumnName="dUrunAd" />
                 <ScalarProperty Name="dBarkod" ColumnName="dBarkod" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Islem">
+            <EntityTypeMapping TypeName="MarketSatisModel.Islem">
+              <MappingFragment StoreEntitySet="Islem">
+                <ScalarProperty Name="dIslemNo" ColumnName="dIslemNo" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="IslemOzet">
+            <EntityTypeMapping TypeName="MarketSatisModel.IslemOzet">
+              <MappingFragment StoreEntitySet="IslemOzet">
+                <ScalarProperty Name="dKullanici" ColumnName="dKullanici" />
+                <ScalarProperty Name="dTarih" ColumnName="dTarih" />
+                <ScalarProperty Name="dAciklama" ColumnName="dAciklama" />
+                <ScalarProperty Name="dAlisFiyatToplam" ColumnName="dAlisFiyatToplam" />
+                <ScalarProperty Name="dGider" ColumnName="dGider" />
+                <ScalarProperty Name="dGelir" ColumnName="dGelir" />
+                <ScalarProperty Name="dKart" ColumnName="dKart" />
+                <ScalarProperty Name="dNakit" ColumnName="dNakit" />
+                <ScalarProperty Name="dOdemeSekli" ColumnName="dOdemeSekli" />
+                <ScalarProperty Name="dIade" ColumnName="dIade" />
+                <ScalarProperty Name="dIslemNo" ColumnName="dIslemNo" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Satislar">
+            <EntityTypeMapping TypeName="MarketSatisModel.Satislar">
+              <MappingFragment StoreEntitySet="Satislar">
+                <ScalarProperty Name="dKullanici" ColumnName="dKullanici" />
+                <ScalarProperty Name="dTarih" ColumnName="dTarih" />
+                <ScalarProperty Name="dIade" ColumnName="dIade" />
+                <ScalarProperty Name="dOdemeSekli" ColumnName="dOdemeSekli" />
+                <ScalarProperty Name="dKdvTutari" ColumnName="dKdvTutari" />
+                <ScalarProperty Name="dToplam" ColumnName="dToplam" />
+                <ScalarProperty Name="dMikar" ColumnName="dMikar" />
+                <ScalarProperty Name="dSatisFiyat" ColumnName="dSatisFiyat" />
+                <ScalarProperty Name="dAlisFiyat" ColumnName="dAlisFiyat" />
+                <ScalarProperty Name="dBirim" ColumnName="dBirim" />
+                <ScalarProperty Name="dUrunGrup" ColumnName="dUrunGrup" />
+                <ScalarProperty Name="dBarkod" ColumnName="dBarkod" />
+                <ScalarProperty Name="dUrunAd" ColumnName="dUrunAd" />
+                <ScalarProperty Name="dIslemNo" ColumnName="dIslemNo" />
+                <ScalarProperty Name="SatisId" ColumnName="SatisId" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -9,6 +9,50 @@
     <Property Name="dUrunAd" Type="nvarchar" MaxLength="100" />
     <Property Name="dFiyat" Type="float" />
   </EntityType>
+  <EntityType Name="Islem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dIslemNo" Type="int" />
+  </EntityType>
+  <EntityType Name="IslemOzet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dIslemNo" Type="int" />
+    <Property Name="dIade" Type="bit" />
+    <Property Name="dOdemeSekli" Type="nvarchar" MaxLength="50" />
+    <Property Name="dNakit" Type="float" />
+    <Property Name="dKart" Type="float" />
+    <Property Name="dGelir" Type="bit" />
+    <Property Name="dGider" Type="bit" />
+    <Property Name="dAlisFiyatToplam" Type="float" />
+    <Property Name="dAciklama" Type="nvarchar" MaxLength="500" />
+    <Property Name="dTarih" Type="datetime" />
+    <Property Name="dKullanici" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Satislar">
+    <Key>
+      <PropertyRef Name="SatisId" />
+    </Key>
+    <Property Name="SatisId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dIslemNo" Type="int" />
+    <Property Name="dUrunAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="dBarkod" Type="nvarchar" MaxLength="50" />
+    <Property Name="dUrunGrup" Type="nvarchar" MaxLength="50" />
+    <Property Name="dBirim" Type="nvarchar" MaxLength="50" />
+    <Property Name="dAlisFiyat" Type="float" />
+    <Property Name="dSatisFiyat" Type="float" />
+    <Property Name="dMikar" Type="float" />
+    <Property Name="dToplam" Type="float" />
+    <Property Name="dKdvTutari" Type="float" />
+    <Property Name="dOdemeSekli" Type="nvarchar" MaxLength="50" />
+    <Property Name="dIade" Type="bit" />
+    <Property Name="dTarih" Type="datetime" />
+    <Property Name="dKullanici" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="Terazi">
     <Key>
       <PropertyRef Name="Id" />
@@ -36,6 +80,9 @@
   </EntityType>
   <EntityContainer Name="MarketSatisModelStoreContainer">
     <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Islem" EntityType="Self.Islem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Satislar" EntityType="Self.Satislar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Terazi" EntityType="Self.Terazi" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Urun" EntityType="Self.Urun" Schema="dbo" store:Type="Tables" />
   </EntityContainer>

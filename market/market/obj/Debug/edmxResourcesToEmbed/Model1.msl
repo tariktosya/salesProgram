@@ -38,5 +38,52 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Islem">
+      <EntityTypeMapping TypeName="MarketSatisModel.Islem">
+        <MappingFragment StoreEntitySet="Islem">
+          <ScalarProperty Name="dIslemNo" ColumnName="dIslemNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="IslemOzet">
+      <EntityTypeMapping TypeName="MarketSatisModel.IslemOzet">
+        <MappingFragment StoreEntitySet="IslemOzet">
+          <ScalarProperty Name="dKullanici" ColumnName="dKullanici" />
+          <ScalarProperty Name="dTarih" ColumnName="dTarih" />
+          <ScalarProperty Name="dAciklama" ColumnName="dAciklama" />
+          <ScalarProperty Name="dAlisFiyatToplam" ColumnName="dAlisFiyatToplam" />
+          <ScalarProperty Name="dGider" ColumnName="dGider" />
+          <ScalarProperty Name="dGelir" ColumnName="dGelir" />
+          <ScalarProperty Name="dKart" ColumnName="dKart" />
+          <ScalarProperty Name="dNakit" ColumnName="dNakit" />
+          <ScalarProperty Name="dOdemeSekli" ColumnName="dOdemeSekli" />
+          <ScalarProperty Name="dIade" ColumnName="dIade" />
+          <ScalarProperty Name="dIslemNo" ColumnName="dIslemNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Satislar">
+      <EntityTypeMapping TypeName="MarketSatisModel.Satislar">
+        <MappingFragment StoreEntitySet="Satislar">
+          <ScalarProperty Name="dKullanici" ColumnName="dKullanici" />
+          <ScalarProperty Name="dTarih" ColumnName="dTarih" />
+          <ScalarProperty Name="dIade" ColumnName="dIade" />
+          <ScalarProperty Name="dOdemeSekli" ColumnName="dOdemeSekli" />
+          <ScalarProperty Name="dKdvTutari" ColumnName="dKdvTutari" />
+          <ScalarProperty Name="dToplam" ColumnName="dToplam" />
+          <ScalarProperty Name="dMikar" ColumnName="dMikar" />
+          <ScalarProperty Name="dSatisFiyat" ColumnName="dSatisFiyat" />
+          <ScalarProperty Name="dAlisFiyat" ColumnName="dAlisFiyat" />
+          <ScalarProperty Name="dBirim" ColumnName="dBirim" />
+          <ScalarProperty Name="dUrunGrup" ColumnName="dUrunGrup" />
+          <ScalarProperty Name="dBarkod" ColumnName="dBarkod" />
+          <ScalarProperty Name="dUrunAd" ColumnName="dUrunAd" />
+          <ScalarProperty Name="dIslemNo" ColumnName="dIslemNo" />
+          <ScalarProperty Name="SatisId" ColumnName="SatisId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

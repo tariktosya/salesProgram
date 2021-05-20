@@ -8,6 +8,9 @@
         <EntityTypeShape EntityType="MarketSatisModel.Urun" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="MarketSatisModel.Terazi" Width="1.5" PointX="3.25" PointY="1" />
         <EntityTypeShape EntityType="MarketSatisModel.HizliUrun" Width="1.5" PointX="3.375" PointY="3.75" />
+        <EntityTypeShape EntityType="MarketSatisModel.Islem" Width="1.5" PointX="5.75" PointY="0.75" />
+        <EntityTypeShape EntityType="MarketSatisModel.IslemOzet" Width="1.5" PointX="0.75" PointY="5.75" />
+        <EntityTypeShape EntityType="MarketSatisModel.Satislar" Width="1.5" PointX="5.75" PointY="3.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

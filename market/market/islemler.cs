@@ -12,8 +12,29 @@ namespace market
         public static double DoubleYap(String deger)
         {
             double degers;
-            double.TryParse(deger,NumberStyles.Currency, CultureInfo.CurrentUICulture.NumberFormat, out degers);
-            return Math.Round(degers,2);
+            double.TryParse(deger, NumberStyles.Currency, CultureInfo.CurrentUICulture.NumberFormat, out degers);
+            return Math.Round(degers, 2);
+        }
+
+        public static void StokAzalt(string barkod, double miktar)
+        {
+            using (var db = new MarketSatisEntities())
+            {
+                var urunbilgi = db.Urun.SingleOrDefault(x => x.dBarkod == barkod);//Yalnızca o satırı al
+                urunbilgi.dMiktar -= miktar;
+                db.SaveChanges();
+
+            }
+        }
+        public static void StokArtir(string barkod, double miktar)
+        {
+            using (var db = new MarketSatisEntities())
+            {
+                var urunbilgi = db.Urun.SingleOrDefault(x => x.dBarkod == barkod);//Yalnızca o satırı al
+                urunbilgi.dMiktar += miktar;
+                db.SaveChanges();
+
+            }
         }
     }
 }
