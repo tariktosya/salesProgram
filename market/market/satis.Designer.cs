@@ -29,15 +29,32 @@ namespace market
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle49 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle50 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle51 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle52 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.gridIslemBeklet = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lNakit = new System.Windows.Forms.Label();
             this.lKart = new System.Windows.Forms.Label();
             this.lKullanici = new System.Windows.Forms.Label();
@@ -111,7 +128,7 @@ namespace market
             this.bOdenen = new System.Windows.Forms.Button();
             this.bIade = new System.Windows.Forms.Button();
             this.bDigerUrun = new System.Windows.Forms.Button();
-            this.button26 = new System.Windows.Forms.Button();
+            this.bIslemBeklet = new System.Windows.Forms.Button();
             this.bBarkod = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -120,6 +137,7 @@ namespace market
             this.splitContainer1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridIslemBeklet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSatisListesi)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -177,6 +195,7 @@ namespace market
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.gridIslemBeklet);
             this.panel1.Controls.Add(this.lNakit);
             this.panel1.Controls.Add(this.lKart);
             this.panel1.Controls.Add(this.lKullanici);
@@ -191,6 +210,127 @@ namespace market
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(818, 76);
             this.panel1.TabIndex = 0;
+            // 
+            // gridIslemBeklet
+            // 
+            this.gridIslemBeklet.AllowUserToAddRows = false;
+            this.gridIslemBeklet.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridIslemBeklet.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.gridIslemBeklet.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridIslemBeklet.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridIslemBeklet.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridIslemBeklet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridIslemBeklet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridIslemBeklet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewImageColumn2,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9});
+            this.gridIslemBeklet.EnableHeadersVisualStyles = false;
+            this.gridIslemBeklet.Location = new System.Drawing.Point(711, 7);
+            this.gridIslemBeklet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridIslemBeklet.Name = "gridIslemBeklet";
+            this.gridIslemBeklet.RowHeadersVisible = false;
+            this.gridIslemBeklet.RowHeadersWidth = 51;
+            this.gridIslemBeklet.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
+            this.gridIslemBeklet.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
+            this.gridIslemBeklet.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.gridIslemBeklet.RowTemplate.Height = 30;
+            this.gridIslemBeklet.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridIslemBeklet.Size = new System.Drawing.Size(16, 61);
+            this.gridIslemBeklet.TabIndex = 8;
+            this.gridIslemBeklet.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Ürün Adı";
+            this.dataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Barkod";
+            this.dataGridViewTextBoxColumn2.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Ürün Grup";
+            this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridViewTextBoxColumn4.HeaderText = "Miktar";
+            this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewTextBoxColumn5.HeaderText = "Birim";
+            this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Format = "C2";
+            dataGridViewCellStyle5.NullValue = null;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridViewTextBoxColumn6.HeaderText = "Fiyat";
+            this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "C2";
+            dataGridViewCellStyle6.NullValue = null;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridViewTextBoxColumn7.HeaderText = "Toplam";
+            this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewImageColumn2
+            // 
+            this.dataGridViewImageColumn2.HeaderText = "sil";
+            this.dataGridViewImageColumn2.Image = global::market.Properties.Resources.cancel;
+            this.dataGridViewImageColumn2.MinimumWidth = 6;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "KdvTutari";
+            this.dataGridViewTextBoxColumn8.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "AlisFiyat";
+            this.dataGridViewTextBoxColumn9.MinimumWidth = 6;
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.Visible = false;
             // 
             // lNakit
             // 
@@ -291,14 +431,14 @@ namespace market
             this.gridSatisListesi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridSatisListesi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridSatisListesi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle49.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle49.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle49.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle49.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle49.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle49.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridSatisListesi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle49;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridSatisListesi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.gridSatisListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridSatisListesi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.UrunAdi,
@@ -341,8 +481,8 @@ namespace market
             // 
             // UrunGrup
             // 
-            dataGridViewCellStyle50.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.UrunGrup.DefaultCellStyle = dataGridViewCellStyle50;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.UrunGrup.DefaultCellStyle = dataGridViewCellStyle8;
             this.UrunGrup.HeaderText = "Ürün Grup";
             this.UrunGrup.MinimumWidth = 6;
             this.UrunGrup.Name = "UrunGrup";
@@ -350,36 +490,36 @@ namespace market
             // 
             // miktar
             // 
-            dataGridViewCellStyle51.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.miktar.DefaultCellStyle = dataGridViewCellStyle51;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.miktar.DefaultCellStyle = dataGridViewCellStyle9;
             this.miktar.HeaderText = "Miktar";
             this.miktar.MinimumWidth = 6;
             this.miktar.Name = "miktar";
             // 
             // Birim
             // 
-            dataGridViewCellStyle52.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Birim.DefaultCellStyle = dataGridViewCellStyle52;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Birim.DefaultCellStyle = dataGridViewCellStyle10;
             this.Birim.HeaderText = "Birim";
             this.Birim.MinimumWidth = 6;
             this.Birim.Name = "Birim";
             // 
             // fiyat
             // 
-            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle53.Format = "C2";
-            dataGridViewCellStyle53.NullValue = null;
-            this.fiyat.DefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle11.Format = "C2";
+            dataGridViewCellStyle11.NullValue = null;
+            this.fiyat.DefaultCellStyle = dataGridViewCellStyle11;
             this.fiyat.HeaderText = "Fiyat";
             this.fiyat.MinimumWidth = 6;
             this.fiyat.Name = "fiyat";
             // 
             // toplam
             // 
-            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle54.Format = "C2";
-            dataGridViewCellStyle54.NullValue = null;
-            this.toplam.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle12.Format = "C2";
+            dataGridViewCellStyle12.NullValue = null;
+            this.toplam.DefaultCellStyle = dataGridViewCellStyle12;
             this.toplam.HeaderText = "Toplam";
             this.toplam.MinimumWidth = 6;
             this.toplam.Name = "toplam";
@@ -641,7 +781,7 @@ namespace market
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel5);
             this.splitContainer2.Size = new System.Drawing.Size(895, 747);
-            this.splitContainer2.SplitterDistance = 535;
+            this.splitContainer2.SplitterDistance = 536;
             this.splitContainer2.SplitterWidth = 3;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -668,7 +808,7 @@ namespace market
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(895, 535);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(895, 536);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // bh6
@@ -754,7 +894,7 @@ namespace market
             this.bh9.Location = new System.Drawing.Point(597, 357);
             this.bh9.Margin = new System.Windows.Forms.Padding(1);
             this.bh9.Name = "bh9";
-            this.bh9.Size = new System.Drawing.Size(297, 177);
+            this.bh9.Size = new System.Drawing.Size(297, 178);
             this.bh9.TabIndex = 10;
             this.bh9.Text = "-";
             this.bh9.UseVisualStyleBackColor = false;
@@ -772,7 +912,7 @@ namespace market
             this.bh8.Location = new System.Drawing.Point(299, 357);
             this.bh8.Margin = new System.Windows.Forms.Padding(1);
             this.bh8.Name = "bh8";
-            this.bh8.Size = new System.Drawing.Size(296, 177);
+            this.bh8.Size = new System.Drawing.Size(296, 178);
             this.bh8.TabIndex = 9;
             this.bh8.Text = "-";
             this.bh8.UseVisualStyleBackColor = false;
@@ -790,7 +930,7 @@ namespace market
             this.bh7.Location = new System.Drawing.Point(1, 357);
             this.bh7.Margin = new System.Windows.Forms.Padding(1);
             this.bh7.Name = "bh7";
-            this.bh7.Size = new System.Drawing.Size(296, 177);
+            this.bh7.Size = new System.Drawing.Size(296, 178);
             this.bh7.TabIndex = 8;
             this.bh7.Text = "-";
             this.bh7.UseVisualStyleBackColor = false;
@@ -848,7 +988,7 @@ namespace market
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(895, 209);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(895, 208);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -872,7 +1012,7 @@ namespace market
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(168, 209);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(168, 208);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // b200
@@ -886,7 +1026,7 @@ namespace market
             this.b200.Location = new System.Drawing.Point(3, 172);
             this.b200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b200.Name = "b200";
-            this.b200.Size = new System.Drawing.Size(162, 35);
+            this.b200.Size = new System.Drawing.Size(162, 34);
             this.b200.TabIndex = 5;
             this.b200.Text = "200";
             this.b200.UseVisualStyleBackColor = false;
@@ -990,7 +1130,7 @@ namespace market
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.37089F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.6291F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(358, 205);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(358, 204);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // numbers
@@ -1031,7 +1171,7 @@ namespace market
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(352, 164);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(352, 163);
             this.tableLayoutPanel12.TabIndex = 1;
             // 
             // bNv
@@ -1042,10 +1182,10 @@ namespace market
             this.bNv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bNv.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bNv.ForeColor = System.Drawing.Color.White;
-            this.bNv.Location = new System.Drawing.Point(237, 125);
+            this.bNv.Location = new System.Drawing.Point(237, 122);
             this.bNv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bNv.Name = "bNv";
-            this.bNv.Size = new System.Drawing.Size(112, 37);
+            this.bNv.Size = new System.Drawing.Size(112, 39);
             this.bNv.TabIndex = 12;
             this.bNv.Text = ",";
             this.bNv.UseVisualStyleBackColor = false;
@@ -1059,10 +1199,10 @@ namespace market
             this.bN0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN0.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN0.ForeColor = System.Drawing.Color.White;
-            this.bN0.Location = new System.Drawing.Point(120, 125);
+            this.bN0.Location = new System.Drawing.Point(120, 122);
             this.bN0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN0.Name = "bN0";
-            this.bN0.Size = new System.Drawing.Size(111, 37);
+            this.bN0.Size = new System.Drawing.Size(111, 39);
             this.bN0.TabIndex = 11;
             this.bN0.Text = "0";
             this.bN0.UseVisualStyleBackColor = false;
@@ -1076,10 +1216,10 @@ namespace market
             this.bNb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bNb.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bNb.ForeColor = System.Drawing.Color.White;
-            this.bNb.Location = new System.Drawing.Point(3, 125);
+            this.bNb.Location = new System.Drawing.Point(3, 122);
             this.bNb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bNb.Name = "bNb";
-            this.bNb.Size = new System.Drawing.Size(111, 37);
+            this.bNb.Size = new System.Drawing.Size(111, 39);
             this.bNb.TabIndex = 10;
             this.bNb.Text = "<";
             this.bNb.UseVisualStyleBackColor = false;
@@ -1093,10 +1233,10 @@ namespace market
             this.bN9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN9.ForeColor = System.Drawing.Color.White;
-            this.bN9.Location = new System.Drawing.Point(237, 84);
+            this.bN9.Location = new System.Drawing.Point(237, 82);
             this.bN9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN9.Name = "bN9";
-            this.bN9.Size = new System.Drawing.Size(112, 37);
+            this.bN9.Size = new System.Drawing.Size(112, 36);
             this.bN9.TabIndex = 9;
             this.bN9.Text = "9";
             this.bN9.UseVisualStyleBackColor = false;
@@ -1110,10 +1250,10 @@ namespace market
             this.bN8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN8.ForeColor = System.Drawing.Color.White;
-            this.bN8.Location = new System.Drawing.Point(120, 84);
+            this.bN8.Location = new System.Drawing.Point(120, 82);
             this.bN8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN8.Name = "bN8";
-            this.bN8.Size = new System.Drawing.Size(111, 37);
+            this.bN8.Size = new System.Drawing.Size(111, 36);
             this.bN8.TabIndex = 8;
             this.bN8.Text = "8";
             this.bN8.UseVisualStyleBackColor = false;
@@ -1127,10 +1267,10 @@ namespace market
             this.bN7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN7.ForeColor = System.Drawing.Color.White;
-            this.bN7.Location = new System.Drawing.Point(3, 84);
+            this.bN7.Location = new System.Drawing.Point(3, 82);
             this.bN7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN7.Name = "bN7";
-            this.bN7.Size = new System.Drawing.Size(111, 37);
+            this.bN7.Size = new System.Drawing.Size(111, 36);
             this.bN7.TabIndex = 7;
             this.bN7.Text = "7";
             this.bN7.UseVisualStyleBackColor = false;
@@ -1144,10 +1284,10 @@ namespace market
             this.bN6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN6.ForeColor = System.Drawing.Color.White;
-            this.bN6.Location = new System.Drawing.Point(237, 43);
+            this.bN6.Location = new System.Drawing.Point(237, 42);
             this.bN6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN6.Name = "bN6";
-            this.bN6.Size = new System.Drawing.Size(112, 37);
+            this.bN6.Size = new System.Drawing.Size(112, 36);
             this.bN6.TabIndex = 6;
             this.bN6.Text = "6";
             this.bN6.UseVisualStyleBackColor = false;
@@ -1161,10 +1301,10 @@ namespace market
             this.bN5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN5.ForeColor = System.Drawing.Color.White;
-            this.bN5.Location = new System.Drawing.Point(120, 43);
+            this.bN5.Location = new System.Drawing.Point(120, 42);
             this.bN5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN5.Name = "bN5";
-            this.bN5.Size = new System.Drawing.Size(111, 37);
+            this.bN5.Size = new System.Drawing.Size(111, 36);
             this.bN5.TabIndex = 5;
             this.bN5.Text = "5";
             this.bN5.UseVisualStyleBackColor = false;
@@ -1178,10 +1318,10 @@ namespace market
             this.bN4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN4.ForeColor = System.Drawing.Color.White;
-            this.bN4.Location = new System.Drawing.Point(3, 43);
+            this.bN4.Location = new System.Drawing.Point(3, 42);
             this.bN4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN4.Name = "bN4";
-            this.bN4.Size = new System.Drawing.Size(111, 37);
+            this.bN4.Size = new System.Drawing.Size(111, 36);
             this.bN4.TabIndex = 4;
             this.bN4.Text = "4";
             this.bN4.UseVisualStyleBackColor = false;
@@ -1198,7 +1338,7 @@ namespace market
             this.bN3.Location = new System.Drawing.Point(237, 2);
             this.bN3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN3.Name = "bN3";
-            this.bN3.Size = new System.Drawing.Size(112, 37);
+            this.bN3.Size = new System.Drawing.Size(112, 36);
             this.bN3.TabIndex = 3;
             this.bN3.Text = "3";
             this.bN3.UseVisualStyleBackColor = false;
@@ -1215,7 +1355,7 @@ namespace market
             this.bN2.Location = new System.Drawing.Point(120, 2);
             this.bN2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN2.Name = "bN2";
-            this.bN2.Size = new System.Drawing.Size(111, 37);
+            this.bN2.Size = new System.Drawing.Size(111, 36);
             this.bN2.TabIndex = 2;
             this.bN2.Text = "2";
             this.bN2.UseVisualStyleBackColor = false;
@@ -1232,7 +1372,7 @@ namespace market
             this.bN1.Location = new System.Drawing.Point(3, 2);
             this.bN1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN1.Name = "bN1";
-            this.bN1.Size = new System.Drawing.Size(111, 37);
+            this.bN1.Size = new System.Drawing.Size(111, 36);
             this.bN1.TabIndex = 1;
             this.bN1.Text = "1";
             this.bN1.UseVisualStyleBackColor = false;
@@ -1249,7 +1389,7 @@ namespace market
             this.tableLayoutPanel8.Controls.Add(this.bOdenen, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.bIade, 0, 1);
             this.tableLayoutPanel8.Controls.Add(this.bDigerUrun, 0, 0);
-            this.tableLayoutPanel8.Controls.Add(this.button26, 0, 0);
+            this.tableLayoutPanel8.Controls.Add(this.bIslemBeklet, 0, 0);
             this.tableLayoutPanel8.Controls.Add(this.bBarkod, 0, 0);
             this.tableLayoutPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel8.Location = new System.Drawing.Point(535, 2);
@@ -1263,12 +1403,12 @@ namespace market
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(357, 205);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(357, 204);
             this.tableLayoutPanel8.TabIndex = 2;
             // 
             // bTemizle
             // 
-            this.bTemizle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bTemizle.BackColor = System.Drawing.Color.DimGray;
             this.bTemizle.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bTemizle.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1276,7 +1416,7 @@ namespace market
             this.bTemizle.Location = new System.Drawing.Point(179, 154);
             this.bTemizle.Margin = new System.Windows.Forms.Padding(1);
             this.bTemizle.Name = "bTemizle";
-            this.bTemizle.Size = new System.Drawing.Size(177, 50);
+            this.bTemizle.Size = new System.Drawing.Size(177, 49);
             this.bTemizle.TabIndex = 10;
             this.bTemizle.Text = "Temizle";
             this.bTemizle.UseVisualStyleBackColor = false;
@@ -1284,7 +1424,7 @@ namespace market
             // 
             // button32
             // 
-            this.button32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.button32.BackColor = System.Drawing.Color.DimGray;
             this.button32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.button32.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1299,7 +1439,7 @@ namespace market
             // 
             // bAdet
             // 
-            this.bAdet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bAdet.BackColor = System.Drawing.Color.DimGray;
             this.bAdet.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bAdet.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bAdet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1307,7 +1447,7 @@ namespace market
             this.bAdet.Location = new System.Drawing.Point(1, 154);
             this.bAdet.Margin = new System.Windows.Forms.Padding(1);
             this.bAdet.Name = "bAdet";
-            this.bAdet.Size = new System.Drawing.Size(176, 50);
+            this.bAdet.Size = new System.Drawing.Size(176, 49);
             this.bAdet.TabIndex = 8;
             this.bAdet.Text = "Adet";
             this.bAdet.UseVisualStyleBackColor = false;
@@ -1315,7 +1455,7 @@ namespace market
             // 
             // bOdenen
             // 
-            this.bOdenen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bOdenen.BackColor = System.Drawing.Color.DimGray;
             this.bOdenen.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bOdenen.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bOdenen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1331,7 +1471,7 @@ namespace market
             // 
             // bIade
             // 
-            this.bIade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bIade.BackColor = System.Drawing.Color.DimGray;
             this.bIade.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bIade.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bIade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1347,7 +1487,7 @@ namespace market
             // 
             // bDigerUrun
             // 
-            this.bDigerUrun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bDigerUrun.BackColor = System.Drawing.Color.DimGray;
             this.bDigerUrun.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bDigerUrun.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bDigerUrun.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1361,24 +1501,25 @@ namespace market
             this.bDigerUrun.UseVisualStyleBackColor = false;
             this.bDigerUrun.Click += new System.EventHandler(this.bDigerUrun_Click);
             // 
-            // button26
+            // bIslemBeklet
             // 
-            this.button26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button26.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button26.ForeColor = System.Drawing.Color.White;
-            this.button26.Location = new System.Drawing.Point(179, 1);
-            this.button26.Margin = new System.Windows.Forms.Padding(1);
-            this.button26.Name = "button26";
-            this.button26.Size = new System.Drawing.Size(177, 49);
-            this.button26.TabIndex = 4;
-            this.button26.Text = "Hızlı Tuş";
-            this.button26.UseVisualStyleBackColor = false;
+            this.bIslemBeklet.BackColor = System.Drawing.Color.DimGray;
+            this.bIslemBeklet.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bIslemBeklet.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bIslemBeklet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bIslemBeklet.ForeColor = System.Drawing.Color.White;
+            this.bIslemBeklet.Location = new System.Drawing.Point(179, 1);
+            this.bIslemBeklet.Margin = new System.Windows.Forms.Padding(1);
+            this.bIslemBeklet.Name = "bIslemBeklet";
+            this.bIslemBeklet.Size = new System.Drawing.Size(177, 49);
+            this.bIslemBeklet.TabIndex = 4;
+            this.bIslemBeklet.Text = "İşlem Beklet";
+            this.bIslemBeklet.UseVisualStyleBackColor = false;
+            this.bIslemBeklet.Click += new System.EventHandler(this.bIslemBeklet_Click);
             // 
             // bBarkod
             // 
-            this.bBarkod.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bBarkod.BackColor = System.Drawing.Color.DimGray;
             this.bBarkod.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bBarkod.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bBarkod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1420,6 +1561,7 @@ namespace market
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridIslemBeklet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridSatisListesi)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -1485,7 +1627,6 @@ namespace market
         private System.Windows.Forms.Button bOdenen;
         private System.Windows.Forms.Button bIade;
         private System.Windows.Forms.Button bDigerUrun;
-        private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button bBarkod;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel9;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel10;
@@ -1525,6 +1666,18 @@ namespace market
         public System.Windows.Forms.Label lNakit;
         public System.Windows.Forms.Label lKart;
         public System.Windows.Forms.TextBox genelToplam;
+        private System.Windows.Forms.Button bIslemBeklet;
+        private System.Windows.Forms.DataGridView gridIslemBeklet;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
     }
 }
 

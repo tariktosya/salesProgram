@@ -296,6 +296,7 @@ namespace market
                 gridSatisListesi.Rows[satirsayisi].Cells["UrunGrup"].Value = "Barkodsuz Ürün";
                 gridSatisListesi.Rows[satirsayisi].Cells["Birim"].Value = "Adet";
                 gridSatisListesi.Rows[satirsayisi].Cells["miktar"].Value = "1";
+                gridSatisListesi.Rows[satirsayisi].Cells["AlisFiyat"].Value = 0;
                 gridSatisListesi.Rows[satirsayisi].Cells["fiyat"].Value = Convert.ToDouble(numbers.Text);
                 gridSatisListesi.Rows[satirsayisi].Cells["KdvTutari"].Value = 0;
                 gridSatisListesi.Rows[satirsayisi].Cells["toplam"].Value = Convert.ToDouble(numbers.Text);
@@ -478,6 +479,59 @@ namespace market
                 NakitKart f = new NakitKart();
                 f.ShowDialog();
             }
+        }
+        private void Bekle()
+        {
+            int satirSayisi = gridSatisListesi.Rows.Count;
+            int sutunSayisi = gridSatisListesi.Columns.Count;
+            if (satirSayisi > 0)
+            {
+                for (int i = 0; i < satirSayisi; i++)
+                {
+                    gridIslemBeklet.Rows.Add();
+                    for (int j = 0; j < sutunSayisi ; j++)
+                    {
+                        gridIslemBeklet.Rows[i].Cells[j].Value = gridSatisListesi.Rows[i].Cells[j].Value;
+                    }
+                }
+            }
+        }
+
+        private void BeklemeCikis() {
+
+            
+                int satirSayisi = gridIslemBeklet.Rows.Count;
+                int sutunSayisi = gridIslemBeklet.Columns.Count;
+                if (satirSayisi > 0)
+                {
+                    for (int i = 0; i < satirSayisi; i++)
+                    {
+                        gridSatisListesi.Rows.Add();
+                        for (int j = 0; j < sutunSayisi ; j++)
+                        {
+                            gridSatisListesi.Rows[i].Cells[j].Value = gridIslemBeklet.Rows[i].Cells[j].Value;
+                        }
+                    }
+                }
+            
+        }
+        private void bIslemBeklet_Click(object sender, EventArgs e)
+        {
+            if(bIslemBeklet.Text=="İşlem Beklet") {
+                Bekle();
+                bIslemBeklet.BackColor = System.Drawing.Color.Red;
+                bIslemBeklet.Text = "İşlem Bekliyor";
+                gridSatisListesi.Rows.Clear();
+            }
+            else
+            {
+                BeklemeCikis();
+                bIslemBeklet.BackColor = System.Drawing.Color.DimGray;
+                gridIslemBeklet.Rows.Clear();
+                bIslemBeklet.Text = "İşlem Beklet";
+                BarkodText.Focus();
+            }
+            
         }
     }
 }
