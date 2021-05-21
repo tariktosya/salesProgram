@@ -342,7 +342,7 @@ namespace market
             BarkodText.Focus();
         }
 
-        private void SatisYapilsin(string odemesekli)
+        public void SatisYapilsin(string odemesekli)
         {
             int satirsayisi = gridSatisListesi.Rows.Count;
             bool satisiade = SatisIade.Checked; // True durumda
@@ -407,7 +407,7 @@ namespace market
                         io.dNakit = 0;
                         io.dKart = islemler.DoubleYap(genelToplam.Text);
                         break;
-                    case "Kart-Nakit":
+                    case "Nakit-Kart":
                         io.dNakit = islemler.DoubleYap(lNakit.Text);
                         io.dKart = islemler.DoubleYap(lKart.Text);
                         break;
@@ -419,6 +419,7 @@ namespace market
                 islemNoArtir.dIslemNo += 1;
                 db.SaveChanges();
                 MessageBox.Show("yazdırma işlemi yap");
+                Temizle();
             }
         }
 
@@ -430,6 +431,53 @@ namespace market
         private void KartButton_Click(object sender, EventArgs e)
         {
             SatisYapilsin("Kart");
+        }
+
+        private void bnakitkart_Click(object sender, EventArgs e)
+        {
+            NakitKart f = new NakitKart();
+            f.ShowDialog();
+        }
+
+        private void BarkodText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) == false && e.KeyChar != (char)08)//ve sağ tarafı = klavyeden backSpace ile silme işlemi
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void MiktarText_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) == false && e.KeyChar != (char)08)//ve sağ tarafı = klavyeden backSpace ile silme işlemi
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void numbers_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar) == false && e.KeyChar != (char)08)//ve sağ tarafı = klavyeden backSpace ile silme işlemi
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void satis_KeyDown(object sender, KeyEventArgs e)//formdan tuş atama*
+        {
+            if(e.KeyCode == Keys.F1)
+            {
+                SatisYapilsin("Nakit");
+            }
+            if (e.KeyCode == Keys.F2)
+            {
+                SatisYapilsin("Kart");
+            }
+            if (e.KeyCode == Keys.F3)
+            {
+                NakitKart f = new NakitKart();
+                f.ShowDialog();
+            }
         }
     }
 }
