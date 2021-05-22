@@ -47,14 +47,16 @@ namespace market
                             }
                             else
                             {
-                                Console.Beep(900, 1000);
-                                MessageBox.Show("Kg ürün ekleme sayfası");
+                                Console.Beep(900, 250);
+                                Console.Beep(900, 250);
+                                MessageBox.Show("Ürün Bulunamadı");
                             }
                         }
                         else
                         {
-                            Console.Beep(900, 1000);
-                            MessageBox.Show("Normal ürün ekleme sayfası");
+                            Console.Beep(900, 250);
+                            Console.Beep(900, 250);
+                            MessageBox.Show("Ürün Bulunamadı");
                         }
                     }
                 }
