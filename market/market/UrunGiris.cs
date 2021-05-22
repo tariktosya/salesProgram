@@ -42,9 +42,9 @@ namespace market
 
         private void bKadet_Click(object sender, EventArgs e)
         {
-            if(tBarkod.Text != "" && tUrunAdi.Text !="" && tAciklama.Text != "" && cmbUrunGrubu.Text != "" && tAlisFiyati.Text != "" && tSatisFiyati.Text!=""&& tKdvOrani.Text!=""&& tMiktar.Text != "")
+            if (tBarkod.Text != "" && tUrunAdi.Text != "" && tAciklama.Text != "" && cmbUrunGrubu.Text != "" && tAlisFiyati.Text != "" && tSatisFiyati.Text != "" && tKdvOrani.Text != "" && tMiktar.Text != "")
             {
-                if(db.Urun.Any(a=> a.dBarkod == tBarkod.Text))
+                if (db.Urun.Any(a => a.dBarkod == tBarkod.Text))
                 {
                     var urunGuncelle = db.Urun.Where(a => a.dBarkod == tBarkod.Text).SingleOrDefault();
                     urunGuncelle.dBarkod = tBarkod.Text;
@@ -64,7 +64,8 @@ namespace market
                     Temizle();
                     MessageBox.Show("Ürün Güncellendi...");
                 }
-                else {
+                else
+                {
                     Urun urun = new Urun();
                     urun.dBarkod = tBarkod.Text;
                     urun.dUrunAd = tUrunAdi.Text;
@@ -86,10 +87,13 @@ namespace market
                         ozelBarkod.dBarkodNo += 1;
                         db.SaveChanges();
                     }
-                    Temizle();                   
+
+                    
+                    gridUrunListesi.DataSource = db.Urun.OrderByDescending(a => a.dUrunId).Take(20).ToList();//20 tanesini alıyoruz
+                    islemler.GridDuzenle(gridUrunListesi);
                 }
-                gridUrunListesi.DataSource = db.Urun.OrderByDescending(a => a.dUrunId).Take(20).ToList();//20 tanesini alıyoruz
-                islemler.GridDuzenle(gridUrunListesi);
+                islemler.StokHareket(tBarkod.Text, tUrunAdi.Text, "Adet", Convert.ToDouble(tMiktar.Text), cmbUrunGrubu.Text, lKullanici.Text);
+                Temizle();
             }
             else
             {

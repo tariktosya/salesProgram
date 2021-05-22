@@ -122,6 +122,15 @@
     <Compile Include="Satislar.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Stok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stok.Designer.cs">
+      <DependentUpon>Stok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StokHareket.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Terazi.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -161,6 +170,9 @@
     </Compile>
     <EmbeddedResource Include="satis.resx">
       <DependentUpon>satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stok.resx">
+      <DependentUpon>Stok.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UrunGiris.resx">
       <DependentUpon>UrunGiris.cs</DependentUpon>
@@ -216,6 +228,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\search.png" />
     <None Include="Resources\trash.png" />
     <None Include="Resources\report.png" />
     <None Include="Resources\floppy-disk.png" />

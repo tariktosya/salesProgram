@@ -101,5 +101,19 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="StokHareket">
+      <EntityTypeMapping TypeName="MarketSatisModel.StokHareket">
+        <MappingFragment StoreEntitySet="StokHareket">
+          <ScalarProperty Name="dTarih" ColumnName="dTarih" />
+          <ScalarProperty Name="dKullanici" ColumnName="dKullanici" />
+          <ScalarProperty Name="dUrunGrup" ColumnName="dUrunGrup" />
+          <ScalarProperty Name="dMiktar" ColumnName="dMiktar" />
+          <ScalarProperty Name="dBirim" ColumnName="dBirim" />
+          <ScalarProperty Name="dUrunAd" ColumnName="dUrunAd" />
+          <ScalarProperty Name="dBarkod" ColumnName="dBarkod" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

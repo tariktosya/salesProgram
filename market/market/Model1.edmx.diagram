@@ -13,6 +13,7 @@
         <EntityTypeShape EntityType="MarketSatisModel.Satislar" Width="1.5" PointX="5.75" PointY="3.75" />
         <EntityTypeShape EntityType="MarketSatisModel.UrunGrubu" Width="1.5" PointX="8.375" PointY="0.75" />
         <EntityTypeShape EntityType="MarketSatisModel.Barkod" Width="1.5" PointX="8.375" PointY="3.75" />
+        <EntityTypeShape EntityType="MarketSatisModel.StokHareket" Width="1.5" PointX="3.375" PointY="8.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

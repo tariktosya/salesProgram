@@ -111,5 +111,22 @@ namespace market
                 }
             }
         }
+
+        public static void StokHareket(string barkod, string urunad, string birim, double miktar, string urungrup, string kullanici)
+        {
+            using(var db = new MarketSatisEntities())
+            {
+                StokHareket s = new StokHareket();
+                s.dBarkod = barkod;
+                s.dBirim = birim;
+                s.dKullanici = kullanici;
+                s.dMiktar = miktar;
+                s.dTarih = DateTime.Now;
+                s.dUrunAd = urunad;
+                s.dUrunGrup = urungrup;
+                db.StokHareket.Add(s);
+                db.SaveChanges();
+            }
+        }
     }
 }

@@ -27,6 +27,7 @@
     <EntitySet Name="Satislar" EntityType="MarketSatisModel.Satislar" />
     <EntitySet Name="UrunGrubu" EntityType="MarketSatisModel.UrunGrubu" />
     <EntitySet Name="Barkod" EntityType="MarketSatisModel.Barkod" />
+    <EntitySet Name="StokHareket" EntityType="MarketSatisModel.StokHareket" />
   </EntityContainer>
   <EntityType Name="Terazi">
     <Key>
@@ -101,5 +102,18 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="dBarkodNo" Type="Int32" />
+  </EntityType>
+  <EntityType Name="StokHareket">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dBarkod" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dUrunAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dBirim" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dMiktar" Type="Double" />
+    <Property Name="dUrunGrup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dTarih" Type="DateTime" Precision="3" />
   </EntityType>
 </Schema>

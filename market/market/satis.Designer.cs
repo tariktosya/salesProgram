@@ -781,7 +781,7 @@ namespace market
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel5);
             this.splitContainer2.Size = new System.Drawing.Size(895, 747);
-            this.splitContainer2.SplitterDistance = 544;
+            this.splitContainer2.SplitterDistance = 545;
             this.splitContainer2.SplitterWidth = 3;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -808,7 +808,7 @@ namespace market
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(895, 544);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(895, 545);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // bh6
@@ -894,7 +894,7 @@ namespace market
             this.bh9.Location = new System.Drawing.Point(597, 363);
             this.bh9.Margin = new System.Windows.Forms.Padding(1);
             this.bh9.Name = "bh9";
-            this.bh9.Size = new System.Drawing.Size(297, 180);
+            this.bh9.Size = new System.Drawing.Size(297, 181);
             this.bh9.TabIndex = 10;
             this.bh9.Text = "-";
             this.bh9.UseVisualStyleBackColor = false;
@@ -912,7 +912,7 @@ namespace market
             this.bh8.Location = new System.Drawing.Point(299, 363);
             this.bh8.Margin = new System.Windows.Forms.Padding(1);
             this.bh8.Name = "bh8";
-            this.bh8.Size = new System.Drawing.Size(296, 180);
+            this.bh8.Size = new System.Drawing.Size(296, 181);
             this.bh8.TabIndex = 9;
             this.bh8.Text = "-";
             this.bh8.UseVisualStyleBackColor = false;
@@ -930,7 +930,7 @@ namespace market
             this.bh7.Location = new System.Drawing.Point(1, 363);
             this.bh7.Margin = new System.Windows.Forms.Padding(1);
             this.bh7.Name = "bh7";
-            this.bh7.Size = new System.Drawing.Size(296, 180);
+            this.bh7.Size = new System.Drawing.Size(296, 181);
             this.bh7.TabIndex = 8;
             this.bh7.Text = "-";
             this.bh7.UseVisualStyleBackColor = false;
@@ -988,7 +988,7 @@ namespace market
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(895, 200);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(895, 199);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -1012,7 +1012,7 @@ namespace market
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(168, 200);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(168, 199);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // b200
@@ -1026,7 +1026,7 @@ namespace market
             this.b200.Location = new System.Drawing.Point(3, 167);
             this.b200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b200.Name = "b200";
-            this.b200.Size = new System.Drawing.Size(162, 31);
+            this.b200.Size = new System.Drawing.Size(162, 30);
             this.b200.TabIndex = 5;
             this.b200.Text = "200";
             this.b200.UseVisualStyleBackColor = false;
@@ -1130,7 +1130,7 @@ namespace market
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.37089F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.6291F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(358, 196);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(358, 195);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // numbers
@@ -1164,7 +1164,7 @@ namespace market
             this.tableLayoutPanel12.Controls.Add(this.bN2, 1, 0);
             this.tableLayoutPanel12.Controls.Add(this.bN1, 0, 0);
             this.tableLayoutPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 37);
+            this.tableLayoutPanel12.Location = new System.Drawing.Point(3, 36);
             this.tableLayoutPanel12.Name = "tableLayoutPanel12";
             this.tableLayoutPanel12.RowCount = 4;
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
@@ -1403,7 +1403,7 @@ namespace market
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(357, 196);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(357, 195);
             this.tableLayoutPanel8.TabIndex = 2;
             // 
             // bTemizle
@@ -1413,10 +1413,10 @@ namespace market
             this.bTemizle.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bTemizle.ForeColor = System.Drawing.Color.White;
-            this.bTemizle.Location = new System.Drawing.Point(179, 148);
+            this.bTemizle.Location = new System.Drawing.Point(179, 145);
             this.bTemizle.Margin = new System.Windows.Forms.Padding(1);
             this.bTemizle.Name = "bTemizle";
-            this.bTemizle.Size = new System.Drawing.Size(177, 47);
+            this.bTemizle.Size = new System.Drawing.Size(177, 49);
             this.bTemizle.TabIndex = 10;
             this.bTemizle.Text = "Temizle";
             this.bTemizle.UseVisualStyleBackColor = false;
@@ -1429,10 +1429,10 @@ namespace market
             this.button32.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button32.ForeColor = System.Drawing.Color.White;
-            this.button32.Location = new System.Drawing.Point(179, 99);
+            this.button32.Location = new System.Drawing.Point(179, 97);
             this.button32.Margin = new System.Windows.Forms.Padding(1);
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(177, 47);
+            this.button32.Size = new System.Drawing.Size(177, 46);
             this.button32.TabIndex = 9;
             this.button32.Text = "Fiş Yazdır";
             this.button32.UseVisualStyleBackColor = false;
@@ -1444,10 +1444,10 @@ namespace market
             this.bAdet.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bAdet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bAdet.ForeColor = System.Drawing.Color.White;
-            this.bAdet.Location = new System.Drawing.Point(1, 148);
+            this.bAdet.Location = new System.Drawing.Point(1, 145);
             this.bAdet.Margin = new System.Windows.Forms.Padding(1);
             this.bAdet.Name = "bAdet";
-            this.bAdet.Size = new System.Drawing.Size(176, 47);
+            this.bAdet.Size = new System.Drawing.Size(176, 49);
             this.bAdet.TabIndex = 8;
             this.bAdet.Text = "Adet";
             this.bAdet.UseVisualStyleBackColor = false;
@@ -1460,10 +1460,10 @@ namespace market
             this.bOdenen.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bOdenen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bOdenen.ForeColor = System.Drawing.Color.White;
-            this.bOdenen.Location = new System.Drawing.Point(1, 99);
+            this.bOdenen.Location = new System.Drawing.Point(1, 97);
             this.bOdenen.Margin = new System.Windows.Forms.Padding(1);
             this.bOdenen.Name = "bOdenen";
-            this.bOdenen.Size = new System.Drawing.Size(176, 47);
+            this.bOdenen.Size = new System.Drawing.Size(176, 46);
             this.bOdenen.TabIndex = 7;
             this.bOdenen.Text = "Ödenen";
             this.bOdenen.UseVisualStyleBackColor = false;
@@ -1476,10 +1476,10 @@ namespace market
             this.bIade.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bIade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bIade.ForeColor = System.Drawing.Color.White;
-            this.bIade.Location = new System.Drawing.Point(179, 50);
+            this.bIade.Location = new System.Drawing.Point(179, 49);
             this.bIade.Margin = new System.Windows.Forms.Padding(1);
             this.bIade.Name = "bIade";
-            this.bIade.Size = new System.Drawing.Size(177, 47);
+            this.bIade.Size = new System.Drawing.Size(177, 46);
             this.bIade.TabIndex = 6;
             this.bIade.Text = "İade";
             this.bIade.UseVisualStyleBackColor = false;
@@ -1495,7 +1495,7 @@ namespace market
             this.bDigerUrun.Location = new System.Drawing.Point(1, 1);
             this.bDigerUrun.Margin = new System.Windows.Forms.Padding(1);
             this.bDigerUrun.Name = "bDigerUrun";
-            this.bDigerUrun.Size = new System.Drawing.Size(176, 47);
+            this.bDigerUrun.Size = new System.Drawing.Size(176, 46);
             this.bDigerUrun.TabIndex = 5;
             this.bDigerUrun.Text = "Diğer Ürün";
             this.bDigerUrun.UseVisualStyleBackColor = false;
@@ -1511,7 +1511,7 @@ namespace market
             this.bIslemBeklet.Location = new System.Drawing.Point(179, 1);
             this.bIslemBeklet.Margin = new System.Windows.Forms.Padding(1);
             this.bIslemBeklet.Name = "bIslemBeklet";
-            this.bIslemBeklet.Size = new System.Drawing.Size(177, 47);
+            this.bIslemBeklet.Size = new System.Drawing.Size(177, 46);
             this.bIslemBeklet.TabIndex = 4;
             this.bIslemBeklet.Text = "İşlem Beklet";
             this.bIslemBeklet.UseVisualStyleBackColor = false;
@@ -1524,10 +1524,10 @@ namespace market
             this.bBarkod.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bBarkod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bBarkod.ForeColor = System.Drawing.Color.White;
-            this.bBarkod.Location = new System.Drawing.Point(1, 50);
+            this.bBarkod.Location = new System.Drawing.Point(1, 49);
             this.bBarkod.Margin = new System.Windows.Forms.Padding(1);
             this.bBarkod.Name = "bBarkod";
-            this.bBarkod.Size = new System.Drawing.Size(176, 47);
+            this.bBarkod.Size = new System.Drawing.Size(176, 46);
             this.bBarkod.TabIndex = 3;
             this.bBarkod.Text = "Barkod";
             this.bBarkod.UseVisualStyleBackColor = false;

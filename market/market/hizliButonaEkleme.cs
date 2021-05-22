@@ -69,9 +69,6 @@ namespace market
             }
         }
 
-        private void hizliButonaEkleme_Load(object sender, EventArgs e)
-        {
-
-        }
+       
     }
 }
