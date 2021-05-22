@@ -24,6 +24,7 @@ namespace market
                 string urunad = urunAraText.Text;
                 var urunler = db.Urun.Where(a => a.dUrunAd.Contains(urunad)).ToList();//örneğin DO yazdın. İçinde do karakterleri olan ürünleri listeler
                 gridUrunler.DataSource = urunler;
+                islemler.GridDuzenle(gridUrunler);
             }
         }
 
@@ -55,11 +56,22 @@ namespace market
             if (chcTumu.Checked) 
             {
                 gridUrunler.DataSource = db.Urun.ToList();
+                gridUrunler.Columns["dAlisFiyat"].Visible = false;
+                gridUrunler.Columns["dSatisFiyat"].Visible = false;
+                gridUrunler.Columns["dKdvOrani"].Visible = false;
+                gridUrunler.Columns["dKdvTutari"].Visible = false;
+                gridUrunler.Columns["dMiktar"].Visible = false;
+                islemler.GridDuzenle(gridUrunler);
             }
             else
             {
                 gridUrunler.DataSource = null;
             }
+        }
+
+        private void hizliButonaEkleme_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

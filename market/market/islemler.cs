@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace market
 {
@@ -34,6 +35,80 @@ namespace market
                 urunbilgi.dMiktar += miktar;
                 db.SaveChanges();
 
+            }
+        }
+        public static void GridDuzenle(DataGridView dgv)
+        {
+            if (dgv.Columns.Count>0)
+            {
+                for (int i = 0; i < dgv.Columns.Count; i++)
+                {
+                    switch (dgv.Columns[i].HeaderText)
+                    {
+                        case "dTarih":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "Tarih"; break;
+
+                        case "dKdvTutari":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2";
+                            dgv.Columns[i].HeaderText = "Kdv Tutarı"; break;
+                        case "dBarkod":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "Barkod"; break;
+                        case "dKullanici":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "Kullanıcı"; break;
+                        case "Id":
+                            dgv.Columns[i].HeaderText = "Numara";
+                            break;
+                        case "dUrunId":
+                            dgv.Columns[i].HeaderText = "Urun Numarası"; break;
+                        case "dUrunAd":
+                            dgv.Columns[i].HeaderText = "Ürün Adı"; break;
+                        case "dAciklama":
+                            dgv.Columns[i].HeaderText = "Açıklama"; break;
+                        case "dUrunGrup":
+                            dgv.Columns[i].HeaderText = "Ürün Grubu";break;
+                        case "dAlisFiyat":
+                            dgv.Columns[i].HeaderText = "Alş Fiyatı";
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                            dgv.Columns[i].DefaultCellStyle.Format ="C2"; break;
+                        case "dSatisFiyat":
+                            dgv.Columns[i].HeaderText = "Satış Fiyatı";
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
+                        case "dKdvOrani":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "KDV Oranı"; break;
+                        case "dBirim":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "Birim"; break;
+                        case "dMiktar":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "Miktar"; break;
+                        case "dOdemeSekli":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "Ödeme Şekli"; break;
+                        case "dKart":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2";
+                            dgv.Columns[i].HeaderText = "Kart"; break;
+                        case "dNakit":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2";
+                            dgv.Columns[i].HeaderText = "Nakit"; break;
+                        case "dGelir":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2";
+                            dgv.Columns[i].HeaderText = "Gelir"; break;
+                        case "dGider":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2";
+                            dgv.Columns[i].HeaderText = "Gider"; break;
+
+                    }
+                }
             }
         }
     }

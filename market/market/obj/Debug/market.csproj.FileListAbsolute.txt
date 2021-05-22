@@ -35,3 +35,4 @@ C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\mark
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.hizliButonaEkleme.resources
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.NakitKart.resources
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.UrunGiris.resources
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.UrunGrup.resources

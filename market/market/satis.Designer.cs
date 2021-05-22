@@ -781,7 +781,7 @@ namespace market
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel5);
             this.splitContainer2.Size = new System.Drawing.Size(895, 747);
-            this.splitContainer2.SplitterDistance = 540;
+            this.splitContainer2.SplitterDistance = 544;
             this.splitContainer2.SplitterWidth = 3;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -808,7 +808,7 @@ namespace market
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(895, 540);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(895, 544);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // bh6
@@ -819,10 +819,10 @@ namespace market
             this.bh6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh6.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh6.Location = new System.Drawing.Point(597, 181);
+            this.bh6.Location = new System.Drawing.Point(597, 182);
             this.bh6.Margin = new System.Windows.Forms.Padding(1);
             this.bh6.Name = "bh6";
-            this.bh6.Size = new System.Drawing.Size(297, 178);
+            this.bh6.Size = new System.Drawing.Size(297, 179);
             this.bh6.TabIndex = 20;
             this.bh6.Text = "-";
             this.bh6.UseVisualStyleBackColor = false;
@@ -837,10 +837,10 @@ namespace market
             this.bh5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh5.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh5.Location = new System.Drawing.Point(299, 181);
+            this.bh5.Location = new System.Drawing.Point(299, 182);
             this.bh5.Margin = new System.Windows.Forms.Padding(1);
             this.bh5.Name = "bh5";
-            this.bh5.Size = new System.Drawing.Size(296, 178);
+            this.bh5.Size = new System.Drawing.Size(296, 179);
             this.bh5.TabIndex = 19;
             this.bh5.Text = "-";
             this.bh5.UseVisualStyleBackColor = false;
@@ -855,10 +855,10 @@ namespace market
             this.bh4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh4.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh4.Location = new System.Drawing.Point(1, 181);
+            this.bh4.Location = new System.Drawing.Point(1, 182);
             this.bh4.Margin = new System.Windows.Forms.Padding(1);
             this.bh4.Name = "bh4";
-            this.bh4.Size = new System.Drawing.Size(296, 178);
+            this.bh4.Size = new System.Drawing.Size(296, 179);
             this.bh4.TabIndex = 18;
             this.bh4.Text = "-";
             this.bh4.UseVisualStyleBackColor = false;
@@ -876,7 +876,7 @@ namespace market
             this.bh3.Location = new System.Drawing.Point(597, 1);
             this.bh3.Margin = new System.Windows.Forms.Padding(1);
             this.bh3.Name = "bh3";
-            this.bh3.Size = new System.Drawing.Size(297, 178);
+            this.bh3.Size = new System.Drawing.Size(297, 179);
             this.bh3.TabIndex = 16;
             this.bh3.Text = "-";
             this.bh3.UseVisualStyleBackColor = false;
@@ -891,10 +891,10 @@ namespace market
             this.bh9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh9.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh9.Location = new System.Drawing.Point(597, 361);
+            this.bh9.Location = new System.Drawing.Point(597, 363);
             this.bh9.Margin = new System.Windows.Forms.Padding(1);
             this.bh9.Name = "bh9";
-            this.bh9.Size = new System.Drawing.Size(297, 178);
+            this.bh9.Size = new System.Drawing.Size(297, 180);
             this.bh9.TabIndex = 10;
             this.bh9.Text = "-";
             this.bh9.UseVisualStyleBackColor = false;
@@ -909,10 +909,10 @@ namespace market
             this.bh8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh8.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh8.Location = new System.Drawing.Point(299, 361);
+            this.bh8.Location = new System.Drawing.Point(299, 363);
             this.bh8.Margin = new System.Windows.Forms.Padding(1);
             this.bh8.Name = "bh8";
-            this.bh8.Size = new System.Drawing.Size(296, 178);
+            this.bh8.Size = new System.Drawing.Size(296, 180);
             this.bh8.TabIndex = 9;
             this.bh8.Text = "-";
             this.bh8.UseVisualStyleBackColor = false;
@@ -927,10 +927,10 @@ namespace market
             this.bh7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh7.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh7.Location = new System.Drawing.Point(1, 361);
+            this.bh7.Location = new System.Drawing.Point(1, 363);
             this.bh7.Margin = new System.Windows.Forms.Padding(1);
             this.bh7.Name = "bh7";
-            this.bh7.Size = new System.Drawing.Size(296, 178);
+            this.bh7.Size = new System.Drawing.Size(296, 180);
             this.bh7.TabIndex = 8;
             this.bh7.Text = "-";
             this.bh7.UseVisualStyleBackColor = false;
@@ -948,7 +948,7 @@ namespace market
             this.bh2.Location = new System.Drawing.Point(299, 1);
             this.bh2.Margin = new System.Windows.Forms.Padding(1);
             this.bh2.Name = "bh2";
-            this.bh2.Size = new System.Drawing.Size(296, 178);
+            this.bh2.Size = new System.Drawing.Size(296, 179);
             this.bh2.TabIndex = 1;
             this.bh2.Text = "DONDURMA";
             this.bh2.UseVisualStyleBackColor = false;
@@ -966,7 +966,7 @@ namespace market
             this.bh1.Location = new System.Drawing.Point(1, 1);
             this.bh1.Margin = new System.Windows.Forms.Padding(1);
             this.bh1.Name = "bh1";
-            this.bh1.Size = new System.Drawing.Size(296, 178);
+            this.bh1.Size = new System.Drawing.Size(296, 179);
             this.bh1.TabIndex = 0;
             this.bh1.Text = "ÇİĞKÖFTE";
             this.bh1.UseVisualStyleBackColor = false;
@@ -988,7 +988,7 @@ namespace market
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(895, 204);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(895, 200);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -1012,7 +1012,7 @@ namespace market
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(168, 204);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(168, 200);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // b200
@@ -1026,7 +1026,7 @@ namespace market
             this.b200.Location = new System.Drawing.Point(3, 167);
             this.b200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b200.Name = "b200";
-            this.b200.Size = new System.Drawing.Size(162, 35);
+            this.b200.Size = new System.Drawing.Size(162, 31);
             this.b200.TabIndex = 5;
             this.b200.Text = "200";
             this.b200.UseVisualStyleBackColor = false;
@@ -1130,7 +1130,7 @@ namespace market
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.37089F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.6291F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(358, 200);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(358, 196);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // numbers
@@ -1171,7 +1171,7 @@ namespace market
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(352, 160);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(352, 156);
             this.tableLayoutPanel12.TabIndex = 1;
             // 
             // bNv
@@ -1182,10 +1182,10 @@ namespace market
             this.bNv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bNv.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bNv.ForeColor = System.Drawing.Color.White;
-            this.bNv.Location = new System.Drawing.Point(237, 122);
+            this.bNv.Location = new System.Drawing.Point(237, 119);
             this.bNv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bNv.Name = "bNv";
-            this.bNv.Size = new System.Drawing.Size(112, 36);
+            this.bNv.Size = new System.Drawing.Size(112, 35);
             this.bNv.TabIndex = 12;
             this.bNv.Text = ",";
             this.bNv.UseVisualStyleBackColor = false;
@@ -1199,10 +1199,10 @@ namespace market
             this.bN0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN0.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN0.ForeColor = System.Drawing.Color.White;
-            this.bN0.Location = new System.Drawing.Point(120, 122);
+            this.bN0.Location = new System.Drawing.Point(120, 119);
             this.bN0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN0.Name = "bN0";
-            this.bN0.Size = new System.Drawing.Size(111, 36);
+            this.bN0.Size = new System.Drawing.Size(111, 35);
             this.bN0.TabIndex = 11;
             this.bN0.Text = "0";
             this.bN0.UseVisualStyleBackColor = false;
@@ -1216,10 +1216,10 @@ namespace market
             this.bNb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bNb.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bNb.ForeColor = System.Drawing.Color.White;
-            this.bNb.Location = new System.Drawing.Point(3, 122);
+            this.bNb.Location = new System.Drawing.Point(3, 119);
             this.bNb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bNb.Name = "bNb";
-            this.bNb.Size = new System.Drawing.Size(111, 36);
+            this.bNb.Size = new System.Drawing.Size(111, 35);
             this.bNb.TabIndex = 10;
             this.bNb.Text = "<";
             this.bNb.UseVisualStyleBackColor = false;
@@ -1233,10 +1233,10 @@ namespace market
             this.bN9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN9.ForeColor = System.Drawing.Color.White;
-            this.bN9.Location = new System.Drawing.Point(237, 82);
+            this.bN9.Location = new System.Drawing.Point(237, 80);
             this.bN9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN9.Name = "bN9";
-            this.bN9.Size = new System.Drawing.Size(112, 36);
+            this.bN9.Size = new System.Drawing.Size(112, 35);
             this.bN9.TabIndex = 9;
             this.bN9.Text = "9";
             this.bN9.UseVisualStyleBackColor = false;
@@ -1250,10 +1250,10 @@ namespace market
             this.bN8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN8.ForeColor = System.Drawing.Color.White;
-            this.bN8.Location = new System.Drawing.Point(120, 82);
+            this.bN8.Location = new System.Drawing.Point(120, 80);
             this.bN8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN8.Name = "bN8";
-            this.bN8.Size = new System.Drawing.Size(111, 36);
+            this.bN8.Size = new System.Drawing.Size(111, 35);
             this.bN8.TabIndex = 8;
             this.bN8.Text = "8";
             this.bN8.UseVisualStyleBackColor = false;
@@ -1267,10 +1267,10 @@ namespace market
             this.bN7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN7.ForeColor = System.Drawing.Color.White;
-            this.bN7.Location = new System.Drawing.Point(3, 82);
+            this.bN7.Location = new System.Drawing.Point(3, 80);
             this.bN7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN7.Name = "bN7";
-            this.bN7.Size = new System.Drawing.Size(111, 36);
+            this.bN7.Size = new System.Drawing.Size(111, 35);
             this.bN7.TabIndex = 7;
             this.bN7.Text = "7";
             this.bN7.UseVisualStyleBackColor = false;
@@ -1284,10 +1284,10 @@ namespace market
             this.bN6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN6.ForeColor = System.Drawing.Color.White;
-            this.bN6.Location = new System.Drawing.Point(237, 42);
+            this.bN6.Location = new System.Drawing.Point(237, 41);
             this.bN6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN6.Name = "bN6";
-            this.bN6.Size = new System.Drawing.Size(112, 36);
+            this.bN6.Size = new System.Drawing.Size(112, 35);
             this.bN6.TabIndex = 6;
             this.bN6.Text = "6";
             this.bN6.UseVisualStyleBackColor = false;
@@ -1301,10 +1301,10 @@ namespace market
             this.bN5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN5.ForeColor = System.Drawing.Color.White;
-            this.bN5.Location = new System.Drawing.Point(120, 42);
+            this.bN5.Location = new System.Drawing.Point(120, 41);
             this.bN5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN5.Name = "bN5";
-            this.bN5.Size = new System.Drawing.Size(111, 36);
+            this.bN5.Size = new System.Drawing.Size(111, 35);
             this.bN5.TabIndex = 5;
             this.bN5.Text = "5";
             this.bN5.UseVisualStyleBackColor = false;
@@ -1318,10 +1318,10 @@ namespace market
             this.bN4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN4.ForeColor = System.Drawing.Color.White;
-            this.bN4.Location = new System.Drawing.Point(3, 42);
+            this.bN4.Location = new System.Drawing.Point(3, 41);
             this.bN4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN4.Name = "bN4";
-            this.bN4.Size = new System.Drawing.Size(111, 36);
+            this.bN4.Size = new System.Drawing.Size(111, 35);
             this.bN4.TabIndex = 4;
             this.bN4.Text = "4";
             this.bN4.UseVisualStyleBackColor = false;
@@ -1338,7 +1338,7 @@ namespace market
             this.bN3.Location = new System.Drawing.Point(237, 2);
             this.bN3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN3.Name = "bN3";
-            this.bN3.Size = new System.Drawing.Size(112, 36);
+            this.bN3.Size = new System.Drawing.Size(112, 35);
             this.bN3.TabIndex = 3;
             this.bN3.Text = "3";
             this.bN3.UseVisualStyleBackColor = false;
@@ -1355,7 +1355,7 @@ namespace market
             this.bN2.Location = new System.Drawing.Point(120, 2);
             this.bN2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN2.Name = "bN2";
-            this.bN2.Size = new System.Drawing.Size(111, 36);
+            this.bN2.Size = new System.Drawing.Size(111, 35);
             this.bN2.TabIndex = 2;
             this.bN2.Text = "2";
             this.bN2.UseVisualStyleBackColor = false;
@@ -1372,7 +1372,7 @@ namespace market
             this.bN1.Location = new System.Drawing.Point(3, 2);
             this.bN1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN1.Name = "bN1";
-            this.bN1.Size = new System.Drawing.Size(111, 36);
+            this.bN1.Size = new System.Drawing.Size(111, 35);
             this.bN1.TabIndex = 1;
             this.bN1.Text = "1";
             this.bN1.UseVisualStyleBackColor = false;
@@ -1403,7 +1403,7 @@ namespace market
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(357, 200);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(357, 196);
             this.tableLayoutPanel8.TabIndex = 2;
             // 
             // bTemizle
@@ -1413,10 +1413,10 @@ namespace market
             this.bTemizle.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bTemizle.ForeColor = System.Drawing.Color.White;
-            this.bTemizle.Location = new System.Drawing.Point(179, 151);
+            this.bTemizle.Location = new System.Drawing.Point(179, 148);
             this.bTemizle.Margin = new System.Windows.Forms.Padding(1);
             this.bTemizle.Name = "bTemizle";
-            this.bTemizle.Size = new System.Drawing.Size(177, 48);
+            this.bTemizle.Size = new System.Drawing.Size(177, 47);
             this.bTemizle.TabIndex = 10;
             this.bTemizle.Text = "Temizle";
             this.bTemizle.UseVisualStyleBackColor = false;
@@ -1429,10 +1429,10 @@ namespace market
             this.button32.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.button32.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button32.ForeColor = System.Drawing.Color.White;
-            this.button32.Location = new System.Drawing.Point(179, 101);
+            this.button32.Location = new System.Drawing.Point(179, 99);
             this.button32.Margin = new System.Windows.Forms.Padding(1);
             this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(177, 48);
+            this.button32.Size = new System.Drawing.Size(177, 47);
             this.button32.TabIndex = 9;
             this.button32.Text = "Fiş Yazdır";
             this.button32.UseVisualStyleBackColor = false;
@@ -1444,10 +1444,10 @@ namespace market
             this.bAdet.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bAdet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bAdet.ForeColor = System.Drawing.Color.White;
-            this.bAdet.Location = new System.Drawing.Point(1, 151);
+            this.bAdet.Location = new System.Drawing.Point(1, 148);
             this.bAdet.Margin = new System.Windows.Forms.Padding(1);
             this.bAdet.Name = "bAdet";
-            this.bAdet.Size = new System.Drawing.Size(176, 48);
+            this.bAdet.Size = new System.Drawing.Size(176, 47);
             this.bAdet.TabIndex = 8;
             this.bAdet.Text = "Adet";
             this.bAdet.UseVisualStyleBackColor = false;
@@ -1460,10 +1460,10 @@ namespace market
             this.bOdenen.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bOdenen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bOdenen.ForeColor = System.Drawing.Color.White;
-            this.bOdenen.Location = new System.Drawing.Point(1, 101);
+            this.bOdenen.Location = new System.Drawing.Point(1, 99);
             this.bOdenen.Margin = new System.Windows.Forms.Padding(1);
             this.bOdenen.Name = "bOdenen";
-            this.bOdenen.Size = new System.Drawing.Size(176, 48);
+            this.bOdenen.Size = new System.Drawing.Size(176, 47);
             this.bOdenen.TabIndex = 7;
             this.bOdenen.Text = "Ödenen";
             this.bOdenen.UseVisualStyleBackColor = false;
@@ -1476,10 +1476,10 @@ namespace market
             this.bIade.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bIade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bIade.ForeColor = System.Drawing.Color.White;
-            this.bIade.Location = new System.Drawing.Point(179, 51);
+            this.bIade.Location = new System.Drawing.Point(179, 50);
             this.bIade.Margin = new System.Windows.Forms.Padding(1);
             this.bIade.Name = "bIade";
-            this.bIade.Size = new System.Drawing.Size(177, 48);
+            this.bIade.Size = new System.Drawing.Size(177, 47);
             this.bIade.TabIndex = 6;
             this.bIade.Text = "İade";
             this.bIade.UseVisualStyleBackColor = false;
@@ -1495,7 +1495,7 @@ namespace market
             this.bDigerUrun.Location = new System.Drawing.Point(1, 1);
             this.bDigerUrun.Margin = new System.Windows.Forms.Padding(1);
             this.bDigerUrun.Name = "bDigerUrun";
-            this.bDigerUrun.Size = new System.Drawing.Size(176, 48);
+            this.bDigerUrun.Size = new System.Drawing.Size(176, 47);
             this.bDigerUrun.TabIndex = 5;
             this.bDigerUrun.Text = "Diğer Ürün";
             this.bDigerUrun.UseVisualStyleBackColor = false;
@@ -1511,7 +1511,7 @@ namespace market
             this.bIslemBeklet.Location = new System.Drawing.Point(179, 1);
             this.bIslemBeklet.Margin = new System.Windows.Forms.Padding(1);
             this.bIslemBeklet.Name = "bIslemBeklet";
-            this.bIslemBeklet.Size = new System.Drawing.Size(177, 48);
+            this.bIslemBeklet.Size = new System.Drawing.Size(177, 47);
             this.bIslemBeklet.TabIndex = 4;
             this.bIslemBeklet.Text = "İşlem Beklet";
             this.bIslemBeklet.UseVisualStyleBackColor = false;
@@ -1524,10 +1524,10 @@ namespace market
             this.bBarkod.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bBarkod.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bBarkod.ForeColor = System.Drawing.Color.White;
-            this.bBarkod.Location = new System.Drawing.Point(1, 51);
+            this.bBarkod.Location = new System.Drawing.Point(1, 50);
             this.bBarkod.Margin = new System.Windows.Forms.Padding(1);
             this.bBarkod.Name = "bBarkod";
-            this.bBarkod.Size = new System.Drawing.Size(176, 48);
+            this.bBarkod.Size = new System.Drawing.Size(176, 47);
             this.bBarkod.TabIndex = 3;
             this.bBarkod.Text = "Barkod";
             this.bBarkod.UseVisualStyleBackColor = false;

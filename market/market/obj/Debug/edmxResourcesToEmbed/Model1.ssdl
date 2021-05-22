@@ -1,5 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="MarketSatisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Barkod">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dBarkodNo" Type="int" />
+  </EntityType>
   <EntityType Name="HizliUrun">
     <Key>
       <PropertyRef Name="Id" />
@@ -78,12 +85,21 @@
     <Property Name="dTarih" Type="datetime" />
     <Property Name="dKullanici" Type="nvarchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="UrunGrubu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dUrunGrupAd" Type="nvarchar" MaxLength="80" />
+  </EntityType>
   <EntityContainer Name="MarketSatisModelStoreContainer">
+    <EntitySet Name="Barkod" EntityType="Self.Barkod" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Islem" EntityType="Self.Islem" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Satislar" EntityType="Self.Satislar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Terazi" EntityType="Self.Terazi" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Urun" EntityType="Self.Urun" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UrunGrubu" EntityType="Self.UrunGrubu" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

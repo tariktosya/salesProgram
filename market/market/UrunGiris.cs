@@ -70,19 +70,26 @@ namespace market
                     urun.dUrunAd = tUrunAdi.Text;
                     urun.dAciklama = tAciklama.Text;
                     urun.dUrunGrup = cmbUrunGrubu.Text;
-                    urun.dAlisFiyat = Convert.ToDouble(tAlisFiyati.Text);
-                    urun.dSatisFiyat = Convert.ToDouble(tSatisFiyati.Text);
-                    urun.dKdvOrani = Convert.ToInt16(tKdvOrani.Text);
-                    urun.dKdvTutari = Math.Round(islemler.DoubleYap(tSatisFiyati.Text) * Convert.ToInt32(tKdvOrani.Text) / 100, 2);
+                    urun.dAlisFiyat = islemler.DoubleYap(tAlisFiyati.Text);
+                    urun.dSatisFiyat = islemler.DoubleYap(tSatisFiyati.Text);
+                    urun.dKdvOrani = islemler.DoubleYap(tKdvOrani.Text);
+                    urun.dKdvTutari = Math.Round(islemler.DoubleYap(tSatisFiyati.Text) * islemler.DoubleYap(tKdvOrani.Text) / 100, 2);
                     urun.dMiktar = Convert.ToDouble(tMiktar.Text);
                     urun.dBirim = "Adet";
                     urun.dTarih = DateTime.Now;
                     urun.dKullanici = lKullanici.Text;
                     db.Urun.Add(urun);
                     db.SaveChanges();
+                    if (tBarkod.Text.Length == 8)
+                    {
+                        var ozelBarkod = db.Barkod.First();
+                        ozelBarkod.dBarkodNo += 1;
+                        db.SaveChanges();
+                    }
                     Temizle();                   
                 }
-                gridUrunListesi.DataSource = db.Urun.OrderByDescending(a => a.dUrunId).Take(10).ToList();//10 tanesini alıyoruz
+                gridUrunListesi.DataSource = db.Urun.OrderByDescending(a => a.dUrunId).Take(20).ToList();//20 tanesini alıyoruz
+                islemler.GridDuzenle(gridUrunListesi);
             }
             else
             {
@@ -97,6 +104,7 @@ namespace market
             {
                 string urunad = tUrunAra.Text;
                 gridUrunListesi.DataSource = db.Urun.Where(a => a.dUrunAd.Contains(urunad)).ToList();//contains - bulunduruyorsa demek
+                islemler.GridDuzenle(gridUrunListesi);
             }
         }
         private void Temizle()
@@ -119,6 +127,69 @@ namespace market
         private void UrunGiris_Load(object sender, EventArgs e)
         {
             tUrunSayisi.Text = db.Urun.Count().ToString();
+            gridUrunListesi.DataSource = db.Urun.OrderByDescending(a => a.dUrunId).Take(20).ToList();
+            islemler.GridDuzenle(gridUrunListesi);
+            GrupDoldur();
+        }
+        public void GrupDoldur()
+        {
+            cmbUrunGrubu.DisplayMember = "dUrunGrupAd";
+            cmbUrunGrubu.ValueMember = "Id";
+            cmbUrunGrubu.DataSource = db.UrunGrubu.OrderBy(a => a.dUrunGrupAd).ToList();
+        }
+
+        private void bUrunGrubuEkle_Click(object sender, EventArgs e)
+        {
+            UrunGrup f = new UrunGrup();
+            f.ShowDialog();
+        }
+
+        private void bBarkodOlustur_Click(object sender, EventArgs e)
+        {
+            var barkodno = db.Barkod.First();
+            int karakter = barkodno.dBarkodNo.ToString().Length;
+            string sifirlar = string.Empty;
+            for (int i = 0; i < 8-karakter; i++)
+            {
+                sifirlar = sifirlar + "0";
+            }
+            string olusanBarkod = sifirlar + barkodno.dBarkodNo.ToString();
+            tBarkod.Text = olusanBarkod;
+            tUrunAdi.Focus();
+        }
+
+        private void tSatisFiyati_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsDigit(e.KeyChar)== false && e.KeyChar!=(char)08 && e.KeyChar !=(char)44 && e.KeyChar !=(char)45)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void silToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gridUrunListesi.Rows.Count>0)
+            {
+                int urunid = Convert.ToInt32(gridUrunListesi.CurrentRow.Cells["dUrunId"].Value.ToString());
+                string urunad = gridUrunListesi.CurrentRow.Cells["dUrunAd"].Value.ToString();
+                string barkod = gridUrunListesi.CurrentRow.Cells["dBarkod"].Value.ToString();
+                DialogResult onay = MessageBox.Show(urunad + " Ürününü Silmek İstiyor Musunuz?", "Ürün Silme İşlemi", MessageBoxButtons.YesNo);
+                if (onay == DialogResult.Yes)
+                {
+                    var urun = db.Urun.Find(urunid);
+                    var hizli = db.HizliUrun.Where(x => x.dBarkod == barkod).SingleOrDefault();
+                    hizli.dBarkod = "-";
+                    hizli.dUrunAd = "-";
+                    hizli.dFiyat = 0;
+                    db.Urun.Remove(urun);
+                    db.SaveChanges();
+                    gridUrunListesi.DataSource = db.Urun.OrderByDescending(a => a.dUrunId).Take(20).ToList();//10 tanesini alıyoruz
+                    islemler.GridDuzenle(gridUrunListesi);
+                    MessageBox.Show("Ürün Silinmiştir.");
+                    tBarkod.Focus();
+                }
+            }
+            
         }
     }
 }

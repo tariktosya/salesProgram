@@ -85,5 +85,21 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="UrunGrubu">
+      <EntityTypeMapping TypeName="MarketSatisModel.UrunGrubu">
+        <MappingFragment StoreEntitySet="UrunGrubu">
+          <ScalarProperty Name="dUrunGrupAd" ColumnName="dUrunGrupAd" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Barkod">
+      <EntityTypeMapping TypeName="MarketSatisModel.Barkod">
+        <MappingFragment StoreEntitySet="Barkod">
+          <ScalarProperty Name="dBarkodNo" ColumnName="dBarkodNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

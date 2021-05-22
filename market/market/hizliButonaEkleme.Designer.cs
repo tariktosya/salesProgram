@@ -29,14 +29,14 @@ namespace market
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.gridUrunler = new System.Windows.Forms.DataGridView();
+            this.chcTumu = new System.Windows.Forms.CheckBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.butonId = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.urunAraText = new System.Windows.Forms.TextBox();
-            this.butonId = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.chcTumu = new System.Windows.Forms.CheckBox();
+            this.gridUrunler = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -67,38 +67,36 @@ namespace market
             this.splitContainer1.SplitterDistance = 139;
             this.splitContainer1.TabIndex = 0;
             // 
-            // gridUrunler
+            // chcTumu
             // 
-            this.gridUrunler.AllowUserToAddRows = false;
-            this.gridUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridUrunler.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.gridUrunler.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.gridUrunler.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.gridUrunler.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridUrunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.gridUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridUrunler.EnableHeadersVisualStyles = false;
-            this.gridUrunler.Location = new System.Drawing.Point(0, 0);
-            this.gridUrunler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gridUrunler.Name = "gridUrunler";
-            this.gridUrunler.RowHeadersVisible = false;
-            this.gridUrunler.RowHeadersWidth = 51;
-            this.gridUrunler.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
-            this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
-            this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.gridUrunler.RowTemplate.Height = 30;
-            this.gridUrunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridUrunler.Size = new System.Drawing.Size(1244, 467);
-            this.gridUrunler.TabIndex = 2;
-            this.gridUrunler.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridUrunler_CellContentDoubleClick);
+            this.chcTumu.AutoSize = true;
+            this.chcTumu.Location = new System.Drawing.Point(437, 105);
+            this.chcTumu.Name = "chcTumu";
+            this.chcTumu.Size = new System.Drawing.Size(153, 21);
+            this.chcTumu.TabIndex = 8;
+            this.chcTumu.Text = "TÜMÜNÜ GÖSTER";
+            this.chcTumu.UseVisualStyleBackColor = true;
+            this.chcTumu.CheckedChanged += new System.EventHandler(this.chcTumu_CheckedChanged);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label2.Location = new System.Drawing.Point(53, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(196, 28);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "BUTON NUMARASI : ";
+            // 
+            // butonId
+            // 
+            this.butonId.AutoSize = true;
+            this.butonId.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.butonId.Location = new System.Drawing.Point(255, 9);
+            this.butonId.Name = "butonId";
+            this.butonId.Size = new System.Drawing.Size(111, 28);
+            this.butonId.TabIndex = 6;
+            this.butonId.Text = "BUTON NO";
             // 
             // label6
             // 
@@ -120,36 +118,38 @@ namespace market
             this.urunAraText.TabIndex = 4;
             this.urunAraText.TextChanged += new System.EventHandler(this.urunAraText_TextChanged);
             // 
-            // butonId
+            // gridUrunler
             // 
-            this.butonId.AutoSize = true;
-            this.butonId.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.butonId.Location = new System.Drawing.Point(255, 9);
-            this.butonId.Name = "butonId";
-            this.butonId.Size = new System.Drawing.Size(111, 28);
-            this.butonId.TabIndex = 6;
-            this.butonId.Text = "BUTON NO";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label2.Location = new System.Drawing.Point(53, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 28);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "BUTON NUMARASI : ";
-            // 
-            // chcTumu
-            // 
-            this.chcTumu.AutoSize = true;
-            this.chcTumu.Location = new System.Drawing.Point(437, 105);
-            this.chcTumu.Name = "chcTumu";
-            this.chcTumu.Size = new System.Drawing.Size(153, 21);
-            this.chcTumu.TabIndex = 8;
-            this.chcTumu.Text = "TÜMÜNÜ GÖSTER";
-            this.chcTumu.UseVisualStyleBackColor = true;
-            this.chcTumu.CheckedChanged += new System.EventHandler(this.chcTumu_CheckedChanged);
+            this.gridUrunler.AllowUserToAddRows = false;
+            this.gridUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridUrunler.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.gridUrunler.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.gridUrunler.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.gridUrunler.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridUrunler.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.gridUrunler.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridUrunler.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridUrunler.EnableHeadersVisualStyles = false;
+            this.gridUrunler.Location = new System.Drawing.Point(0, 0);
+            this.gridUrunler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gridUrunler.Name = "gridUrunler";
+            this.gridUrunler.RowHeadersVisible = false;
+            this.gridUrunler.RowHeadersWidth = 51;
+            this.gridUrunler.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
+            this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
+            this.gridUrunler.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.gridUrunler.RowTemplate.Height = 30;
+            this.gridUrunler.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.gridUrunler.Size = new System.Drawing.Size(1244, 467);
+            this.gridUrunler.TabIndex = 2;
+            this.gridUrunler.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridUrunler_CellContentDoubleClick);
             // 
             // hizliButonaEkleme
             // 
@@ -160,6 +160,7 @@ namespace market
             this.Controls.Add(this.splitContainer1);
             this.Name = "hizliButonaEkleme";
             this.Text = "Barkodsuz Ürün ekleme";
+            this.Load += new System.EventHandler(this.hizliButonaEkleme_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);

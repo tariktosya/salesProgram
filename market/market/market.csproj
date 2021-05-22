@@ -70,6 +70,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Barkod.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="hizliButonaEkleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,6 +134,15 @@
     <Compile Include="UrunGiris.Designer.cs">
       <DependentUpon>UrunGiris.cs</DependentUpon>
     </Compile>
+    <Compile Include="UrunGrubu.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UrunGrup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunGrup.Designer.cs">
+      <DependentUpon>UrunGrup.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="hizliButonaEkleme.resx">
       <DependentUpon>hizliButonaEkleme.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UrunGiris.resx">
       <DependentUpon>UrunGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunGrup.resx">
+      <DependentUpon>UrunGrup.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -201,6 +216,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\trash.png" />
     <None Include="Resources\report.png" />
     <None Include="Resources\floppy-disk.png" />
     <None Include="Resources\barcode-product %281%29.png" />

@@ -5,6 +5,13 @@
     <!-- SSDL content -->
     <edmx:StorageModels>
     <Schema Namespace="MarketSatisModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Barkod">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dBarkodNo" Type="int" />
+        </EntityType>
         <EntityType Name="HizliUrun">
           <Key>
             <PropertyRef Name="Id" />
@@ -83,13 +90,22 @@
           <Property Name="dTarih" Type="datetime" />
           <Property Name="dKullanici" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="UrunGrubu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dUrunGrupAd" Type="nvarchar" MaxLength="80" />
+        </EntityType>
         <EntityContainer Name="MarketSatisModelStoreContainer">
+          <EntitySet Name="Barkod" EntityType="Self.Barkod" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Islem" EntityType="Self.Islem" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Satislar" EntityType="Self.Satislar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Terazi" EntityType="Self.Terazi" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Urun" EntityType="Self.Urun" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="UrunGrubu" EntityType="Self.UrunGrubu" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -120,6 +136,8 @@
           <EntitySet Name="Islem" EntityType="MarketSatisModel.Islem" />
           <EntitySet Name="IslemOzet" EntityType="MarketSatisModel.IslemOzet" />
           <EntitySet Name="Satislar" EntityType="MarketSatisModel.Satislar" />
+          <EntitySet Name="UrunGrubu" EntityType="MarketSatisModel.UrunGrubu" />
+          <EntitySet Name="Barkod" EntityType="MarketSatisModel.Barkod" />
         </EntityContainer>
         <EntityType Name="Terazi">
           <Key>
@@ -180,6 +198,20 @@
           <Property Name="dIade" Type="Boolean" />
           <Property Name="dTarih" Type="DateTime" Precision="3" />
           <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="UrunGrubu">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dUrunGrupAd" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Barkod">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dBarkodNo" Type="Int32" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -268,6 +300,22 @@
                 <ScalarProperty Name="dUrunAd" ColumnName="dUrunAd" />
                 <ScalarProperty Name="dIslemNo" ColumnName="dIslemNo" />
                 <ScalarProperty Name="SatisId" ColumnName="SatisId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="UrunGrubu">
+            <EntityTypeMapping TypeName="MarketSatisModel.UrunGrubu">
+              <MappingFragment StoreEntitySet="UrunGrubu">
+                <ScalarProperty Name="dUrunGrupAd" ColumnName="dUrunGrupAd" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Barkod">
+            <EntityTypeMapping TypeName="MarketSatisModel.Barkod">
+              <MappingFragment StoreEntitySet="Barkod">
+                <ScalarProperty Name="dBarkodNo" ColumnName="dBarkodNo" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -25,6 +25,8 @@
     <EntitySet Name="Islem" EntityType="MarketSatisModel.Islem" />
     <EntitySet Name="IslemOzet" EntityType="MarketSatisModel.IslemOzet" />
     <EntitySet Name="Satislar" EntityType="MarketSatisModel.Satislar" />
+    <EntitySet Name="UrunGrubu" EntityType="MarketSatisModel.UrunGrubu" />
+    <EntitySet Name="Barkod" EntityType="MarketSatisModel.Barkod" />
   </EntityContainer>
   <EntityType Name="Terazi">
     <Key>
@@ -85,5 +87,19 @@
     <Property Name="dIade" Type="Boolean" />
     <Property Name="dTarih" Type="DateTime" Precision="3" />
     <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="UrunGrubu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dUrunGrupAd" Type="String" MaxLength="80" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Barkod">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dBarkodNo" Type="Int32" />
   </EntityType>
 </Schema>

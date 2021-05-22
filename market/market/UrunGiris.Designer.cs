@@ -29,6 +29,7 @@ namespace market
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
@@ -36,7 +37,9 @@ namespace market
             this.tBarkod = new System.Windows.Forms.TextBox();
             this.bBarkodOlustur = new System.Windows.Forms.Button();
             this.tUrunSayisi = new System.Windows.Forms.TextBox();
+            this.lStandart10 = new market.lStandart();
             this.tUrunAra = new System.Windows.Forms.TextBox();
+            this.lStandart9 = new market.lStandart();
             this.bRaporAl = new System.Windows.Forms.Button();
             this.bUrunGrubuEkle = new System.Windows.Forms.Button();
             this.bIptal = new System.Windows.Forms.Button();
@@ -45,25 +48,26 @@ namespace market
             this.tMiktar = new System.Windows.Forms.TextBox();
             this.tSatisFiyati = new System.Windows.Forms.TextBox();
             this.tAlisFiyati = new System.Windows.Forms.TextBox();
-            this.tAciklama = new System.Windows.Forms.TextBox();
-            this.tUrunAdi = new System.Windows.Forms.TextBox();
-            this.cmbUrunGrubu = new System.Windows.Forms.ComboBox();
-            this.lStandart10 = new market.lStandart();
-            this.lStandart9 = new market.lStandart();
             this.lStandart8 = new market.lStandart();
             this.lStandart7 = new market.lStandart();
             this.lStandart6 = new market.lStandart();
             this.lStandart5 = new market.lStandart();
+            this.tAciklama = new System.Windows.Forms.TextBox();
+            this.tUrunAdi = new System.Windows.Forms.TextBox();
             this.lStandart4 = new market.lStandart();
+            this.cmbUrunGrubu = new System.Windows.Forms.ComboBox();
             this.lStandart3 = new market.lStandart();
             this.lStandart2 = new market.lStandart();
             this.lStandart1 = new market.lStandart();
             this.gridUrunListesi = new market.gridGrid();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridUrunListesi)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -142,11 +146,12 @@ namespace market
             this.bBarkodOlustur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bBarkodOlustur.Name = "bBarkodOlustur";
             this.bBarkodOlustur.Size = new System.Drawing.Size(152, 97);
-            this.bBarkodOlustur.TabIndex = 28;
+            this.bBarkodOlustur.TabIndex = 11;
             this.bBarkodOlustur.Text = "  BARKOD \r\n OLUŞTUR";
             this.bBarkodOlustur.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bBarkodOlustur.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.bBarkodOlustur.UseVisualStyleBackColor = false;
+            this.bBarkodOlustur.Click += new System.EventHandler(this.bBarkodOlustur_Click);
             // 
             // tUrunSayisi
             // 
@@ -157,7 +162,19 @@ namespace market
             this.tUrunSayisi.ReadOnly = true;
             this.tUrunSayisi.Size = new System.Drawing.Size(159, 30);
             this.tUrunSayisi.TabIndex = 27;
+            this.tUrunSayisi.TabStop = false;
             this.tUrunSayisi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lStandart10
+            // 
+            this.lStandart10.AutoSize = true;
+            this.lStandart10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart10.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart10.Location = new System.Drawing.Point(552, 299);
+            this.lStandart10.Name = "lStandart10";
+            this.lStandart10.Size = new System.Drawing.Size(112, 25);
+            this.lStandart10.TabIndex = 26;
+            this.lStandart10.Text = "Ürün Sayısı";
             // 
             // tUrunAra
             // 
@@ -165,8 +182,19 @@ namespace market
             this.tUrunAra.Location = new System.Drawing.Point(142, 298);
             this.tUrunAra.Name = "tUrunAra";
             this.tUrunAra.Size = new System.Drawing.Size(323, 30);
-            this.tUrunAra.TabIndex = 25;
+            this.tUrunAra.TabIndex = 12;
             this.tUrunAra.TextChanged += new System.EventHandler(this.tUrunAra_TextChanged);
+            // 
+            // lStandart9
+            // 
+            this.lStandart9.AutoSize = true;
+            this.lStandart9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart9.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart9.Location = new System.Drawing.Point(46, 301);
+            this.lStandart9.Name = "lStandart9";
+            this.lStandart9.Size = new System.Drawing.Size(90, 25);
+            this.lStandart9.TabIndex = 24;
+            this.lStandart9.Text = "Ürün Ara";
             // 
             // bRaporAl
             // 
@@ -180,7 +208,7 @@ namespace market
             this.bRaporAl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bRaporAl.Name = "bRaporAl";
             this.bRaporAl.Size = new System.Drawing.Size(157, 136);
-            this.bRaporAl.TabIndex = 23;
+            this.bRaporAl.TabIndex = 13;
             this.bRaporAl.Text = "RAPOR Al";
             this.bRaporAl.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bRaporAl.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -198,11 +226,12 @@ namespace market
             this.bUrunGrubuEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bUrunGrubuEkle.Name = "bUrunGrubuEkle";
             this.bUrunGrubuEkle.Size = new System.Drawing.Size(152, 97);
-            this.bUrunGrubuEkle.TabIndex = 21;
+            this.bUrunGrubuEkle.TabIndex = 10;
             this.bUrunGrubuEkle.Text = "ÜRÜN GRUBU EKLE";
             this.bUrunGrubuEkle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bUrunGrubuEkle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.bUrunGrubuEkle.UseVisualStyleBackColor = false;
+            this.bUrunGrubuEkle.Click += new System.EventHandler(this.bUrunGrubuEkle_Click);
             // 
             // bIptal
             // 
@@ -216,7 +245,7 @@ namespace market
             this.bIptal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bIptal.Name = "bIptal";
             this.bIptal.Size = new System.Drawing.Size(112, 74);
-            this.bIptal.TabIndex = 20;
+            this.bIptal.TabIndex = 9;
             this.bIptal.Text = " İPTAL";
             this.bIptal.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bIptal.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -235,7 +264,7 @@ namespace market
             this.bKadet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bKadet.Name = "bKadet";
             this.bKadet.Size = new System.Drawing.Size(112, 77);
-            this.bKadet.TabIndex = 19;
+            this.bKadet.TabIndex = 8;
             this.bKadet.Text = "KAYDET";
             this.bKadet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bKadet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -249,7 +278,7 @@ namespace market
             this.tKdvOrani.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.tKdvOrani.Name = "tKdvOrani";
             this.tKdvOrani.Size = new System.Drawing.Size(159, 30);
-            this.tKdvOrani.TabIndex = 15;
+            this.tKdvOrani.TabIndex = 7;
             this.tKdvOrani.Text = "8";
             this.tKdvOrani.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -260,7 +289,7 @@ namespace market
             this.tMiktar.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.tMiktar.Name = "tMiktar";
             this.tMiktar.Size = new System.Drawing.Size(159, 30);
-            this.tMiktar.TabIndex = 14;
+            this.tMiktar.TabIndex = 6;
             this.tMiktar.Text = "0";
             this.tMiktar.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -271,9 +300,10 @@ namespace market
             this.tSatisFiyati.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.tSatisFiyati.Name = "tSatisFiyati";
             this.tSatisFiyati.Size = new System.Drawing.Size(159, 30);
-            this.tSatisFiyati.TabIndex = 13;
+            this.tSatisFiyati.TabIndex = 5;
             this.tSatisFiyati.Text = "0";
             this.tSatisFiyati.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.tSatisFiyati.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tSatisFiyati_KeyPress);
             // 
             // tAlisFiyati
             // 
@@ -282,56 +312,9 @@ namespace market
             this.tAlisFiyati.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.tAlisFiyati.Name = "tAlisFiyati";
             this.tAlisFiyati.Size = new System.Drawing.Size(159, 30);
-            this.tAlisFiyati.TabIndex = 12;
+            this.tAlisFiyati.TabIndex = 4;
             this.tAlisFiyati.Text = "0";
             this.tAlisFiyati.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // tAciklama
-            // 
-            this.tAciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tAciklama.Location = new System.Drawing.Point(142, 111);
-            this.tAciklama.Name = "tAciklama";
-            this.tAciklama.Size = new System.Drawing.Size(323, 30);
-            this.tAciklama.TabIndex = 7;
-            // 
-            // tUrunAdi
-            // 
-            this.tUrunAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tUrunAdi.Location = new System.Drawing.Point(142, 64);
-            this.tUrunAdi.Name = "tUrunAdi";
-            this.tUrunAdi.Size = new System.Drawing.Size(323, 30);
-            this.tUrunAdi.TabIndex = 6;
-            // 
-            // cmbUrunGrubu
-            // 
-            this.cmbUrunGrubu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.cmbUrunGrubu.FormattingEnabled = true;
-            this.cmbUrunGrubu.Location = new System.Drawing.Point(142, 158);
-            this.cmbUrunGrubu.Name = "cmbUrunGrubu";
-            this.cmbUrunGrubu.Size = new System.Drawing.Size(323, 33);
-            this.cmbUrunGrubu.TabIndex = 3;
-            // 
-            // lStandart10
-            // 
-            this.lStandart10.AutoSize = true;
-            this.lStandart10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart10.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart10.Location = new System.Drawing.Point(552, 299);
-            this.lStandart10.Name = "lStandart10";
-            this.lStandart10.Size = new System.Drawing.Size(112, 25);
-            this.lStandart10.TabIndex = 26;
-            this.lStandart10.Text = "Ürün Sayısı";
-            // 
-            // lStandart9
-            // 
-            this.lStandart9.AutoSize = true;
-            this.lStandart9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart9.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart9.Location = new System.Drawing.Point(46, 301);
-            this.lStandart9.Name = "lStandart9";
-            this.lStandart9.Size = new System.Drawing.Size(90, 25);
-            this.lStandart9.TabIndex = 24;
-            this.lStandart9.Text = "Ürün Ara";
             // 
             // lStandart8
             // 
@@ -377,6 +360,22 @@ namespace market
             this.lStandart5.TabIndex = 8;
             this.lStandart5.Text = "Alış Fiyatı";
             // 
+            // tAciklama
+            // 
+            this.tAciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.tAciklama.Location = new System.Drawing.Point(142, 111);
+            this.tAciklama.Name = "tAciklama";
+            this.tAciklama.Size = new System.Drawing.Size(323, 30);
+            this.tAciklama.TabIndex = 2;
+            // 
+            // tUrunAdi
+            // 
+            this.tUrunAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.tUrunAdi.Location = new System.Drawing.Point(142, 64);
+            this.tUrunAdi.Name = "tUrunAdi";
+            this.tUrunAdi.Size = new System.Drawing.Size(323, 30);
+            this.tUrunAdi.TabIndex = 1;
+            // 
             // lStandart4
             // 
             this.lStandart4.AutoSize = true;
@@ -387,6 +386,15 @@ namespace market
             this.lStandart4.Size = new System.Drawing.Size(108, 25);
             this.lStandart4.TabIndex = 4;
             this.lStandart4.Text = "ÜrünGrubu";
+            // 
+            // cmbUrunGrubu
+            // 
+            this.cmbUrunGrubu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.cmbUrunGrubu.FormattingEnabled = true;
+            this.cmbUrunGrubu.Location = new System.Drawing.Point(142, 158);
+            this.cmbUrunGrubu.Name = "cmbUrunGrubu";
+            this.cmbUrunGrubu.Size = new System.Drawing.Size(323, 33);
+            this.cmbUrunGrubu.TabIndex = 3;
             // 
             // lStandart3
             // 
@@ -447,8 +455,10 @@ namespace market
             this.gridUrunListesi.RowHeadersVisible = false;
             this.gridUrunListesi.RowHeadersWidth = 51;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             this.gridUrunListesi.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.gridUrunListesi.RowTemplate.ContextMenuStrip = this.contextMenuStrip1;
             this.gridUrunListesi.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
             this.gridUrunListesi.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Silver;
             this.gridUrunListesi.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
@@ -456,6 +466,21 @@ namespace market
             this.gridUrunListesi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridUrunListesi.Size = new System.Drawing.Size(1228, 218);
             this.gridUrunListesi.TabIndex = 0;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.silToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 56);
+            // 
+            // silToolStripMenuItem
+            // 
+            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
+            this.silToolStripMenuItem.Text = "Sil";
+            this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
             // 
             // UrunGiris
             // 
@@ -474,6 +499,7 @@ namespace market
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridUrunListesi)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -482,7 +508,6 @@ namespace market
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private lStandart lStandart4;
-        private System.Windows.Forms.ComboBox cmbUrunGrubu;
         private lStandart lStandart3;
         private lStandart lStandart2;
         private lStandart lStandart1;
@@ -508,5 +533,8 @@ namespace market
         private System.Windows.Forms.Button bBarkodOlustur;
         private System.Windows.Forms.TextBox tBarkod;
         public System.Windows.Forms.Label lKullanici;
+        public System.Windows.Forms.ComboBox cmbUrunGrubu;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
     }
 }
