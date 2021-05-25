@@ -28,6 +28,7 @@
     <EntitySet Name="UrunGrubu" EntityType="MarketSatisModel.UrunGrubu" />
     <EntitySet Name="Barkod" EntityType="MarketSatisModel.Barkod" />
     <EntitySet Name="StokHareket" EntityType="MarketSatisModel.StokHareket" />
+    <EntitySet Name="Sabitlerim" EntityType="MarketSatisModel.Sabitlerim" />
   </EntityContainer>
   <EntityType Name="Terazi">
     <Key>
@@ -115,5 +116,12 @@
     <Property Name="dUrunGrup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="dTarih" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Sabitlerim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dKartKomisyonum" Type="Int32" />
   </EntityType>
 </Schema>

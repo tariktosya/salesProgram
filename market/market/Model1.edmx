@@ -45,6 +45,13 @@
           <Property Name="dTarih" Type="datetime" />
           <Property Name="dKullanici" Type="nvarchar" MaxLength="50" />
         </EntityType>
+        <EntityType Name="Sabitlerim">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dKartKomisyonum" Type="int" />
+        </EntityType>
         <EntityType Name="Satislar">
           <Key>
             <PropertyRef Name="SatisId" />
@@ -115,6 +122,7 @@
           <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Islem" EntityType="Self.Islem" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sabitlerim" EntityType="Self.Sabitlerim" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Satislar" EntityType="Self.Satislar" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="StokHareket" EntityType="Self.StokHareket" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Terazi" EntityType="Self.Terazi" Schema="dbo" store:Type="Tables" />
@@ -153,6 +161,7 @@
           <EntitySet Name="UrunGrubu" EntityType="MarketSatisModel.UrunGrubu" />
           <EntitySet Name="Barkod" EntityType="MarketSatisModel.Barkod" />
           <EntitySet Name="StokHareket" EntityType="MarketSatisModel.StokHareket" />
+          <EntitySet Name="Sabitlerim" EntityType="MarketSatisModel.Sabitlerim" />
         </EntityContainer>
         <EntityType Name="Terazi">
           <Key>
@@ -240,6 +249,13 @@
           <Property Name="dUrunGrup" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="dTarih" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Sabitlerim">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dKartKomisyonum" Type="Int32" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -357,6 +373,14 @@
                 <ScalarProperty Name="dBirim" ColumnName="dBirim" />
                 <ScalarProperty Name="dUrunAd" ColumnName="dUrunAd" />
                 <ScalarProperty Name="dBarkod" ColumnName="dBarkod" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sabitlerim">
+            <EntityTypeMapping TypeName="MarketSatisModel.Sabitlerim">
+              <MappingFragment StoreEntitySet="Sabitlerim">
+                <ScalarProperty Name="dKartKomisyonum" ColumnName="dKartKomisyonum" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

@@ -77,9 +77,19 @@ namespace market
                 {
                     if (gridSatisListesi.Rows[i].Cells["Barkod"].Value.ToString() == barkod)
                     {
-                        gridSatisListesi.Rows[i].Cells["Miktar"].Value = miktar + Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Miktar"].Value);
-                        gridSatisListesi.Rows[i].Cells["Toplam"].Value = Math.Round((Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Miktar"].Value) * Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Fiyat"].Value)), 2);
-                        eklenmismi = true;
+                        if (barkod.Length <= 2 && numbers.Text != "")
+                        {
+                            gridSatisListesi.Rows[i].Cells["Miktar"].Value = miktar + Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Miktar"].Value);
+                            gridSatisListesi.Rows[i].Cells["Toplam"].Value = ((Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Toplam"].Value))+(Convert.ToDouble(numbers.Text)));
+                            eklenmismi = true;
+                        }
+                        
+                        else {
+                            gridSatisListesi.Rows[i].Cells["Miktar"].Value = miktar + Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Miktar"].Value);
+                            gridSatisListesi.Rows[i].Cells["Toplam"].Value = Math.Round((Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Miktar"].Value) * Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Fiyat"].Value)), 2);
+                            eklenmismi = true;
+                        }
+                        
                     }
                 }
             }
@@ -92,7 +102,15 @@ namespace market
                 gridSatisListesi.Rows[satirsayisi].Cells["Birim"].Value = urun.dBirim;
                 gridSatisListesi.Rows[satirsayisi].Cells["fiyat"].Value = urun.dSatisFiyat;
                 gridSatisListesi.Rows[satirsayisi].Cells["miktar"].Value = miktar;
-                gridSatisListesi.Rows[satirsayisi].Cells["toplam"].Value = Math.Round((miktar * (double)urun.dSatisFiyat), 2);
+                if (barkod.Length <= 2 && numbers.Text != "")
+                {
+                    gridSatisListesi.Rows[satirsayisi].Cells["toplam"].Value = Convert.ToDouble(numbers.Text);
+                }
+                
+                else
+                {
+                    gridSatisListesi.Rows[satirsayisi].Cells["toplam"].Value = Math.Round((miktar * (double)urun.dSatisFiyat), 2);
+                }
                 gridSatisListesi.Rows[satirsayisi].Cells["AlisFiyat"].Value = urun.dAlisFiyat;
                 gridSatisListesi.Rows[satirsayisi].Cells["KdvTutari"].Value = urun.dKdvTutari;
             }
@@ -166,12 +184,17 @@ namespace market
                 f.ShowDialog();
             }
             else {
-                
-                var urunBarkod = db.HizliUrun.Where(a => a.Id == butonid).Select(a => a.dBarkod).FirstOrDefault();
-                var urun = db.Urun.Where(a => a.dBarkod == urunBarkod).FirstOrDefault();
-                UrunGetirListe(urun, urunBarkod, Convert.ToDouble(MiktarText.Text));
-                
-                GenelToplam();
+                if(numbers.Text != "") {
+                    var urunBarkod = db.HizliUrun.Where(a => a.Id == butonid).Select(a => a.dBarkod).FirstOrDefault();
+                    var urun = db.Urun.Where(a => a.dBarkod == urunBarkod).FirstOrDefault();
+                    UrunGetirListe(urun, urunBarkod, Convert.ToDouble(MiktarText.Text));
+                    GenelToplam();
+                    numbers.Text = "";
+                }
+                else
+                {
+                    MessageBox.Show("Fiyat Bilgisi Giriniz.");
+                }
             }
         }
         
@@ -293,7 +316,7 @@ namespace market
             {
                 int satirsayisi = gridSatisListesi.Rows.Count;
                 gridSatisListesi.Rows.Add();
-                gridSatisListesi.Rows[satirsayisi].Cells["Barkod"].Value = "1111111111116";
+                gridSatisListesi.Rows[satirsayisi].Cells["Barkod"].Value = "0";
                 gridSatisListesi.Rows[satirsayisi].Cells["UrunAdi"].Value = "Barkodsuz Ürün";
                 gridSatisListesi.Rows[satirsayisi].Cells["UrunGrup"].Value = "Barkodsuz Ürün";
                 gridSatisListesi.Rows[satirsayisi].Cells["Birim"].Value = "Adet";
@@ -373,15 +396,20 @@ namespace market
                     db.Satislar.Add(satis);
                     db.SaveChanges();
 
-                    alisfiyattoplam += islemler.DoubleYap(gridSatisListesi.Rows[i].Cells["AlisFiyat"].Value.ToString()); 
+                    alisfiyattoplam += islemler.DoubleYap(gridSatisListesi.Rows[i].Cells["AlisFiyat"].Value.ToString()) * islemler.DoubleYap(gridSatisListesi.Rows[i].Cells["miktar"].Value.ToString());
                     //STOK İŞLEMLERİ
-                    /*if (satisiade) {
-                        islemler.StokAzalt(gridSatisListesi.Rows[i].Cells["Barkod"].Value.ToString(), islemler.DoubleYap(gridSatisListesi.Rows[i].Cells["miktar"].Value.ToString()));
-                    }
-                    else
+                    if (satis.dBarkod.Length != 1)
                     {
-                        islemler.StokArtir(gridSatisListesi.Rows[i].Cells["Barkod"].Value.ToString(), islemler.DoubleYap(gridSatisListesi.Rows[i].Cells["miktar"].Value.ToString()));
-                    }*/
+                        if (satisiade)
+                        {
+                            islemler.StokAzalt(gridSatisListesi.Rows[i].Cells["Barkod"].Value.ToString(), islemler.DoubleYap(gridSatisListesi.Rows[i].Cells["miktar"].Value.ToString()));
+                        }
+                        else
+                        {
+                            islemler.StokArtir(gridSatisListesi.Rows[i].Cells["Barkod"].Value.ToString(), islemler.DoubleYap(gridSatisListesi.Rows[i].Cells["miktar"].Value.ToString()));
+                        }
+                    }
+                    
                 }
                 IslemOzet io = new IslemOzet();
                 io.dIslemNo = islemno;

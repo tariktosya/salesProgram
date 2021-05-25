@@ -88,16 +88,6 @@ namespace market
             this.label3 = new System.Windows.Forms.Label();
             this.genelToplam = new System.Windows.Forms.TextBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.bh6 = new System.Windows.Forms.Button();
-            this.bh5 = new System.Windows.Forms.Button();
-            this.bh4 = new System.Windows.Forms.Button();
-            this.bh3 = new System.Windows.Forms.Button();
-            this.bh9 = new System.Windows.Forms.Button();
-            this.bh8 = new System.Windows.Forms.Button();
-            this.bh7 = new System.Windows.Forms.Button();
-            this.bh2 = new System.Windows.Forms.Button();
-            this.bh1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
             this.b200 = new System.Windows.Forms.Button();
@@ -131,6 +121,32 @@ namespace market
             this.bIslemBeklet = new System.Windows.Forms.Button();
             this.bBarkod = new System.Windows.Forms.Button();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.bh4 = new System.Windows.Forms.Button();
+            this.bh5 = new System.Windows.Forms.Button();
+            this.bh6 = new System.Windows.Forms.Button();
+            this.bh1 = new System.Windows.Forms.Button();
+            this.bh2 = new System.Windows.Forms.Button();
+            this.bh3 = new System.Windows.Forms.Button();
+            this.bh10 = new System.Windows.Forms.Button();
+            this.bh11 = new System.Windows.Forms.Button();
+            this.bh9 = new System.Windows.Forms.Button();
+            this.bh7 = new System.Windows.Forms.Button();
+            this.bh8 = new System.Windows.Forms.Button();
+            this.bh12 = new System.Windows.Forms.Button();
+            this.bh13 = new System.Windows.Forms.Button();
+            this.bh16 = new System.Windows.Forms.Button();
+            this.bh15 = new System.Windows.Forms.Button();
+            this.bh14 = new System.Windows.Forms.Button();
+            this.bh20 = new System.Windows.Forms.Button();
+            this.bh21 = new System.Windows.Forms.Button();
+            this.bh19 = new System.Windows.Forms.Button();
+            this.bh17 = new System.Windows.Forms.Button();
+            this.bh18 = new System.Windows.Forms.Button();
+            this.bh24 = new System.Windows.Forms.Button();
+            this.bh25 = new System.Windows.Forms.Button();
+            this.bh22 = new System.Windows.Forms.Button();
+            this.bh23 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -148,12 +164,12 @@ namespace market
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
             this.splitContainer2.SuspendLayout();
-            this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
             this.tableLayoutPanel12.SuspendLayout();
             this.tableLayoutPanel8.SuspendLayout();
+            this.tableLayoutPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -781,197 +797,9 @@ namespace market
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel5);
             this.splitContainer2.Size = new System.Drawing.Size(895, 747);
-            this.splitContainer2.SplitterDistance = 545;
+            this.splitContainer2.SplitterDistance = 548;
             this.splitContainer2.SplitterWidth = 3;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // tableLayoutPanel4
-            // 
-            this.tableLayoutPanel4.ColumnCount = 3;
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33334F));
-            this.tableLayoutPanel4.Controls.Add(this.bh6, 2, 1);
-            this.tableLayoutPanel4.Controls.Add(this.bh5, 1, 1);
-            this.tableLayoutPanel4.Controls.Add(this.bh4, 0, 1);
-            this.tableLayoutPanel4.Controls.Add(this.bh3, 2, 0);
-            this.tableLayoutPanel4.Controls.Add(this.bh9, 2, 2);
-            this.tableLayoutPanel4.Controls.Add(this.bh8, 1, 2);
-            this.tableLayoutPanel4.Controls.Add(this.bh7, 0, 2);
-            this.tableLayoutPanel4.Controls.Add(this.bh2, 1, 0);
-            this.tableLayoutPanel4.Controls.Add(this.bh1, 0, 0);
-            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
-            this.tableLayoutPanel4.RowCount = 3;
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(895, 545);
-            this.tableLayoutPanel4.TabIndex = 0;
-            // 
-            // bh6
-            // 
-            this.bh6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bh6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bh6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bh6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh6.Location = new System.Drawing.Point(597, 182);
-            this.bh6.Margin = new System.Windows.Forms.Padding(1);
-            this.bh6.Name = "bh6";
-            this.bh6.Size = new System.Drawing.Size(297, 179);
-            this.bh6.TabIndex = 20;
-            this.bh6.Text = "-";
-            this.bh6.UseVisualStyleBackColor = false;
-            this.bh6.Click += new System.EventHandler(this.HizliButonClick);
-            this.bh6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
-            // 
-            // bh5
-            // 
-            this.bh5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bh5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bh5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bh5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh5.Location = new System.Drawing.Point(299, 182);
-            this.bh5.Margin = new System.Windows.Forms.Padding(1);
-            this.bh5.Name = "bh5";
-            this.bh5.Size = new System.Drawing.Size(296, 179);
-            this.bh5.TabIndex = 19;
-            this.bh5.Text = "-";
-            this.bh5.UseVisualStyleBackColor = false;
-            this.bh5.Click += new System.EventHandler(this.HizliButonClick);
-            this.bh5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
-            // 
-            // bh4
-            // 
-            this.bh4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bh4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bh4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bh4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh4.Location = new System.Drawing.Point(1, 182);
-            this.bh4.Margin = new System.Windows.Forms.Padding(1);
-            this.bh4.Name = "bh4";
-            this.bh4.Size = new System.Drawing.Size(296, 179);
-            this.bh4.TabIndex = 18;
-            this.bh4.Text = "-";
-            this.bh4.UseVisualStyleBackColor = false;
-            this.bh4.Click += new System.EventHandler(this.HizliButonClick);
-            this.bh4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
-            // 
-            // bh3
-            // 
-            this.bh3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bh3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bh3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bh3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh3.Location = new System.Drawing.Point(597, 1);
-            this.bh3.Margin = new System.Windows.Forms.Padding(1);
-            this.bh3.Name = "bh3";
-            this.bh3.Size = new System.Drawing.Size(297, 179);
-            this.bh3.TabIndex = 16;
-            this.bh3.Text = "-";
-            this.bh3.UseVisualStyleBackColor = false;
-            this.bh3.Click += new System.EventHandler(this.HizliButonClick);
-            this.bh3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
-            // 
-            // bh9
-            // 
-            this.bh9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bh9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bh9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bh9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh9.Location = new System.Drawing.Point(597, 363);
-            this.bh9.Margin = new System.Windows.Forms.Padding(1);
-            this.bh9.Name = "bh9";
-            this.bh9.Size = new System.Drawing.Size(297, 181);
-            this.bh9.TabIndex = 10;
-            this.bh9.Text = "-";
-            this.bh9.UseVisualStyleBackColor = false;
-            this.bh9.Click += new System.EventHandler(this.HizliButonClick);
-            this.bh9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
-            // 
-            // bh8
-            // 
-            this.bh8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bh8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bh8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bh8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh8.Location = new System.Drawing.Point(299, 363);
-            this.bh8.Margin = new System.Windows.Forms.Padding(1);
-            this.bh8.Name = "bh8";
-            this.bh8.Size = new System.Drawing.Size(296, 181);
-            this.bh8.TabIndex = 9;
-            this.bh8.Text = "-";
-            this.bh8.UseVisualStyleBackColor = false;
-            this.bh8.Click += new System.EventHandler(this.HizliButonClick);
-            this.bh8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
-            // 
-            // bh7
-            // 
-            this.bh7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bh7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bh7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bh7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh7.Location = new System.Drawing.Point(1, 363);
-            this.bh7.Margin = new System.Windows.Forms.Padding(1);
-            this.bh7.Name = "bh7";
-            this.bh7.Size = new System.Drawing.Size(296, 181);
-            this.bh7.TabIndex = 8;
-            this.bh7.Text = "-";
-            this.bh7.UseVisualStyleBackColor = false;
-            this.bh7.Click += new System.EventHandler(this.HizliButonClick);
-            this.bh7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
-            // 
-            // bh2
-            // 
-            this.bh2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bh2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bh2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bh2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh2.Location = new System.Drawing.Point(299, 1);
-            this.bh2.Margin = new System.Windows.Forms.Padding(1);
-            this.bh2.Name = "bh2";
-            this.bh2.Size = new System.Drawing.Size(296, 179);
-            this.bh2.TabIndex = 1;
-            this.bh2.Text = "DONDURMA";
-            this.bh2.UseVisualStyleBackColor = false;
-            this.bh2.Click += new System.EventHandler(this.HizliButonClick);
-            this.bh2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
-            // 
-            // bh1
-            // 
-            this.bh1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bh1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.bh1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bh1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.bh1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh1.Location = new System.Drawing.Point(1, 1);
-            this.bh1.Margin = new System.Windows.Forms.Padding(1);
-            this.bh1.Name = "bh1";
-            this.bh1.Size = new System.Drawing.Size(296, 179);
-            this.bh1.TabIndex = 0;
-            this.bh1.Text = "ÇİĞKÖFTE";
-            this.bh1.UseVisualStyleBackColor = false;
-            this.bh1.Click += new System.EventHandler(this.HizliButonClick);
-            this.bh1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
             // 
             // tableLayoutPanel5
             // 
@@ -988,7 +816,7 @@ namespace market
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(895, 199);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(895, 196);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -1012,7 +840,7 @@ namespace market
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(168, 199);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(168, 196);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // b200
@@ -1023,10 +851,10 @@ namespace market
             this.b200.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b200.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.b200.ForeColor = System.Drawing.Color.White;
-            this.b200.Location = new System.Drawing.Point(3, 167);
+            this.b200.Location = new System.Drawing.Point(3, 162);
             this.b200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b200.Name = "b200";
-            this.b200.Size = new System.Drawing.Size(162, 30);
+            this.b200.Size = new System.Drawing.Size(162, 32);
             this.b200.TabIndex = 5;
             this.b200.Text = "200";
             this.b200.UseVisualStyleBackColor = false;
@@ -1040,10 +868,10 @@ namespace market
             this.b100.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b100.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.b100.ForeColor = System.Drawing.Color.White;
-            this.b100.Location = new System.Drawing.Point(3, 134);
+            this.b100.Location = new System.Drawing.Point(3, 130);
             this.b100.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b100.Name = "b100";
-            this.b100.Size = new System.Drawing.Size(162, 29);
+            this.b100.Size = new System.Drawing.Size(162, 28);
             this.b100.TabIndex = 4;
             this.b100.Text = "100";
             this.b100.UseVisualStyleBackColor = false;
@@ -1057,10 +885,10 @@ namespace market
             this.b50.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b50.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.b50.ForeColor = System.Drawing.Color.White;
-            this.b50.Location = new System.Drawing.Point(3, 101);
+            this.b50.Location = new System.Drawing.Point(3, 98);
             this.b50.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b50.Name = "b50";
-            this.b50.Size = new System.Drawing.Size(162, 29);
+            this.b50.Size = new System.Drawing.Size(162, 28);
             this.b50.TabIndex = 3;
             this.b50.Text = "50";
             this.b50.UseVisualStyleBackColor = false;
@@ -1074,10 +902,10 @@ namespace market
             this.b20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b20.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.b20.ForeColor = System.Drawing.Color.White;
-            this.b20.Location = new System.Drawing.Point(3, 68);
+            this.b20.Location = new System.Drawing.Point(3, 66);
             this.b20.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b20.Name = "b20";
-            this.b20.Size = new System.Drawing.Size(162, 29);
+            this.b20.Size = new System.Drawing.Size(162, 28);
             this.b20.TabIndex = 2;
             this.b20.Text = "20";
             this.b20.UseVisualStyleBackColor = false;
@@ -1091,10 +919,10 @@ namespace market
             this.b10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.b10.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.b10.ForeColor = System.Drawing.Color.White;
-            this.b10.Location = new System.Drawing.Point(3, 35);
+            this.b10.Location = new System.Drawing.Point(3, 34);
             this.b10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b10.Name = "b10";
-            this.b10.Size = new System.Drawing.Size(162, 29);
+            this.b10.Size = new System.Drawing.Size(162, 28);
             this.b10.TabIndex = 1;
             this.b10.Text = "10";
             this.b10.UseVisualStyleBackColor = false;
@@ -1111,7 +939,7 @@ namespace market
             this.b5.Location = new System.Drawing.Point(3, 2);
             this.b5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b5.Name = "b5";
-            this.b5.Size = new System.Drawing.Size(162, 29);
+            this.b5.Size = new System.Drawing.Size(162, 28);
             this.b5.TabIndex = 0;
             this.b5.Text = "5";
             this.b5.UseVisualStyleBackColor = false;
@@ -1130,7 +958,7 @@ namespace market
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.37089F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.6291F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(358, 195);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(358, 192);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // numbers
@@ -1171,7 +999,7 @@ namespace market
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(352, 156);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(352, 153);
             this.tableLayoutPanel12.TabIndex = 1;
             // 
             // bNv
@@ -1182,7 +1010,7 @@ namespace market
             this.bNv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bNv.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bNv.ForeColor = System.Drawing.Color.White;
-            this.bNv.Location = new System.Drawing.Point(237, 119);
+            this.bNv.Location = new System.Drawing.Point(237, 116);
             this.bNv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bNv.Name = "bNv";
             this.bNv.Size = new System.Drawing.Size(112, 35);
@@ -1199,7 +1027,7 @@ namespace market
             this.bN0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN0.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN0.ForeColor = System.Drawing.Color.White;
-            this.bN0.Location = new System.Drawing.Point(120, 119);
+            this.bN0.Location = new System.Drawing.Point(120, 116);
             this.bN0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN0.Name = "bN0";
             this.bN0.Size = new System.Drawing.Size(111, 35);
@@ -1216,7 +1044,7 @@ namespace market
             this.bNb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bNb.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bNb.ForeColor = System.Drawing.Color.White;
-            this.bNb.Location = new System.Drawing.Point(3, 119);
+            this.bNb.Location = new System.Drawing.Point(3, 116);
             this.bNb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bNb.Name = "bNb";
             this.bNb.Size = new System.Drawing.Size(111, 35);
@@ -1233,10 +1061,10 @@ namespace market
             this.bN9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN9.ForeColor = System.Drawing.Color.White;
-            this.bN9.Location = new System.Drawing.Point(237, 80);
+            this.bN9.Location = new System.Drawing.Point(237, 78);
             this.bN9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN9.Name = "bN9";
-            this.bN9.Size = new System.Drawing.Size(112, 35);
+            this.bN9.Size = new System.Drawing.Size(112, 34);
             this.bN9.TabIndex = 9;
             this.bN9.Text = "9";
             this.bN9.UseVisualStyleBackColor = false;
@@ -1250,10 +1078,10 @@ namespace market
             this.bN8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN8.ForeColor = System.Drawing.Color.White;
-            this.bN8.Location = new System.Drawing.Point(120, 80);
+            this.bN8.Location = new System.Drawing.Point(120, 78);
             this.bN8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN8.Name = "bN8";
-            this.bN8.Size = new System.Drawing.Size(111, 35);
+            this.bN8.Size = new System.Drawing.Size(111, 34);
             this.bN8.TabIndex = 8;
             this.bN8.Text = "8";
             this.bN8.UseVisualStyleBackColor = false;
@@ -1267,10 +1095,10 @@ namespace market
             this.bN7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN7.ForeColor = System.Drawing.Color.White;
-            this.bN7.Location = new System.Drawing.Point(3, 80);
+            this.bN7.Location = new System.Drawing.Point(3, 78);
             this.bN7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN7.Name = "bN7";
-            this.bN7.Size = new System.Drawing.Size(111, 35);
+            this.bN7.Size = new System.Drawing.Size(111, 34);
             this.bN7.TabIndex = 7;
             this.bN7.Text = "7";
             this.bN7.UseVisualStyleBackColor = false;
@@ -1284,10 +1112,10 @@ namespace market
             this.bN6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN6.ForeColor = System.Drawing.Color.White;
-            this.bN6.Location = new System.Drawing.Point(237, 41);
+            this.bN6.Location = new System.Drawing.Point(237, 40);
             this.bN6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN6.Name = "bN6";
-            this.bN6.Size = new System.Drawing.Size(112, 35);
+            this.bN6.Size = new System.Drawing.Size(112, 34);
             this.bN6.TabIndex = 6;
             this.bN6.Text = "6";
             this.bN6.UseVisualStyleBackColor = false;
@@ -1301,10 +1129,10 @@ namespace market
             this.bN5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN5.ForeColor = System.Drawing.Color.White;
-            this.bN5.Location = new System.Drawing.Point(120, 41);
+            this.bN5.Location = new System.Drawing.Point(120, 40);
             this.bN5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN5.Name = "bN5";
-            this.bN5.Size = new System.Drawing.Size(111, 35);
+            this.bN5.Size = new System.Drawing.Size(111, 34);
             this.bN5.TabIndex = 5;
             this.bN5.Text = "5";
             this.bN5.UseVisualStyleBackColor = false;
@@ -1318,10 +1146,10 @@ namespace market
             this.bN4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN4.ForeColor = System.Drawing.Color.White;
-            this.bN4.Location = new System.Drawing.Point(3, 41);
+            this.bN4.Location = new System.Drawing.Point(3, 40);
             this.bN4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN4.Name = "bN4";
-            this.bN4.Size = new System.Drawing.Size(111, 35);
+            this.bN4.Size = new System.Drawing.Size(111, 34);
             this.bN4.TabIndex = 4;
             this.bN4.Text = "4";
             this.bN4.UseVisualStyleBackColor = false;
@@ -1338,7 +1166,7 @@ namespace market
             this.bN3.Location = new System.Drawing.Point(237, 2);
             this.bN3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN3.Name = "bN3";
-            this.bN3.Size = new System.Drawing.Size(112, 35);
+            this.bN3.Size = new System.Drawing.Size(112, 34);
             this.bN3.TabIndex = 3;
             this.bN3.Text = "3";
             this.bN3.UseVisualStyleBackColor = false;
@@ -1355,7 +1183,7 @@ namespace market
             this.bN2.Location = new System.Drawing.Point(120, 2);
             this.bN2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN2.Name = "bN2";
-            this.bN2.Size = new System.Drawing.Size(111, 35);
+            this.bN2.Size = new System.Drawing.Size(111, 34);
             this.bN2.TabIndex = 2;
             this.bN2.Text = "2";
             this.bN2.UseVisualStyleBackColor = false;
@@ -1372,7 +1200,7 @@ namespace market
             this.bN1.Location = new System.Drawing.Point(3, 2);
             this.bN1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN1.Name = "bN1";
-            this.bN1.Size = new System.Drawing.Size(111, 35);
+            this.bN1.Size = new System.Drawing.Size(111, 34);
             this.bN1.TabIndex = 1;
             this.bN1.Text = "1";
             this.bN1.UseVisualStyleBackColor = false;
@@ -1403,7 +1231,7 @@ namespace market
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(357, 195);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(357, 192);
             this.tableLayoutPanel8.TabIndex = 2;
             // 
             // bTemizle
@@ -1416,7 +1244,7 @@ namespace market
             this.bTemizle.Location = new System.Drawing.Point(179, 145);
             this.bTemizle.Margin = new System.Windows.Forms.Padding(1);
             this.bTemizle.Name = "bTemizle";
-            this.bTemizle.Size = new System.Drawing.Size(177, 49);
+            this.bTemizle.Size = new System.Drawing.Size(177, 46);
             this.bTemizle.TabIndex = 10;
             this.bTemizle.Text = "Temizle";
             this.bTemizle.UseVisualStyleBackColor = false;
@@ -1447,7 +1275,7 @@ namespace market
             this.bAdet.Location = new System.Drawing.Point(1, 145);
             this.bAdet.Margin = new System.Windows.Forms.Padding(1);
             this.bAdet.Name = "bAdet";
-            this.bAdet.Size = new System.Drawing.Size(176, 49);
+            this.bAdet.Size = new System.Drawing.Size(176, 46);
             this.bAdet.TabIndex = 8;
             this.bAdet.Text = "Adet";
             this.bAdet.UseVisualStyleBackColor = false;
@@ -1541,6 +1369,508 @@ namespace market
             this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
             this.dataGridViewImageColumn1.Width = 135;
             // 
+            // tableLayoutPanel4
+            // 
+            this.tableLayoutPanel4.ColumnCount = 5;
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.Controls.Add(this.bh23, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.bh22, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.bh25, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.bh24, 0, 4);
+            this.tableLayoutPanel4.Controls.Add(this.bh18, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.bh17, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.bh19, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.bh21, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.bh20, 0, 3);
+            this.tableLayoutPanel4.Controls.Add(this.bh14, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.bh15, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.bh16, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.bh13, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.bh12, 0, 2);
+            this.tableLayoutPanel4.Controls.Add(this.bh8, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.bh7, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.bh9, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.bh11, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.bh10, 0, 1);
+            this.tableLayoutPanel4.Controls.Add(this.bh3, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.bh2, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.bh1, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.bh6, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.bh5, 0, 0);
+            this.tableLayoutPanel4.Controls.Add(this.bh4, 0, 0);
+            this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tableLayoutPanel4.Name = "tableLayoutPanel4";
+            this.tableLayoutPanel4.RowCount = 5;
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(895, 548);
+            this.tableLayoutPanel4.TabIndex = 0;
+            // 
+            // bh4
+            // 
+            this.bh4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh4.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh4.Location = new System.Drawing.Point(538, 1);
+            this.bh4.Margin = new System.Windows.Forms.Padding(1);
+            this.bh4.Name = "bh4";
+            this.bh4.Size = new System.Drawing.Size(177, 107);
+            this.bh4.TabIndex = 14;
+            this.bh4.Text = "-";
+            this.bh4.UseVisualStyleBackColor = false;
+            this.bh4.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh5
+            // 
+            this.bh5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh5.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh5.Location = new System.Drawing.Point(717, 1);
+            this.bh5.Margin = new System.Windows.Forms.Padding(1);
+            this.bh5.Name = "bh5";
+            this.bh5.Size = new System.Drawing.Size(177, 107);
+            this.bh5.TabIndex = 15;
+            this.bh5.Text = "-";
+            this.bh5.UseVisualStyleBackColor = false;
+            this.bh5.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh6
+            // 
+            this.bh6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh6.Location = new System.Drawing.Point(1, 110);
+            this.bh6.Margin = new System.Windows.Forms.Padding(1);
+            this.bh6.Name = "bh6";
+            this.bh6.Size = new System.Drawing.Size(177, 107);
+            this.bh6.TabIndex = 16;
+            this.bh6.Text = "-";
+            this.bh6.UseVisualStyleBackColor = false;
+            this.bh6.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh1
+            // 
+            this.bh1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh1.Location = new System.Drawing.Point(1, 1);
+            this.bh1.Margin = new System.Windows.Forms.Padding(1);
+            this.bh1.Name = "bh1";
+            this.bh1.Size = new System.Drawing.Size(177, 107);
+            this.bh1.TabIndex = 17;
+            this.bh1.Text = "-";
+            this.bh1.UseVisualStyleBackColor = false;
+            this.bh1.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh2
+            // 
+            this.bh2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh2.Location = new System.Drawing.Point(180, 1);
+            this.bh2.Margin = new System.Windows.Forms.Padding(1);
+            this.bh2.Name = "bh2";
+            this.bh2.Size = new System.Drawing.Size(177, 107);
+            this.bh2.TabIndex = 18;
+            this.bh2.Text = "-";
+            this.bh2.UseVisualStyleBackColor = false;
+            this.bh2.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh3
+            // 
+            this.bh3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh3.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh3.Location = new System.Drawing.Point(359, 1);
+            this.bh3.Margin = new System.Windows.Forms.Padding(1);
+            this.bh3.Name = "bh3";
+            this.bh3.Size = new System.Drawing.Size(177, 107);
+            this.bh3.TabIndex = 19;
+            this.bh3.Text = "-";
+            this.bh3.UseVisualStyleBackColor = false;
+            this.bh3.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh10
+            // 
+            this.bh10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh10.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh10.Location = new System.Drawing.Point(717, 110);
+            this.bh10.Margin = new System.Windows.Forms.Padding(1);
+            this.bh10.Name = "bh10";
+            this.bh10.Size = new System.Drawing.Size(177, 107);
+            this.bh10.TabIndex = 20;
+            this.bh10.Text = "-";
+            this.bh10.UseVisualStyleBackColor = false;
+            this.bh10.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh11
+            // 
+            this.bh11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh11.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh11.Location = new System.Drawing.Point(1, 219);
+            this.bh11.Margin = new System.Windows.Forms.Padding(1);
+            this.bh11.Name = "bh11";
+            this.bh11.Size = new System.Drawing.Size(177, 107);
+            this.bh11.TabIndex = 21;
+            this.bh11.Text = "-";
+            this.bh11.UseVisualStyleBackColor = false;
+            this.bh11.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh9
+            // 
+            this.bh9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh9.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh9.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh9.Location = new System.Drawing.Point(538, 110);
+            this.bh9.Margin = new System.Windows.Forms.Padding(1);
+            this.bh9.Name = "bh9";
+            this.bh9.Size = new System.Drawing.Size(177, 107);
+            this.bh9.TabIndex = 22;
+            this.bh9.Text = "-";
+            this.bh9.UseVisualStyleBackColor = false;
+            this.bh9.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh7
+            // 
+            this.bh7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh7.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh7.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh7.Location = new System.Drawing.Point(180, 110);
+            this.bh7.Margin = new System.Windows.Forms.Padding(1);
+            this.bh7.Name = "bh7";
+            this.bh7.Size = new System.Drawing.Size(177, 107);
+            this.bh7.TabIndex = 23;
+            this.bh7.Text = "-";
+            this.bh7.UseVisualStyleBackColor = false;
+            this.bh7.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh8
+            // 
+            this.bh8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh8.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh8.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh8.Location = new System.Drawing.Point(359, 110);
+            this.bh8.Margin = new System.Windows.Forms.Padding(1);
+            this.bh8.Name = "bh8";
+            this.bh8.Size = new System.Drawing.Size(177, 107);
+            this.bh8.TabIndex = 24;
+            this.bh8.Text = "-";
+            this.bh8.UseVisualStyleBackColor = false;
+            this.bh8.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh12
+            // 
+            this.bh12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh12.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh12.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh12.Location = new System.Drawing.Point(180, 219);
+            this.bh12.Margin = new System.Windows.Forms.Padding(1);
+            this.bh12.Name = "bh12";
+            this.bh12.Size = new System.Drawing.Size(177, 107);
+            this.bh12.TabIndex = 25;
+            this.bh12.Text = "-";
+            this.bh12.UseVisualStyleBackColor = false;
+            this.bh12.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh13
+            // 
+            this.bh13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh13.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh13.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh13.Location = new System.Drawing.Point(359, 219);
+            this.bh13.Margin = new System.Windows.Forms.Padding(1);
+            this.bh13.Name = "bh13";
+            this.bh13.Size = new System.Drawing.Size(177, 107);
+            this.bh13.TabIndex = 26;
+            this.bh13.Text = "-";
+            this.bh13.UseVisualStyleBackColor = false;
+            this.bh13.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh16
+            // 
+            this.bh16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh16.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh16.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh16.Location = new System.Drawing.Point(1, 328);
+            this.bh16.Margin = new System.Windows.Forms.Padding(1);
+            this.bh16.Name = "bh16";
+            this.bh16.Size = new System.Drawing.Size(177, 107);
+            this.bh16.TabIndex = 27;
+            this.bh16.Text = "-";
+            this.bh16.UseVisualStyleBackColor = false;
+            this.bh16.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh15
+            // 
+            this.bh15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh15.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh15.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh15.Location = new System.Drawing.Point(717, 219);
+            this.bh15.Margin = new System.Windows.Forms.Padding(1);
+            this.bh15.Name = "bh15";
+            this.bh15.Size = new System.Drawing.Size(177, 107);
+            this.bh15.TabIndex = 28;
+            this.bh15.Text = "-";
+            this.bh15.UseVisualStyleBackColor = false;
+            this.bh15.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh14
+            // 
+            this.bh14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh14.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh14.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh14.Location = new System.Drawing.Point(538, 219);
+            this.bh14.Margin = new System.Windows.Forms.Padding(1);
+            this.bh14.Name = "bh14";
+            this.bh14.Size = new System.Drawing.Size(177, 107);
+            this.bh14.TabIndex = 29;
+            this.bh14.Text = "-";
+            this.bh14.UseVisualStyleBackColor = false;
+            this.bh14.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh20
+            // 
+            this.bh20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh20.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh20.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh20.Location = new System.Drawing.Point(717, 328);
+            this.bh20.Margin = new System.Windows.Forms.Padding(1);
+            this.bh20.Name = "bh20";
+            this.bh20.Size = new System.Drawing.Size(177, 107);
+            this.bh20.TabIndex = 30;
+            this.bh20.Text = "-";
+            this.bh20.UseVisualStyleBackColor = false;
+            this.bh20.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh20.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh21
+            // 
+            this.bh21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh21.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh21.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh21.Location = new System.Drawing.Point(1, 437);
+            this.bh21.Margin = new System.Windows.Forms.Padding(1);
+            this.bh21.Name = "bh21";
+            this.bh21.Size = new System.Drawing.Size(177, 110);
+            this.bh21.TabIndex = 31;
+            this.bh21.Text = "-";
+            this.bh21.UseVisualStyleBackColor = false;
+            this.bh21.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh21.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh19
+            // 
+            this.bh19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh19.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh19.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh19.Location = new System.Drawing.Point(538, 328);
+            this.bh19.Margin = new System.Windows.Forms.Padding(1);
+            this.bh19.Name = "bh19";
+            this.bh19.Size = new System.Drawing.Size(177, 107);
+            this.bh19.TabIndex = 32;
+            this.bh19.Text = "-";
+            this.bh19.UseVisualStyleBackColor = false;
+            this.bh19.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh19.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh17
+            // 
+            this.bh17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh17.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh17.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh17.Location = new System.Drawing.Point(180, 328);
+            this.bh17.Margin = new System.Windows.Forms.Padding(1);
+            this.bh17.Name = "bh17";
+            this.bh17.Size = new System.Drawing.Size(177, 107);
+            this.bh17.TabIndex = 33;
+            this.bh17.Text = "-";
+            this.bh17.UseVisualStyleBackColor = false;
+            this.bh17.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh18
+            // 
+            this.bh18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh18.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh18.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh18.Location = new System.Drawing.Point(359, 328);
+            this.bh18.Margin = new System.Windows.Forms.Padding(1);
+            this.bh18.Name = "bh18";
+            this.bh18.Size = new System.Drawing.Size(177, 107);
+            this.bh18.TabIndex = 34;
+            this.bh18.Text = "-";
+            this.bh18.UseVisualStyleBackColor = false;
+            this.bh18.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh18.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh24
+            // 
+            this.bh24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh24.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh24.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh24.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh24.Location = new System.Drawing.Point(538, 437);
+            this.bh24.Margin = new System.Windows.Forms.Padding(1);
+            this.bh24.Name = "bh24";
+            this.bh24.Size = new System.Drawing.Size(177, 110);
+            this.bh24.TabIndex = 35;
+            this.bh24.Text = "-";
+            this.bh24.UseVisualStyleBackColor = false;
+            this.bh24.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh24.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh25
+            // 
+            this.bh25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh25.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh25.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh25.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh25.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh25.Location = new System.Drawing.Point(717, 437);
+            this.bh25.Margin = new System.Windows.Forms.Padding(1);
+            this.bh25.Name = "bh25";
+            this.bh25.Size = new System.Drawing.Size(177, 110);
+            this.bh25.TabIndex = 36;
+            this.bh25.Text = "-";
+            this.bh25.UseVisualStyleBackColor = false;
+            this.bh25.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh25.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh22
+            // 
+            this.bh22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh22.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh22.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh22.Location = new System.Drawing.Point(180, 437);
+            this.bh22.Margin = new System.Windows.Forms.Padding(1);
+            this.bh22.Name = "bh22";
+            this.bh22.Size = new System.Drawing.Size(177, 110);
+            this.bh22.TabIndex = 37;
+            this.bh22.Text = "-";
+            this.bh22.UseVisualStyleBackColor = false;
+            this.bh22.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh22.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
+            // bh23
+            // 
+            this.bh23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh23.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bh23.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.bh23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bh23.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.bh23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.bh23.Location = new System.Drawing.Point(359, 437);
+            this.bh23.Margin = new System.Windows.Forms.Padding(1);
+            this.bh23.Name = "bh23";
+            this.bh23.Size = new System.Drawing.Size(177, 110);
+            this.bh23.TabIndex = 38;
+            this.bh23.Text = "-";
+            this.bh23.UseVisualStyleBackColor = false;
+            this.bh23.Click += new System.EventHandler(this.HizliButonClick);
+            this.bh23.MouseDown += new System.Windows.Forms.MouseEventHandler(this.RightClick);
+            // 
             // satis
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1575,13 +1905,13 @@ namespace market
             this.splitContainer2.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).EndInit();
             this.splitContainer2.ResumeLayout(false);
-            this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
             this.tableLayoutPanel7.ResumeLayout(false);
             this.tableLayoutPanel7.PerformLayout();
             this.tableLayoutPanel12.ResumeLayout(false);
             this.tableLayoutPanel8.ResumeLayout(false);
+            this.tableLayoutPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1600,17 +1930,7 @@ namespace market
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.SplitContainer splitContainer2;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
-        private System.Windows.Forms.Button bh1;
-        private System.Windows.Forms.Button bh6;
-        private System.Windows.Forms.Button bh5;
-        private System.Windows.Forms.Button bh4;
-        private System.Windows.Forms.Button bh3;
-        private System.Windows.Forms.Button bh9;
-        private System.Windows.Forms.Button bh8;
-        private System.Windows.Forms.Button bh7;
         private System.Windows.Forms.Button b10;
-        private System.Windows.Forms.Button bh2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
         private System.Windows.Forms.Button b200;
         private System.Windows.Forms.Button b100;
@@ -1678,6 +1998,32 @@ namespace market
         private System.Windows.Forms.DataGridViewImageColumn dataGridViewImageColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel4;
+        private System.Windows.Forms.Button bh23;
+        private System.Windows.Forms.Button bh22;
+        private System.Windows.Forms.Button bh25;
+        private System.Windows.Forms.Button bh24;
+        private System.Windows.Forms.Button bh18;
+        private System.Windows.Forms.Button bh17;
+        private System.Windows.Forms.Button bh19;
+        private System.Windows.Forms.Button bh21;
+        private System.Windows.Forms.Button bh20;
+        private System.Windows.Forms.Button bh14;
+        private System.Windows.Forms.Button bh15;
+        private System.Windows.Forms.Button bh16;
+        private System.Windows.Forms.Button bh13;
+        private System.Windows.Forms.Button bh12;
+        private System.Windows.Forms.Button bh8;
+        private System.Windows.Forms.Button bh7;
+        private System.Windows.Forms.Button bh9;
+        private System.Windows.Forms.Button bh11;
+        private System.Windows.Forms.Button bh10;
+        private System.Windows.Forms.Button bh3;
+        private System.Windows.Forms.Button bh2;
+        private System.Windows.Forms.Button bh1;
+        private System.Windows.Forms.Button bh6;
+        private System.Windows.Forms.Button bh5;
+        private System.Windows.Forms.Button bh4;
     }
 }
 

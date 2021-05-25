@@ -73,6 +73,18 @@
     <Compile Include="Barkod.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="DetayGoster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetayGoster.Designer.cs">
+      <DependentUpon>DetayGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GelirGider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GelirGider.Designer.cs">
+      <DependentUpon>GelirGider.cs</DependentUpon>
+    </Compile>
     <Compile Include="hizliButonaEkleme.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +125,15 @@
     <Compile Include="nesnelerim.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rapor.Designer.cs">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sabitlerim.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="satis.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +173,12 @@
     <Compile Include="UrunGrup.Designer.cs">
       <DependentUpon>UrunGrup.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DetayGoster.resx">
+      <DependentUpon>DetayGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GelirGider.resx">
+      <DependentUpon>GelirGider.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="hizliButonaEkleme.resx">
       <DependentUpon>hizliButonaEkleme.cs</DependentUpon>
     </EmbeddedResource>
@@ -168,6 +195,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Rapor.resx">
+      <DependentUpon>Rapor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="satis.resx">
       <DependentUpon>satis.cs</DependentUpon>
     </EmbeddedResource>
@@ -228,6 +258,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\search %281%29.png" />
     <None Include="Resources\search.png" />
     <None Include="Resources\trash.png" />
     <None Include="Resources\report.png" />

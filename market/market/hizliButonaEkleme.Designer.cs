@@ -160,6 +160,7 @@ namespace market
             this.Controls.Add(this.splitContainer1);
             this.Name = "hizliButonaEkleme";
             this.Text = "Barkodsuz Ürün ekleme";
+            this.Load += new System.EventHandler(this.hizliButonaEkleme_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);

@@ -33,13 +33,12 @@ namespace market
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.chUrunType = new System.Windows.Forms.CheckBox();
             this.lKullanici = new System.Windows.Forms.Label();
             this.tBarkod = new System.Windows.Forms.TextBox();
             this.bBarkodOlustur = new System.Windows.Forms.Button();
             this.tUrunSayisi = new System.Windows.Forms.TextBox();
-            this.lStandart10 = new market.lStandart();
             this.tUrunAra = new System.Windows.Forms.TextBox();
-            this.lStandart9 = new market.lStandart();
             this.bRaporAl = new System.Windows.Forms.Button();
             this.bUrunGrubuEkle = new System.Windows.Forms.Button();
             this.bIptal = new System.Windows.Forms.Button();
@@ -48,26 +47,29 @@ namespace market
             this.tMiktar = new System.Windows.Forms.TextBox();
             this.tSatisFiyati = new System.Windows.Forms.TextBox();
             this.tAlisFiyati = new System.Windows.Forms.TextBox();
+            this.tAciklama = new System.Windows.Forms.TextBox();
+            this.tUrunAdi = new System.Windows.Forms.TextBox();
+            this.cmbUrunGrubu = new System.Windows.Forms.ComboBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lStandart10 = new market.lStandart();
+            this.lStandart9 = new market.lStandart();
             this.lStandart8 = new market.lStandart();
             this.lStandart7 = new market.lStandart();
             this.lStandart6 = new market.lStandart();
             this.lStandart5 = new market.lStandart();
-            this.tAciklama = new System.Windows.Forms.TextBox();
-            this.tUrunAdi = new System.Windows.Forms.TextBox();
             this.lStandart4 = new market.lStandart();
-            this.cmbUrunGrubu = new System.Windows.Forms.ComboBox();
             this.lStandart3 = new market.lStandart();
             this.lStandart2 = new market.lStandart();
             this.lStandart1 = new market.lStandart();
             this.gridUrunListesi = new market.gridGrid();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridUrunListesi)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridUrunListesi)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -80,6 +82,7 @@ namespace market
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.chUrunType);
             this.splitContainer1.Panel1.Controls.Add(this.lKullanici);
             this.splitContainer1.Panel1.Controls.Add(this.tBarkod);
             this.splitContainer1.Panel1.Controls.Add(this.bBarkodOlustur);
@@ -111,13 +114,33 @@ namespace market
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gridUrunListesi);
             this.splitContainer1.Size = new System.Drawing.Size(1228, 553);
-            this.splitContainer1.SplitterDistance = 331;
+            this.splitContainer1.SplitterDistance = 392;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // chUrunType
+            // 
+            this.chUrunType.Appearance = System.Windows.Forms.Appearance.Button;
+            this.chUrunType.AutoSize = true;
+            this.chUrunType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.chUrunType.Checked = true;
+            this.chUrunType.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chUrunType.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.chUrunType.FlatAppearance.CheckedBackColor = System.Drawing.Color.White;
+            this.chUrunType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.chUrunType.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.chUrunType.Location = new System.Drawing.Point(499, 11);
+            this.chUrunType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.chUrunType.Name = "chUrunType";
+            this.chUrunType.Size = new System.Drawing.Size(201, 30);
+            this.chUrunType.TabIndex = 31;
+            this.chUrunType.Text = "BARKODLU ÜRÜN İŞLEMİ";
+            this.chUrunType.UseVisualStyleBackColor = false;
+            this.chUrunType.CheckedChanged += new System.EventHandler(this.chUrunType_CheckedChanged);
             // 
             // lKullanici
             // 
             this.lKullanici.AutoSize = true;
-            this.lKullanici.Location = new System.Drawing.Point(1114, 22);
+            this.lKullanici.Location = new System.Drawing.Point(1110, 69);
             this.lKullanici.Name = "lKullanici";
             this.lKullanici.Size = new System.Drawing.Size(46, 17);
             this.lKullanici.TabIndex = 30;
@@ -127,7 +150,7 @@ namespace market
             // tBarkod
             // 
             this.tBarkod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tBarkod.Location = new System.Drawing.Point(142, 22);
+            this.tBarkod.Location = new System.Drawing.Point(138, 69);
             this.tBarkod.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tBarkod.Name = "tBarkod";
             this.tBarkod.Size = new System.Drawing.Size(323, 30);
@@ -142,7 +165,7 @@ namespace market
             this.bBarkodOlustur.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bBarkodOlustur.ForeColor = System.Drawing.Color.White;
             this.bBarkodOlustur.Image = global::market.Properties.Resources.barcode_product__1_;
-            this.bBarkodOlustur.Location = new System.Drawing.Point(313, 196);
+            this.bBarkodOlustur.Location = new System.Drawing.Point(309, 243);
             this.bBarkodOlustur.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bBarkodOlustur.Name = "bBarkodOlustur";
             this.bBarkodOlustur.Size = new System.Drawing.Size(152, 97);
@@ -156,7 +179,7 @@ namespace market
             // tUrunSayisi
             // 
             this.tUrunSayisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tUrunSayisi.Location = new System.Drawing.Point(667, 294);
+            this.tUrunSayisi.Location = new System.Drawing.Point(663, 341);
             this.tUrunSayisi.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.tUrunSayisi.Name = "tUrunSayisi";
             this.tUrunSayisi.ReadOnly = true;
@@ -165,36 +188,14 @@ namespace market
             this.tUrunSayisi.TabStop = false;
             this.tUrunSayisi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // lStandart10
-            // 
-            this.lStandart10.AutoSize = true;
-            this.lStandart10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart10.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart10.Location = new System.Drawing.Point(552, 299);
-            this.lStandart10.Name = "lStandart10";
-            this.lStandart10.Size = new System.Drawing.Size(112, 25);
-            this.lStandart10.TabIndex = 26;
-            this.lStandart10.Text = "Ürün Sayısı";
-            // 
             // tUrunAra
             // 
             this.tUrunAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tUrunAra.Location = new System.Drawing.Point(142, 298);
+            this.tUrunAra.Location = new System.Drawing.Point(138, 345);
             this.tUrunAra.Name = "tUrunAra";
             this.tUrunAra.Size = new System.Drawing.Size(323, 30);
             this.tUrunAra.TabIndex = 12;
             this.tUrunAra.TextChanged += new System.EventHandler(this.tUrunAra_TextChanged);
-            // 
-            // lStandart9
-            // 
-            this.lStandart9.AutoSize = true;
-            this.lStandart9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart9.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart9.Location = new System.Drawing.Point(46, 301);
-            this.lStandart9.Name = "lStandart9";
-            this.lStandart9.Size = new System.Drawing.Size(90, 25);
-            this.lStandart9.TabIndex = 24;
-            this.lStandart9.Text = "Ürün Ara";
             // 
             // bRaporAl
             // 
@@ -204,7 +205,7 @@ namespace market
             this.bRaporAl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.bRaporAl.ForeColor = System.Drawing.Color.White;
             this.bRaporAl.Image = global::market.Properties.Resources.report;
-            this.bRaporAl.Location = new System.Drawing.Point(1021, 188);
+            this.bRaporAl.Location = new System.Drawing.Point(1017, 235);
             this.bRaporAl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bRaporAl.Name = "bRaporAl";
             this.bRaporAl.Size = new System.Drawing.Size(157, 136);
@@ -222,7 +223,7 @@ namespace market
             this.bUrunGrubuEkle.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bUrunGrubuEkle.ForeColor = System.Drawing.Color.White;
             this.bUrunGrubuEkle.Image = global::market.Properties.Resources.plus;
-            this.bUrunGrubuEkle.Location = new System.Drawing.Point(142, 196);
+            this.bUrunGrubuEkle.Location = new System.Drawing.Point(138, 243);
             this.bUrunGrubuEkle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bUrunGrubuEkle.Name = "bUrunGrubuEkle";
             this.bUrunGrubuEkle.Size = new System.Drawing.Size(152, 97);
@@ -241,7 +242,7 @@ namespace market
             this.bIptal.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bIptal.ForeColor = System.Drawing.Color.White;
             this.bIptal.Image = global::market.Properties.Resources.cancel;
-            this.bIptal.Location = new System.Drawing.Point(852, 109);
+            this.bIptal.Location = new System.Drawing.Point(848, 156);
             this.bIptal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bIptal.Name = "bIptal";
             this.bIptal.Size = new System.Drawing.Size(112, 74);
@@ -260,7 +261,7 @@ namespace market
             this.bKadet.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bKadet.ForeColor = System.Drawing.Color.White;
             this.bKadet.Image = global::market.Properties.Resources.floppy_disk;
-            this.bKadet.Location = new System.Drawing.Point(852, 22);
+            this.bKadet.Location = new System.Drawing.Point(848, 69);
             this.bKadet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bKadet.Name = "bKadet";
             this.bKadet.Size = new System.Drawing.Size(112, 77);
@@ -274,7 +275,7 @@ namespace market
             // tKdvOrani
             // 
             this.tKdvOrani.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tKdvOrani.Location = new System.Drawing.Point(667, 156);
+            this.tKdvOrani.Location = new System.Drawing.Point(663, 203);
             this.tKdvOrani.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.tKdvOrani.Name = "tKdvOrani";
             this.tKdvOrani.Size = new System.Drawing.Size(159, 30);
@@ -285,7 +286,7 @@ namespace market
             // tMiktar
             // 
             this.tMiktar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tMiktar.Location = new System.Drawing.Point(667, 109);
+            this.tMiktar.Location = new System.Drawing.Point(663, 156);
             this.tMiktar.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.tMiktar.Name = "tMiktar";
             this.tMiktar.Size = new System.Drawing.Size(159, 30);
@@ -296,7 +297,7 @@ namespace market
             // tSatisFiyati
             // 
             this.tSatisFiyati.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tSatisFiyati.Location = new System.Drawing.Point(667, 62);
+            this.tSatisFiyati.Location = new System.Drawing.Point(663, 109);
             this.tSatisFiyati.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.tSatisFiyati.Name = "tSatisFiyati";
             this.tSatisFiyati.Size = new System.Drawing.Size(159, 30);
@@ -308,7 +309,7 @@ namespace market
             // tAlisFiyati
             // 
             this.tAlisFiyati.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tAlisFiyati.Location = new System.Drawing.Point(667, 23);
+            this.tAlisFiyati.Location = new System.Drawing.Point(663, 70);
             this.tAlisFiyati.Margin = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.tAlisFiyati.Name = "tAlisFiyati";
             this.tAlisFiyati.Size = new System.Drawing.Size(159, 30);
@@ -316,12 +317,82 @@ namespace market
             this.tAlisFiyati.Text = "0";
             this.tAlisFiyati.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // tAciklama
+            // 
+            this.tAciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.tAciklama.Location = new System.Drawing.Point(138, 158);
+            this.tAciklama.Name = "tAciklama";
+            this.tAciklama.Size = new System.Drawing.Size(323, 30);
+            this.tAciklama.TabIndex = 2;
+            // 
+            // tUrunAdi
+            // 
+            this.tUrunAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.tUrunAdi.Location = new System.Drawing.Point(138, 111);
+            this.tUrunAdi.Name = "tUrunAdi";
+            this.tUrunAdi.Size = new System.Drawing.Size(323, 30);
+            this.tUrunAdi.TabIndex = 1;
+            // 
+            // cmbUrunGrubu
+            // 
+            this.cmbUrunGrubu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.cmbUrunGrubu.FormattingEnabled = true;
+            this.cmbUrunGrubu.Location = new System.Drawing.Point(138, 205);
+            this.cmbUrunGrubu.Name = "cmbUrunGrubu";
+            this.cmbUrunGrubu.Size = new System.Drawing.Size(323, 33);
+            this.cmbUrunGrubu.TabIndex = 3;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.silToolStripMenuItem,
+            this.düzenleToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(133, 52);
+            // 
+            // silToolStripMenuItem
+            // 
+            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.silToolStripMenuItem.Text = "Sil";
+            this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
+            // 
+            // düzenleToolStripMenuItem
+            // 
+            this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
+            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.düzenleToolStripMenuItem.Text = "Düzenle";
+            this.düzenleToolStripMenuItem.Click += new System.EventHandler(this.düzenleToolStripMenuItem_Click);
+            // 
+            // lStandart10
+            // 
+            this.lStandart10.AutoSize = true;
+            this.lStandart10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart10.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart10.Location = new System.Drawing.Point(548, 346);
+            this.lStandart10.Name = "lStandart10";
+            this.lStandart10.Size = new System.Drawing.Size(112, 25);
+            this.lStandart10.TabIndex = 26;
+            this.lStandart10.Text = "Ürün Sayısı";
+            // 
+            // lStandart9
+            // 
+            this.lStandart9.AutoSize = true;
+            this.lStandart9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart9.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart9.Location = new System.Drawing.Point(42, 348);
+            this.lStandart9.Name = "lStandart9";
+            this.lStandart9.Size = new System.Drawing.Size(90, 25);
+            this.lStandart9.TabIndex = 24;
+            this.lStandart9.Text = "Ürün Ara";
+            // 
             // lStandart8
             // 
             this.lStandart8.AutoSize = true;
             this.lStandart8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart8.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart8.Location = new System.Drawing.Point(564, 158);
+            this.lStandart8.Location = new System.Drawing.Point(560, 205);
             this.lStandart8.Name = "lStandart8";
             this.lStandart8.Size = new System.Drawing.Size(100, 25);
             this.lStandart8.TabIndex = 11;
@@ -332,7 +403,7 @@ namespace market
             this.lStandart7.AutoSize = true;
             this.lStandart7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart7.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart7.Location = new System.Drawing.Point(599, 112);
+            this.lStandart7.Location = new System.Drawing.Point(595, 159);
             this.lStandart7.Name = "lStandart7";
             this.lStandart7.Size = new System.Drawing.Size(65, 25);
             this.lStandart7.TabIndex = 10;
@@ -343,7 +414,7 @@ namespace market
             this.lStandart6.AutoSize = true;
             this.lStandart6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart6.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart6.Location = new System.Drawing.Point(557, 65);
+            this.lStandart6.Location = new System.Drawing.Point(553, 112);
             this.lStandart6.Name = "lStandart6";
             this.lStandart6.Size = new System.Drawing.Size(107, 25);
             this.lStandart6.TabIndex = 9;
@@ -354,54 +425,29 @@ namespace market
             this.lStandart5.AutoSize = true;
             this.lStandart5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart5.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart5.Location = new System.Drawing.Point(569, 23);
+            this.lStandart5.Location = new System.Drawing.Point(565, 70);
             this.lStandart5.Name = "lStandart5";
             this.lStandart5.Size = new System.Drawing.Size(95, 25);
             this.lStandart5.TabIndex = 8;
             this.lStandart5.Text = "Alış Fiyatı";
-            // 
-            // tAciklama
-            // 
-            this.tAciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tAciklama.Location = new System.Drawing.Point(142, 111);
-            this.tAciklama.Name = "tAciklama";
-            this.tAciklama.Size = new System.Drawing.Size(323, 30);
-            this.tAciklama.TabIndex = 2;
-            // 
-            // tUrunAdi
-            // 
-            this.tUrunAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tUrunAdi.Location = new System.Drawing.Point(142, 64);
-            this.tUrunAdi.Name = "tUrunAdi";
-            this.tUrunAdi.Size = new System.Drawing.Size(323, 30);
-            this.tUrunAdi.TabIndex = 1;
             // 
             // lStandart4
             // 
             this.lStandart4.AutoSize = true;
             this.lStandart4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart4.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart4.Location = new System.Drawing.Point(28, 161);
+            this.lStandart4.Location = new System.Drawing.Point(24, 208);
             this.lStandart4.Name = "lStandart4";
             this.lStandart4.Size = new System.Drawing.Size(108, 25);
             this.lStandart4.TabIndex = 4;
             this.lStandart4.Text = "ÜrünGrubu";
-            // 
-            // cmbUrunGrubu
-            // 
-            this.cmbUrunGrubu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.cmbUrunGrubu.FormattingEnabled = true;
-            this.cmbUrunGrubu.Location = new System.Drawing.Point(142, 158);
-            this.cmbUrunGrubu.Name = "cmbUrunGrubu";
-            this.cmbUrunGrubu.Size = new System.Drawing.Size(323, 33);
-            this.cmbUrunGrubu.TabIndex = 3;
             // 
             // lStandart3
             // 
             this.lStandart3.AutoSize = true;
             this.lStandart3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart3.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart3.Location = new System.Drawing.Point(44, 114);
+            this.lStandart3.Location = new System.Drawing.Point(40, 161);
             this.lStandart3.Name = "lStandart3";
             this.lStandart3.Size = new System.Drawing.Size(92, 25);
             this.lStandart3.TabIndex = 2;
@@ -412,7 +458,7 @@ namespace market
             this.lStandart2.AutoSize = true;
             this.lStandart2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart2.Location = new System.Drawing.Point(48, 67);
+            this.lStandart2.Location = new System.Drawing.Point(44, 114);
             this.lStandart2.Name = "lStandart2";
             this.lStandart2.Size = new System.Drawing.Size(88, 25);
             this.lStandart2.TabIndex = 1;
@@ -423,7 +469,7 @@ namespace market
             this.lStandart1.AutoSize = true;
             this.lStandart1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart1.Location = new System.Drawing.Point(62, 25);
+            this.lStandart1.Location = new System.Drawing.Point(58, 72);
             this.lStandart1.Name = "lStandart1";
             this.lStandart1.Size = new System.Drawing.Size(74, 25);
             this.lStandart1.TabIndex = 0;
@@ -432,6 +478,7 @@ namespace market
             // gridUrunListesi
             // 
             this.gridUrunListesi.AllowUserToAddRows = false;
+            this.gridUrunListesi.AllowUserToDeleteRows = false;
             this.gridUrunListesi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridUrunListesi.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.gridUrunListesi.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -452,6 +499,7 @@ namespace market
             this.gridUrunListesi.Location = new System.Drawing.Point(0, 0);
             this.gridUrunListesi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridUrunListesi.Name = "gridUrunListesi";
+            this.gridUrunListesi.ReadOnly = true;
             this.gridUrunListesi.RowHeadersVisible = false;
             this.gridUrunListesi.RowHeadersWidth = 51;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
@@ -464,23 +512,8 @@ namespace market
             this.gridUrunListesi.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.gridUrunListesi.RowTemplate.Height = 30;
             this.gridUrunListesi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridUrunListesi.Size = new System.Drawing.Size(1228, 218);
+            this.gridUrunListesi.Size = new System.Drawing.Size(1228, 157);
             this.gridUrunListesi.TabIndex = 0;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.silToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 56);
-            // 
-            // silToolStripMenuItem
-            // 
-            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(210, 24);
-            this.silToolStripMenuItem.Text = "Sil";
-            this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
             // 
             // UrunGiris
             // 
@@ -498,8 +531,8 @@ namespace market
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridUrunListesi)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridUrunListesi)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -536,5 +569,7 @@ namespace market
         public System.Windows.Forms.ComboBox cmbUrunGrubu;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
+        private System.Windows.Forms.CheckBox chUrunType;
+        private System.Windows.Forms.ToolStripMenuItem düzenleToolStripMenuItem;
     }
 }

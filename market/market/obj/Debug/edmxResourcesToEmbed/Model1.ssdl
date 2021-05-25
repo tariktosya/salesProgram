@@ -40,6 +40,13 @@
     <Property Name="dTarih" Type="datetime" />
     <Property Name="dKullanici" Type="nvarchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="Sabitlerim">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dKartKomisyonum" Type="int" />
+  </EntityType>
   <EntityType Name="Satislar">
     <Key>
       <PropertyRef Name="SatisId" />
@@ -110,6 +117,7 @@
     <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Islem" EntityType="Self.Islem" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sabitlerim" EntityType="Self.Sabitlerim" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Satislar" EntityType="Self.Satislar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="StokHareket" EntityType="Self.StokHareket" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Terazi" EntityType="Self.Terazi" Schema="dbo" store:Type="Tables" />

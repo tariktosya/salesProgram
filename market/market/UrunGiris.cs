@@ -32,6 +32,14 @@ namespace market
                     tSatisFiyati.Text = urun.dSatisFiyat.ToString();
                     tMiktar.Text = urun.dMiktar.ToString();
                     tKdvOrani.Text = urun.dKdvOrani.ToString();
+                    if (urun.dBirim =="Kg")
+                    {
+                        chUrunType.Checked = false;
+                    }
+                    else
+                    {
+                        chUrunType.Checked = true;
+                    }
                 }
                 else
                 {
@@ -55,9 +63,15 @@ namespace market
                     urunGuncelle.dSatisFiyat = Convert.ToDouble(tSatisFiyati.Text);
                     urunGuncelle.dKdvOrani = Convert.ToInt16(tKdvOrani.Text);
                     urunGuncelle.dKdvTutari = Math.Round(islemler.DoubleYap(tSatisFiyati.Text) * Convert.ToInt32(tKdvOrani.Text) / 100, 2);
-                    //urunGuncelle.dMiktar += Convert.ToDouble(tMiktar.Text); DEPO STOK YOK
-                    urunGuncelle.dMiktar = Convert.ToDouble(tMiktar.Text);
-                    urunGuncelle.dBirim = "Adet";
+                    urunGuncelle.dMiktar += Convert.ToDouble(tMiktar.Text); //DEPO STOK YOK
+                    if (!chUrunType.Checked)
+                    {
+                        urunGuncelle.dBirim = "Kg";
+                    }
+                    else
+                    {
+                        urunGuncelle.dBirim = "Adet";
+                    }
                     urunGuncelle.dTarih = DateTime.Now;
                     urunGuncelle.dKullanici = lKullanici.Text;
                     db.SaveChanges();
@@ -76,7 +90,15 @@ namespace market
                     urun.dKdvOrani = islemler.DoubleYap(tKdvOrani.Text);
                     urun.dKdvTutari = Math.Round(islemler.DoubleYap(tSatisFiyati.Text) * islemler.DoubleYap(tKdvOrani.Text) / 100, 2);
                     urun.dMiktar = Convert.ToDouble(tMiktar.Text);
-                    urun.dBirim = "Adet";
+                    if (!chUrunType.Checked)
+                    {
+                        urun.dBirim = "Kg";
+                    }
+                    else
+                    {
+                        urun.dBirim = "Adet";
+                    }
+                    
                     urun.dTarih = DateTime.Now;
                     urun.dKullanici = lKullanici.Text;
                     db.Urun.Add(urun);
@@ -182,9 +204,12 @@ namespace market
                 {
                     var urun = db.Urun.Find(urunid);
                     var hizli = db.HizliUrun.Where(x => x.dBarkod == barkod).SingleOrDefault();
-                    hizli.dBarkod = "-";
-                    hizli.dUrunAd = "-";
-                    hizli.dFiyat = 0;
+                    if (hizli != null){
+                        hizli.dBarkod = "-";
+                        hizli.dUrunAd = "-";
+                        hizli.dFiyat = 0;
+                    }
+                    
                     db.Urun.Remove(urun);
                     db.SaveChanges();
                     gridUrunListesi.DataSource = db.Urun.OrderByDescending(a => a.dUrunId).Take(20).ToList();//10 tanesini alıyoruz
@@ -194,6 +219,44 @@ namespace market
                 }
             }
             
+        }
+
+        private void chUrunType_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!chUrunType.Checked)
+            {
+                chUrunType.Text = "Gramajlı Ürün İşlemi";
+                bBarkodOlustur.Enabled = false;
+            }
+            else
+            {
+                chUrunType.Text = "Barkodlu Ürün İşlemi";
+                bBarkodOlustur.Enabled = true;
+            }
+        }
+
+        private void düzenleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (gridUrunListesi.Rows.Count>0)
+            {
+                tBarkod.Text = gridUrunListesi.CurrentRow.Cells["dBarkod"].Value.ToString();
+                tUrunAdi.Text = gridUrunListesi.CurrentRow.Cells["dUrunAd"].Value.ToString();
+                tAciklama.Text = gridUrunListesi.CurrentRow.Cells["dAciklama"].Value.ToString();
+                cmbUrunGrubu.Text = gridUrunListesi.CurrentRow.Cells["dUrunGrup"].Value.ToString();
+                tAlisFiyati.Text = gridUrunListesi.CurrentRow.Cells["dAlisFiyat"].Value.ToString();
+                tSatisFiyati.Text = gridUrunListesi.CurrentRow.Cells["dSatisFiyat"].Value.ToString();
+                tKdvOrani.Text = gridUrunListesi.CurrentRow.Cells["dKdvOrani"].Value.ToString();
+                string birim = gridUrunListesi.CurrentRow.Cells["dBirim"].Value.ToString();
+                tMiktar.Text = gridUrunListesi.CurrentRow.Cells["dMiktar"].Value.ToString();
+                if (birim == "kg")
+                {
+                    chUrunType.Checked = false;
+                }
+                else
+                {
+                    chUrunType.Checked = true;
+                }
+            }
         }
     }
 }

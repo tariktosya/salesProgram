@@ -39,12 +39,18 @@ namespace market
         }
         public static void GridDuzenle(DataGridView dgv)
         {
-            if (dgv.Columns.Count>0)
+            if (dgv.Columns.Count > 0)
             {
                 for (int i = 0; i < dgv.Columns.Count; i++)
                 {
                     switch (dgv.Columns[i].HeaderText)
                     {
+                        case "dIade":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "İade"; break;
+                        case "dIslemNo":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "İşlem No"; break;
                         case "dTarih":
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                             dgv.Columns[i].HeaderText = "Tarih"; break;
@@ -69,11 +75,11 @@ namespace market
                         case "dAciklama":
                             dgv.Columns[i].HeaderText = "Açıklama"; break;
                         case "dUrunGrup":
-                            dgv.Columns[i].HeaderText = "Ürün Grubu";break;
+                            dgv.Columns[i].HeaderText = "Ürün Grubu"; break;
                         case "dAlisFiyat":
-                            dgv.Columns[i].HeaderText = "Alş Fiyatı";
+                            dgv.Columns[i].HeaderText = "Alış Fiyatı";
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-                            dgv.Columns[i].DefaultCellStyle.Format ="C2"; break;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
                         case "dSatisFiyat":
                             dgv.Columns[i].HeaderText = "Satış Fiyatı";
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
@@ -106,6 +112,14 @@ namespace market
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                             dgv.Columns[i].DefaultCellStyle.Format = "C2";
                             dgv.Columns[i].HeaderText = "Gider"; break;
+                        case "dAlisFiyatToplam":
+                            dgv.Columns[i].HeaderText = "Alış Fiyat Toplam";
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
+                        case "dToplam":
+                            dgv.Columns[i].HeaderText = "Toplam";
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
+                            dgv.Columns[i].DefaultCellStyle.Format = "C2"; break;
 
                     }
                 }
@@ -114,7 +128,7 @@ namespace market
 
         public static void StokHareket(string barkod, string urunad, string birim, double miktar, string urungrup, string kullanici)
         {
-            using(var db = new MarketSatisEntities())
+            using (var db = new MarketSatisEntities())
             {
                 StokHareket s = new StokHareket();
                 s.dBarkod = barkod;
@@ -127,6 +141,21 @@ namespace market
                 db.StokHareket.Add(s);
                 db.SaveChanges();
             }
+        }
+        public static int KartKomisyon() {
+            int sonuc = 0;
+            using (var db = new MarketSatisEntities())
+            {
+                if (db.Sabitlerim.Any())
+                {
+                    sonuc =Convert.ToInt32(db.Sabitlerim.First().dKartKomisyonum);
+                }
+                else
+                {
+                    sonuc = 0;
+                }
+            }
+            return sonuc;
         }
     }
 }

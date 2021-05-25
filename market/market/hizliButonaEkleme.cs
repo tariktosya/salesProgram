@@ -49,6 +49,7 @@ namespace market
                     b.Text = urunad + "\n" + fiyat.ToString("C2");
                 }
             }
+            this.Hide();
         }
 
         private void chcTumu_CheckedChanged(object sender, EventArgs e)
@@ -69,6 +70,9 @@ namespace market
             }
         }
 
-       
+        private void hizliButonaEkleme_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
