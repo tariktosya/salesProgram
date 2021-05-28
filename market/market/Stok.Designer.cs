@@ -29,28 +29,29 @@ namespace market
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.bAra = new market.bStandart();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dateBitis = new System.Windows.Forms.DateTimePicker();
+            this.lStandart5 = new market.lStandart();
             this.dateBaslangic = new System.Windows.Forms.DateTimePicker();
+            this.lStandart4 = new market.lStandart();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cmbUrunGrubu = new System.Windows.Forms.ComboBox();
+            this.lStandart3 = new market.lStandart();
             this.panel1 = new System.Windows.Forms.Panel();
             this.rdUrunGrubu = new System.Windows.Forms.RadioButton();
             this.rdTumu = new System.Windows.Forms.RadioButton();
-            this.cmbIslemTuru = new System.Windows.Forms.ComboBox();
-            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.bAra = new market.bStandart();
-            this.lStandart5 = new market.lStandart();
-            this.lStandart4 = new market.lStandart();
-            this.lStandart3 = new market.lStandart();
             this.lStandart2 = new market.lStandart();
+            this.cmbIslemTuru = new System.Windows.Forms.ComboBox();
             this.lStandart1 = new market.lStandart();
+            this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.bRaporAl = new market.bStandart();
             this.tUrunAra = new market.tStandart();
             this.lStandart6 = new market.lStandart();
             this.gridListe = new market.gridGrid();
+            this.lKullanici = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -75,6 +76,7 @@ namespace market
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.splitContainer1.Panel1.Controls.Add(this.lKullanici);
             this.splitContainer1.Panel1.Controls.Add(this.bAra);
             this.splitContainer1.Panel1.Controls.Add(this.panel3);
             this.splitContainer1.Panel1.Controls.Add(this.panel2);
@@ -88,6 +90,25 @@ namespace market
             this.splitContainer1.Size = new System.Drawing.Size(1308, 676);
             this.splitContainer1.SplitterDistance = 329;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // bAra
+            // 
+            this.bAra.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.bAra.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bAra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bAra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.bAra.ForeColor = System.Drawing.Color.White;
+            this.bAra.Image = global::market.Properties.Resources.search;
+            this.bAra.Location = new System.Drawing.Point(187, 570);
+            this.bAra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bAra.Name = "bAra";
+            this.bAra.Size = new System.Drawing.Size(132, 81);
+            this.bAra.TabIndex = 4;
+            this.bAra.Text = " ARA";
+            this.bAra.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bAra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bAra.UseVisualStyleBackColor = false;
+            this.bAra.Click += new System.EventHandler(this.bAra_Click);
             // 
             // panel3
             // 
@@ -108,6 +129,17 @@ namespace market
             this.dateBitis.Size = new System.Drawing.Size(299, 30);
             this.dateBitis.TabIndex = 3;
             // 
+            // lStandart5
+            // 
+            this.lStandart5.AutoSize = true;
+            this.lStandart5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart5.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart5.Location = new System.Drawing.Point(0, 100);
+            this.lStandart5.Name = "lStandart5";
+            this.lStandart5.Size = new System.Drawing.Size(102, 25);
+            this.lStandart5.TabIndex = 2;
+            this.lStandart5.Text = "Bitiş Tarihi";
+            // 
             // dateBaslangic
             // 
             this.dateBaslangic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
@@ -115,6 +147,17 @@ namespace market
             this.dateBaslangic.Name = "dateBaslangic";
             this.dateBaslangic.Size = new System.Drawing.Size(299, 30);
             this.dateBaslangic.TabIndex = 1;
+            // 
+            // lStandart4
+            // 
+            this.lStandart4.AutoSize = true;
+            this.lStandart4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart4.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart4.Location = new System.Drawing.Point(-2, 16);
+            this.lStandart4.Name = "lStandart4";
+            this.lStandart4.Size = new System.Drawing.Size(151, 25);
+            this.lStandart4.TabIndex = 0;
+            this.lStandart4.Text = "Başlangış Tarihi";
             // 
             // panel2
             // 
@@ -134,6 +177,17 @@ namespace market
             this.cmbUrunGrubu.Name = "cmbUrunGrubu";
             this.cmbUrunGrubu.Size = new System.Drawing.Size(223, 33);
             this.cmbUrunGrubu.TabIndex = 2;
+            // 
+            // lStandart3
+            // 
+            this.lStandart3.AutoSize = true;
+            this.lStandart3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart3.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart3.Location = new System.Drawing.Point(-2, 13);
+            this.lStandart3.Name = "lStandart3";
+            this.lStandart3.Size = new System.Drawing.Size(113, 25);
+            this.lStandart3.TabIndex = 0;
+            this.lStandart3.Text = "Ürün Grubu";
             // 
             // panel1
             // 
@@ -169,6 +223,17 @@ namespace market
             this.rdTumu.Text = "Tümü";
             this.rdTumu.UseVisualStyleBackColor = true;
             // 
+            // lStandart2
+            // 
+            this.lStandart2.AutoSize = true;
+            this.lStandart2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart2.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart2.Location = new System.Drawing.Point(13, 14);
+            this.lStandart2.Name = "lStandart2";
+            this.lStandart2.Size = new System.Drawing.Size(142, 25);
+            this.lStandart2.TabIndex = 0;
+            this.lStandart2.Text = "Filtreleme Türü";
+            // 
             // cmbIslemTuru
             // 
             this.cmbIslemTuru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -181,6 +246,17 @@ namespace market
             this.cmbIslemTuru.Name = "cmbIslemTuru";
             this.cmbIslemTuru.Size = new System.Drawing.Size(223, 33);
             this.cmbIslemTuru.TabIndex = 1;
+            // 
+            // lStandart1
+            // 
+            this.lStandart1.AutoSize = true;
+            this.lStandart1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart1.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart1.Location = new System.Drawing.Point(17, 90);
+            this.lStandart1.Name = "lStandart1";
+            this.lStandart1.Size = new System.Drawing.Size(104, 25);
+            this.lStandart1.TabIndex = 0;
+            this.lStandart1.Text = "İşlem Türü";
             // 
             // splitContainer2
             // 
@@ -204,80 +280,6 @@ namespace market
             this.splitContainer2.Size = new System.Drawing.Size(975, 676);
             this.splitContainer2.SplitterDistance = 76;
             this.splitContainer2.TabIndex = 0;
-            // 
-            // bAra
-            // 
-            this.bAra.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.bAra.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bAra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bAra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.bAra.ForeColor = System.Drawing.Color.White;
-            this.bAra.Image = global::market.Properties.Resources.search;
-            this.bAra.Location = new System.Drawing.Point(187, 570);
-            this.bAra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bAra.Name = "bAra";
-            this.bAra.Size = new System.Drawing.Size(132, 81);
-            this.bAra.TabIndex = 4;
-            this.bAra.Text = " ARA";
-            this.bAra.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.bAra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bAra.UseVisualStyleBackColor = false;
-            this.bAra.Click += new System.EventHandler(this.bAra_Click);
-            // 
-            // lStandart5
-            // 
-            this.lStandart5.AutoSize = true;
-            this.lStandart5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart5.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart5.Location = new System.Drawing.Point(0, 100);
-            this.lStandart5.Name = "lStandart5";
-            this.lStandart5.Size = new System.Drawing.Size(102, 25);
-            this.lStandart5.TabIndex = 2;
-            this.lStandart5.Text = "Bitiş Tarihi";
-            // 
-            // lStandart4
-            // 
-            this.lStandart4.AutoSize = true;
-            this.lStandart4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart4.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart4.Location = new System.Drawing.Point(-2, 16);
-            this.lStandart4.Name = "lStandart4";
-            this.lStandart4.Size = new System.Drawing.Size(151, 25);
-            this.lStandart4.TabIndex = 0;
-            this.lStandart4.Text = "Başlangış Tarihi";
-            // 
-            // lStandart3
-            // 
-            this.lStandart3.AutoSize = true;
-            this.lStandart3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart3.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart3.Location = new System.Drawing.Point(-2, 13);
-            this.lStandart3.Name = "lStandart3";
-            this.lStandart3.Size = new System.Drawing.Size(113, 25);
-            this.lStandart3.TabIndex = 0;
-            this.lStandart3.Text = "Ürün Grubu";
-            // 
-            // lStandart2
-            // 
-            this.lStandart2.AutoSize = true;
-            this.lStandart2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart2.Location = new System.Drawing.Point(13, 14);
-            this.lStandart2.Name = "lStandart2";
-            this.lStandart2.Size = new System.Drawing.Size(142, 25);
-            this.lStandart2.TabIndex = 0;
-            this.lStandart2.Text = "Filtreleme Türü";
-            // 
-            // lStandart1
-            // 
-            this.lStandart1.AutoSize = true;
-            this.lStandart1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart1.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart1.Location = new System.Drawing.Point(17, 90);
-            this.lStandart1.Name = "lStandart1";
-            this.lStandart1.Size = new System.Drawing.Size(104, 25);
-            this.lStandart1.TabIndex = 0;
-            this.lStandart1.Text = "İşlem Türü";
             // 
             // bRaporAl
             // 
@@ -328,16 +330,16 @@ namespace market
             this.gridListe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridListe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridListe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridListe.DefaultCellStyle = dataGridViewCellStyle1;
+            this.gridListe.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridListe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridListe.EnableHeadersVisualStyles = false;
             this.gridListe.Location = new System.Drawing.Point(0, 0);
@@ -353,6 +355,16 @@ namespace market
             this.gridListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridListe.Size = new System.Drawing.Size(975, 596);
             this.gridListe.TabIndex = 0;
+            // 
+            // lKullanici
+            // 
+            this.lKullanici.AutoSize = true;
+            this.lKullanici.Location = new System.Drawing.Point(74, 25);
+            this.lKullanici.Name = "lKullanici";
+            this.lKullanici.Size = new System.Drawing.Size(46, 17);
+            this.lKullanici.TabIndex = 5;
+            this.lKullanici.Text = "label1";
+            this.lKullanici.Visible = false;
             // 
             // Stok
             // 
@@ -408,5 +420,6 @@ namespace market
         private lStandart lStandart6;
         private gridGrid gridListe;
         private bStandart bRaporAl;
+        public System.Windows.Forms.Label lKullanici;
     }
 }

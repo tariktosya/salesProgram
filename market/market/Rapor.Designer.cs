@@ -143,7 +143,7 @@ namespace market
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gridListe);
             this.splitContainer1.Size = new System.Drawing.Size(2016, 610);
-            this.splitContainer1.SplitterDistance = 280;
+            this.splitContainer1.SplitterDistance = 341;
             this.splitContainer1.TabIndex = 0;
             // 
             // bRaporAl
@@ -154,10 +154,10 @@ namespace market
             this.bRaporAl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.bRaporAl.ForeColor = System.Drawing.Color.White;
             this.bRaporAl.Image = global::market.Properties.Resources.business_report;
-            this.bRaporAl.Location = new System.Drawing.Point(608, 206);
+            this.bRaporAl.Location = new System.Drawing.Point(315, 234);
             this.bRaporAl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bRaporAl.Name = "bRaporAl";
-            this.bRaporAl.Size = new System.Drawing.Size(108, 74);
+            this.bRaporAl.Size = new System.Drawing.Size(205, 96);
             this.bRaporAl.TabIndex = 21;
             this.bRaporAl.Text = "Rapor Al";
             this.bRaporAl.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -263,6 +263,7 @@ namespace market
             this.lKullanici.Size = new System.Drawing.Size(89, 25);
             this.lKullanici.TabIndex = 12;
             this.lKullanici.Text = "lKullanici";
+            this.lKullanici.Visible = false;
             // 
             // bGiderEkle
             // 
@@ -682,7 +683,7 @@ namespace market
             this.gridListe.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.gridListe.RowTemplate.Height = 30;
             this.gridListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridListe.Size = new System.Drawing.Size(2016, 326);
+            this.gridListe.Size = new System.Drawing.Size(2016, 265);
             this.gridListe.TabIndex = 1;
             this.gridListe.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gridListe_CellFormatting);
             // 
@@ -762,7 +763,6 @@ namespace market
         private lStandart lStandart3;
         private lStandart lStandart2;
         private gridGrid gridListe;
-        private lStandart lKullanici;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem detayGösterToolStripMenuItem;
         private lStandart lStandart19;
@@ -774,5 +774,6 @@ namespace market
         private lStandart lStandart20;
         private tNumeric tDigerurun;
         private bStandart bRaporAl;
+        internal lStandart lKullanici;
     }
 }

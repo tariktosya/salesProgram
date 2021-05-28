@@ -29,18 +29,18 @@ namespace market
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -235,14 +235,14 @@ namespace market
             this.gridIslemBeklet.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridIslemBeklet.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridIslemBeklet.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridIslemBeklet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridIslemBeklet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle25;
             this.gridIslemBeklet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridIslemBeklet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -284,8 +284,8 @@ namespace market
             // 
             // dataGridViewTextBoxColumn3
             // 
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle26.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn3.DefaultCellStyle = dataGridViewCellStyle26;
             this.dataGridViewTextBoxColumn3.HeaderText = "Ürün Grup";
             this.dataGridViewTextBoxColumn3.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
@@ -293,36 +293,36 @@ namespace market
             // 
             // dataGridViewTextBoxColumn4
             // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle27.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn4.DefaultCellStyle = dataGridViewCellStyle27;
             this.dataGridViewTextBoxColumn4.HeaderText = "Miktar";
             this.dataGridViewTextBoxColumn4.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // dataGridViewTextBoxColumn5
             // 
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle28.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dataGridViewTextBoxColumn5.DefaultCellStyle = dataGridViewCellStyle28;
             this.dataGridViewTextBoxColumn5.HeaderText = "Birim";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             // 
             // dataGridViewTextBoxColumn6
             // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle5.Format = "C2";
-            dataGridViewCellStyle5.NullValue = null;
-            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle29.Format = "C2";
+            dataGridViewCellStyle29.NullValue = null;
+            this.dataGridViewTextBoxColumn6.DefaultCellStyle = dataGridViewCellStyle29;
             this.dataGridViewTextBoxColumn6.HeaderText = "Fiyat";
             this.dataGridViewTextBoxColumn6.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             // 
             // dataGridViewTextBoxColumn7
             // 
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle6.Format = "C2";
-            dataGridViewCellStyle6.NullValue = null;
-            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle30.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle30.Format = "C2";
+            dataGridViewCellStyle30.NullValue = null;
+            this.dataGridViewTextBoxColumn7.DefaultCellStyle = dataGridViewCellStyle30;
             this.dataGridViewTextBoxColumn7.HeaderText = "Toplam";
             this.dataGridViewTextBoxColumn7.MinimumWidth = 6;
             this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
@@ -371,9 +371,10 @@ namespace market
             // lKullanici
             // 
             this.lKullanici.AutoSize = true;
-            this.lKullanici.Location = new System.Drawing.Point(566, 44);
+            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.lKullanici.Location = new System.Drawing.Point(606, 41);
             this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(63, 17);
+            this.lKullanici.Size = new System.Drawing.Size(99, 26);
             this.lKullanici.TabIndex = 5;
             this.lKullanici.Text = "lKullanici";
             // 
@@ -447,14 +448,14 @@ namespace market
             this.gridSatisListesi.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridSatisListesi.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridSatisListesi.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridSatisListesi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridSatisListesi.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.gridSatisListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridSatisListesi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.UrunAdi,
@@ -497,8 +498,8 @@ namespace market
             // 
             // UrunGrup
             // 
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.UrunGrup.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.UrunGrup.DefaultCellStyle = dataGridViewCellStyle32;
             this.UrunGrup.HeaderText = "Ürün Grup";
             this.UrunGrup.MinimumWidth = 6;
             this.UrunGrup.Name = "UrunGrup";
@@ -506,36 +507,36 @@ namespace market
             // 
             // miktar
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.miktar.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.miktar.DefaultCellStyle = dataGridViewCellStyle33;
             this.miktar.HeaderText = "Miktar";
             this.miktar.MinimumWidth = 6;
             this.miktar.Name = "miktar";
             // 
             // Birim
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Birim.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Birim.DefaultCellStyle = dataGridViewCellStyle34;
             this.Birim.HeaderText = "Birim";
             this.Birim.MinimumWidth = 6;
             this.Birim.Name = "Birim";
             // 
             // fiyat
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle11.Format = "C2";
-            dataGridViewCellStyle11.NullValue = null;
-            this.fiyat.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle35.Format = "C2";
+            dataGridViewCellStyle35.NullValue = null;
+            this.fiyat.DefaultCellStyle = dataGridViewCellStyle35;
             this.fiyat.HeaderText = "Fiyat";
             this.fiyat.MinimumWidth = 6;
             this.fiyat.Name = "fiyat";
             // 
             // toplam
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle12.Format = "C2";
-            dataGridViewCellStyle12.NullValue = null;
-            this.toplam.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle36.Format = "C2";
+            dataGridViewCellStyle36.NullValue = null;
+            this.toplam.DefaultCellStyle = dataGridViewCellStyle36;
             this.toplam.HeaderText = "Toplam";
             this.toplam.MinimumWidth = 6;
             this.toplam.Name = "toplam";
@@ -797,7 +798,7 @@ namespace market
             // 
             this.splitContainer2.Panel2.Controls.Add(this.tableLayoutPanel5);
             this.splitContainer2.Size = new System.Drawing.Size(895, 747);
-            this.splitContainer2.SplitterDistance = 549;
+            this.splitContainer2.SplitterDistance = 550;
             this.splitContainer2.SplitterWidth = 3;
             this.splitContainer2.TabIndex = 0;
             // 
@@ -850,7 +851,7 @@ namespace market
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel4.Size = new System.Drawing.Size(895, 549);
+            this.tableLayoutPanel4.Size = new System.Drawing.Size(895, 550);
             this.tableLayoutPanel4.TabIndex = 0;
             // 
             // bh23
@@ -861,10 +862,10 @@ namespace market
             this.bh23.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh23.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh23.Location = new System.Drawing.Point(359, 437);
+            this.bh23.Location = new System.Drawing.Point(359, 441);
             this.bh23.Margin = new System.Windows.Forms.Padding(1);
             this.bh23.Name = "bh23";
-            this.bh23.Size = new System.Drawing.Size(177, 111);
+            this.bh23.Size = new System.Drawing.Size(177, 108);
             this.bh23.TabIndex = 38;
             this.bh23.Text = "-";
             this.bh23.UseVisualStyleBackColor = false;
@@ -879,10 +880,10 @@ namespace market
             this.bh22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh22.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh22.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh22.Location = new System.Drawing.Point(180, 437);
+            this.bh22.Location = new System.Drawing.Point(180, 441);
             this.bh22.Margin = new System.Windows.Forms.Padding(1);
             this.bh22.Name = "bh22";
-            this.bh22.Size = new System.Drawing.Size(177, 111);
+            this.bh22.Size = new System.Drawing.Size(177, 108);
             this.bh22.TabIndex = 37;
             this.bh22.Text = "-";
             this.bh22.UseVisualStyleBackColor = false;
@@ -897,10 +898,10 @@ namespace market
             this.bh25.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh25.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh25.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh25.Location = new System.Drawing.Point(717, 437);
+            this.bh25.Location = new System.Drawing.Point(717, 441);
             this.bh25.Margin = new System.Windows.Forms.Padding(1);
             this.bh25.Name = "bh25";
-            this.bh25.Size = new System.Drawing.Size(177, 111);
+            this.bh25.Size = new System.Drawing.Size(177, 108);
             this.bh25.TabIndex = 36;
             this.bh25.Text = "-";
             this.bh25.UseVisualStyleBackColor = false;
@@ -915,10 +916,10 @@ namespace market
             this.bh24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh24.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh24.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh24.Location = new System.Drawing.Point(538, 437);
+            this.bh24.Location = new System.Drawing.Point(538, 441);
             this.bh24.Margin = new System.Windows.Forms.Padding(1);
             this.bh24.Name = "bh24";
-            this.bh24.Size = new System.Drawing.Size(177, 111);
+            this.bh24.Size = new System.Drawing.Size(177, 108);
             this.bh24.TabIndex = 35;
             this.bh24.Text = "-";
             this.bh24.UseVisualStyleBackColor = false;
@@ -933,10 +934,10 @@ namespace market
             this.bh18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh18.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh18.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh18.Location = new System.Drawing.Point(359, 328);
+            this.bh18.Location = new System.Drawing.Point(359, 331);
             this.bh18.Margin = new System.Windows.Forms.Padding(1);
             this.bh18.Name = "bh18";
-            this.bh18.Size = new System.Drawing.Size(177, 107);
+            this.bh18.Size = new System.Drawing.Size(177, 108);
             this.bh18.TabIndex = 34;
             this.bh18.Text = "-";
             this.bh18.UseVisualStyleBackColor = false;
@@ -951,10 +952,10 @@ namespace market
             this.bh17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh17.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh17.Location = new System.Drawing.Point(180, 328);
+            this.bh17.Location = new System.Drawing.Point(180, 331);
             this.bh17.Margin = new System.Windows.Forms.Padding(1);
             this.bh17.Name = "bh17";
-            this.bh17.Size = new System.Drawing.Size(177, 107);
+            this.bh17.Size = new System.Drawing.Size(177, 108);
             this.bh17.TabIndex = 33;
             this.bh17.Text = "-";
             this.bh17.UseVisualStyleBackColor = false;
@@ -969,10 +970,10 @@ namespace market
             this.bh19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh19.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh19.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh19.Location = new System.Drawing.Point(538, 328);
+            this.bh19.Location = new System.Drawing.Point(538, 331);
             this.bh19.Margin = new System.Windows.Forms.Padding(1);
             this.bh19.Name = "bh19";
-            this.bh19.Size = new System.Drawing.Size(177, 107);
+            this.bh19.Size = new System.Drawing.Size(177, 108);
             this.bh19.TabIndex = 32;
             this.bh19.Text = "-";
             this.bh19.UseVisualStyleBackColor = false;
@@ -987,10 +988,10 @@ namespace market
             this.bh21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh21.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh21.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh21.Location = new System.Drawing.Point(1, 437);
+            this.bh21.Location = new System.Drawing.Point(1, 441);
             this.bh21.Margin = new System.Windows.Forms.Padding(1);
             this.bh21.Name = "bh21";
-            this.bh21.Size = new System.Drawing.Size(177, 111);
+            this.bh21.Size = new System.Drawing.Size(177, 108);
             this.bh21.TabIndex = 31;
             this.bh21.Text = "-";
             this.bh21.UseVisualStyleBackColor = false;
@@ -1005,10 +1006,10 @@ namespace market
             this.bh20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh20.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh20.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh20.Location = new System.Drawing.Point(717, 328);
+            this.bh20.Location = new System.Drawing.Point(717, 331);
             this.bh20.Margin = new System.Windows.Forms.Padding(1);
             this.bh20.Name = "bh20";
-            this.bh20.Size = new System.Drawing.Size(177, 107);
+            this.bh20.Size = new System.Drawing.Size(177, 108);
             this.bh20.TabIndex = 30;
             this.bh20.Text = "-";
             this.bh20.UseVisualStyleBackColor = false;
@@ -1023,10 +1024,10 @@ namespace market
             this.bh14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh14.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh14.Location = new System.Drawing.Point(538, 219);
+            this.bh14.Location = new System.Drawing.Point(538, 221);
             this.bh14.Margin = new System.Windows.Forms.Padding(1);
             this.bh14.Name = "bh14";
-            this.bh14.Size = new System.Drawing.Size(177, 107);
+            this.bh14.Size = new System.Drawing.Size(177, 108);
             this.bh14.TabIndex = 29;
             this.bh14.Text = "-";
             this.bh14.UseVisualStyleBackColor = false;
@@ -1041,10 +1042,10 @@ namespace market
             this.bh15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh15.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh15.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh15.Location = new System.Drawing.Point(717, 219);
+            this.bh15.Location = new System.Drawing.Point(717, 221);
             this.bh15.Margin = new System.Windows.Forms.Padding(1);
             this.bh15.Name = "bh15";
-            this.bh15.Size = new System.Drawing.Size(177, 107);
+            this.bh15.Size = new System.Drawing.Size(177, 108);
             this.bh15.TabIndex = 28;
             this.bh15.Text = "-";
             this.bh15.UseVisualStyleBackColor = false;
@@ -1059,10 +1060,10 @@ namespace market
             this.bh16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh16.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh16.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh16.Location = new System.Drawing.Point(1, 328);
+            this.bh16.Location = new System.Drawing.Point(1, 331);
             this.bh16.Margin = new System.Windows.Forms.Padding(1);
             this.bh16.Name = "bh16";
-            this.bh16.Size = new System.Drawing.Size(177, 107);
+            this.bh16.Size = new System.Drawing.Size(177, 108);
             this.bh16.TabIndex = 27;
             this.bh16.Text = "-";
             this.bh16.UseVisualStyleBackColor = false;
@@ -1077,10 +1078,10 @@ namespace market
             this.bh13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh13.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh13.Location = new System.Drawing.Point(359, 219);
+            this.bh13.Location = new System.Drawing.Point(359, 221);
             this.bh13.Margin = new System.Windows.Forms.Padding(1);
             this.bh13.Name = "bh13";
-            this.bh13.Size = new System.Drawing.Size(177, 107);
+            this.bh13.Size = new System.Drawing.Size(177, 108);
             this.bh13.TabIndex = 26;
             this.bh13.Text = "-";
             this.bh13.UseVisualStyleBackColor = false;
@@ -1095,10 +1096,10 @@ namespace market
             this.bh12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh12.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh12.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh12.Location = new System.Drawing.Point(180, 219);
+            this.bh12.Location = new System.Drawing.Point(180, 221);
             this.bh12.Margin = new System.Windows.Forms.Padding(1);
             this.bh12.Name = "bh12";
-            this.bh12.Size = new System.Drawing.Size(177, 107);
+            this.bh12.Size = new System.Drawing.Size(177, 108);
             this.bh12.TabIndex = 25;
             this.bh12.Text = "-";
             this.bh12.UseVisualStyleBackColor = false;
@@ -1113,10 +1114,10 @@ namespace market
             this.bh8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh8.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh8.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh8.Location = new System.Drawing.Point(359, 110);
+            this.bh8.Location = new System.Drawing.Point(359, 111);
             this.bh8.Margin = new System.Windows.Forms.Padding(1);
             this.bh8.Name = "bh8";
-            this.bh8.Size = new System.Drawing.Size(177, 107);
+            this.bh8.Size = new System.Drawing.Size(177, 108);
             this.bh8.TabIndex = 24;
             this.bh8.Text = "-";
             this.bh8.UseVisualStyleBackColor = false;
@@ -1131,10 +1132,10 @@ namespace market
             this.bh7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh7.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh7.Location = new System.Drawing.Point(180, 110);
+            this.bh7.Location = new System.Drawing.Point(180, 111);
             this.bh7.Margin = new System.Windows.Forms.Padding(1);
             this.bh7.Name = "bh7";
-            this.bh7.Size = new System.Drawing.Size(177, 107);
+            this.bh7.Size = new System.Drawing.Size(177, 108);
             this.bh7.TabIndex = 23;
             this.bh7.Text = "-";
             this.bh7.UseVisualStyleBackColor = false;
@@ -1149,10 +1150,10 @@ namespace market
             this.bh9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh9.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh9.Location = new System.Drawing.Point(538, 110);
+            this.bh9.Location = new System.Drawing.Point(538, 111);
             this.bh9.Margin = new System.Windows.Forms.Padding(1);
             this.bh9.Name = "bh9";
-            this.bh9.Size = new System.Drawing.Size(177, 107);
+            this.bh9.Size = new System.Drawing.Size(177, 108);
             this.bh9.TabIndex = 22;
             this.bh9.Text = "-";
             this.bh9.UseVisualStyleBackColor = false;
@@ -1167,10 +1168,10 @@ namespace market
             this.bh11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh11.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh11.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh11.Location = new System.Drawing.Point(1, 219);
+            this.bh11.Location = new System.Drawing.Point(1, 221);
             this.bh11.Margin = new System.Windows.Forms.Padding(1);
             this.bh11.Name = "bh11";
-            this.bh11.Size = new System.Drawing.Size(177, 107);
+            this.bh11.Size = new System.Drawing.Size(177, 108);
             this.bh11.TabIndex = 21;
             this.bh11.Text = "-";
             this.bh11.UseVisualStyleBackColor = false;
@@ -1185,10 +1186,10 @@ namespace market
             this.bh10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh10.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh10.Location = new System.Drawing.Point(717, 110);
+            this.bh10.Location = new System.Drawing.Point(717, 111);
             this.bh10.Margin = new System.Windows.Forms.Padding(1);
             this.bh10.Name = "bh10";
-            this.bh10.Size = new System.Drawing.Size(177, 107);
+            this.bh10.Size = new System.Drawing.Size(177, 108);
             this.bh10.TabIndex = 20;
             this.bh10.Text = "-";
             this.bh10.UseVisualStyleBackColor = false;
@@ -1206,7 +1207,7 @@ namespace market
             this.bh3.Location = new System.Drawing.Point(359, 1);
             this.bh3.Margin = new System.Windows.Forms.Padding(1);
             this.bh3.Name = "bh3";
-            this.bh3.Size = new System.Drawing.Size(177, 107);
+            this.bh3.Size = new System.Drawing.Size(177, 108);
             this.bh3.TabIndex = 19;
             this.bh3.Text = "-";
             this.bh3.UseVisualStyleBackColor = false;
@@ -1224,7 +1225,7 @@ namespace market
             this.bh2.Location = new System.Drawing.Point(180, 1);
             this.bh2.Margin = new System.Windows.Forms.Padding(1);
             this.bh2.Name = "bh2";
-            this.bh2.Size = new System.Drawing.Size(177, 107);
+            this.bh2.Size = new System.Drawing.Size(177, 108);
             this.bh2.TabIndex = 18;
             this.bh2.Text = "-";
             this.bh2.UseVisualStyleBackColor = false;
@@ -1242,7 +1243,7 @@ namespace market
             this.bh1.Location = new System.Drawing.Point(1, 1);
             this.bh1.Margin = new System.Windows.Forms.Padding(1);
             this.bh1.Name = "bh1";
-            this.bh1.Size = new System.Drawing.Size(177, 107);
+            this.bh1.Size = new System.Drawing.Size(177, 108);
             this.bh1.TabIndex = 17;
             this.bh1.Text = "-";
             this.bh1.UseVisualStyleBackColor = false;
@@ -1257,10 +1258,10 @@ namespace market
             this.bh6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bh6.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.bh6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.bh6.Location = new System.Drawing.Point(1, 110);
+            this.bh6.Location = new System.Drawing.Point(1, 111);
             this.bh6.Margin = new System.Windows.Forms.Padding(1);
             this.bh6.Name = "bh6";
-            this.bh6.Size = new System.Drawing.Size(177, 107);
+            this.bh6.Size = new System.Drawing.Size(177, 108);
             this.bh6.TabIndex = 16;
             this.bh6.Text = "-";
             this.bh6.UseVisualStyleBackColor = false;
@@ -1278,7 +1279,7 @@ namespace market
             this.bh5.Location = new System.Drawing.Point(717, 1);
             this.bh5.Margin = new System.Windows.Forms.Padding(1);
             this.bh5.Name = "bh5";
-            this.bh5.Size = new System.Drawing.Size(177, 107);
+            this.bh5.Size = new System.Drawing.Size(177, 108);
             this.bh5.TabIndex = 15;
             this.bh5.Text = "-";
             this.bh5.UseVisualStyleBackColor = false;
@@ -1296,7 +1297,7 @@ namespace market
             this.bh4.Location = new System.Drawing.Point(538, 1);
             this.bh4.Margin = new System.Windows.Forms.Padding(1);
             this.bh4.Name = "bh4";
-            this.bh4.Size = new System.Drawing.Size(177, 107);
+            this.bh4.Size = new System.Drawing.Size(177, 108);
             this.bh4.TabIndex = 14;
             this.bh4.Text = "-";
             this.bh4.UseVisualStyleBackColor = false;
@@ -1318,7 +1319,7 @@ namespace market
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(895, 195);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(895, 194);
             this.tableLayoutPanel5.TabIndex = 0;
             // 
             // tableLayoutPanel6
@@ -1342,7 +1343,7 @@ namespace market
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(168, 195);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(168, 194);
             this.tableLayoutPanel6.TabIndex = 0;
             // 
             // b200
@@ -1356,7 +1357,7 @@ namespace market
             this.b200.Location = new System.Drawing.Point(3, 162);
             this.b200.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.b200.Name = "b200";
-            this.b200.Size = new System.Drawing.Size(162, 31);
+            this.b200.Size = new System.Drawing.Size(162, 30);
             this.b200.TabIndex = 5;
             this.b200.Text = "200";
             this.b200.UseVisualStyleBackColor = false;
@@ -1460,7 +1461,7 @@ namespace market
             this.tableLayoutPanel7.RowCount = 2;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.37089F));
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 82.6291F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(358, 191);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(358, 190);
             this.tableLayoutPanel7.TabIndex = 1;
             // 
             // numbers
@@ -1501,7 +1502,7 @@ namespace market
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.tableLayoutPanel12.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel12.Size = new System.Drawing.Size(352, 152);
+            this.tableLayoutPanel12.Size = new System.Drawing.Size(352, 151);
             this.tableLayoutPanel12.TabIndex = 1;
             // 
             // bNv
@@ -1512,10 +1513,10 @@ namespace market
             this.bNv.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bNv.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bNv.ForeColor = System.Drawing.Color.White;
-            this.bNv.Location = new System.Drawing.Point(237, 116);
+            this.bNv.Location = new System.Drawing.Point(237, 113);
             this.bNv.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bNv.Name = "bNv";
-            this.bNv.Size = new System.Drawing.Size(112, 34);
+            this.bNv.Size = new System.Drawing.Size(112, 36);
             this.bNv.TabIndex = 12;
             this.bNv.Text = ",";
             this.bNv.UseVisualStyleBackColor = false;
@@ -1529,10 +1530,10 @@ namespace market
             this.bN0.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN0.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN0.ForeColor = System.Drawing.Color.White;
-            this.bN0.Location = new System.Drawing.Point(120, 116);
+            this.bN0.Location = new System.Drawing.Point(120, 113);
             this.bN0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN0.Name = "bN0";
-            this.bN0.Size = new System.Drawing.Size(111, 34);
+            this.bN0.Size = new System.Drawing.Size(111, 36);
             this.bN0.TabIndex = 11;
             this.bN0.Text = "0";
             this.bN0.UseVisualStyleBackColor = false;
@@ -1546,10 +1547,10 @@ namespace market
             this.bNb.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bNb.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bNb.ForeColor = System.Drawing.Color.White;
-            this.bNb.Location = new System.Drawing.Point(3, 116);
+            this.bNb.Location = new System.Drawing.Point(3, 113);
             this.bNb.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bNb.Name = "bNb";
-            this.bNb.Size = new System.Drawing.Size(111, 34);
+            this.bNb.Size = new System.Drawing.Size(111, 36);
             this.bNb.TabIndex = 10;
             this.bNb.Text = "<";
             this.bNb.UseVisualStyleBackColor = false;
@@ -1563,10 +1564,10 @@ namespace market
             this.bN9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN9.ForeColor = System.Drawing.Color.White;
-            this.bN9.Location = new System.Drawing.Point(237, 78);
+            this.bN9.Location = new System.Drawing.Point(237, 76);
             this.bN9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN9.Name = "bN9";
-            this.bN9.Size = new System.Drawing.Size(112, 34);
+            this.bN9.Size = new System.Drawing.Size(112, 33);
             this.bN9.TabIndex = 9;
             this.bN9.Text = "9";
             this.bN9.UseVisualStyleBackColor = false;
@@ -1580,10 +1581,10 @@ namespace market
             this.bN8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN8.ForeColor = System.Drawing.Color.White;
-            this.bN8.Location = new System.Drawing.Point(120, 78);
+            this.bN8.Location = new System.Drawing.Point(120, 76);
             this.bN8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN8.Name = "bN8";
-            this.bN8.Size = new System.Drawing.Size(111, 34);
+            this.bN8.Size = new System.Drawing.Size(111, 33);
             this.bN8.TabIndex = 8;
             this.bN8.Text = "8";
             this.bN8.UseVisualStyleBackColor = false;
@@ -1597,10 +1598,10 @@ namespace market
             this.bN7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN7.ForeColor = System.Drawing.Color.White;
-            this.bN7.Location = new System.Drawing.Point(3, 78);
+            this.bN7.Location = new System.Drawing.Point(3, 76);
             this.bN7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN7.Name = "bN7";
-            this.bN7.Size = new System.Drawing.Size(111, 34);
+            this.bN7.Size = new System.Drawing.Size(111, 33);
             this.bN7.TabIndex = 7;
             this.bN7.Text = "7";
             this.bN7.UseVisualStyleBackColor = false;
@@ -1614,10 +1615,10 @@ namespace market
             this.bN6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN6.ForeColor = System.Drawing.Color.White;
-            this.bN6.Location = new System.Drawing.Point(237, 40);
+            this.bN6.Location = new System.Drawing.Point(237, 39);
             this.bN6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN6.Name = "bN6";
-            this.bN6.Size = new System.Drawing.Size(112, 34);
+            this.bN6.Size = new System.Drawing.Size(112, 33);
             this.bN6.TabIndex = 6;
             this.bN6.Text = "6";
             this.bN6.UseVisualStyleBackColor = false;
@@ -1631,10 +1632,10 @@ namespace market
             this.bN5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN5.ForeColor = System.Drawing.Color.White;
-            this.bN5.Location = new System.Drawing.Point(120, 40);
+            this.bN5.Location = new System.Drawing.Point(120, 39);
             this.bN5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN5.Name = "bN5";
-            this.bN5.Size = new System.Drawing.Size(111, 34);
+            this.bN5.Size = new System.Drawing.Size(111, 33);
             this.bN5.TabIndex = 5;
             this.bN5.Text = "5";
             this.bN5.UseVisualStyleBackColor = false;
@@ -1648,10 +1649,10 @@ namespace market
             this.bN4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bN4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bN4.ForeColor = System.Drawing.Color.White;
-            this.bN4.Location = new System.Drawing.Point(3, 40);
+            this.bN4.Location = new System.Drawing.Point(3, 39);
             this.bN4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN4.Name = "bN4";
-            this.bN4.Size = new System.Drawing.Size(111, 34);
+            this.bN4.Size = new System.Drawing.Size(111, 33);
             this.bN4.TabIndex = 4;
             this.bN4.Text = "4";
             this.bN4.UseVisualStyleBackColor = false;
@@ -1668,7 +1669,7 @@ namespace market
             this.bN3.Location = new System.Drawing.Point(237, 2);
             this.bN3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN3.Name = "bN3";
-            this.bN3.Size = new System.Drawing.Size(112, 34);
+            this.bN3.Size = new System.Drawing.Size(112, 33);
             this.bN3.TabIndex = 3;
             this.bN3.Text = "3";
             this.bN3.UseVisualStyleBackColor = false;
@@ -1685,7 +1686,7 @@ namespace market
             this.bN2.Location = new System.Drawing.Point(120, 2);
             this.bN2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN2.Name = "bN2";
-            this.bN2.Size = new System.Drawing.Size(111, 34);
+            this.bN2.Size = new System.Drawing.Size(111, 33);
             this.bN2.TabIndex = 2;
             this.bN2.Text = "2";
             this.bN2.UseVisualStyleBackColor = false;
@@ -1702,7 +1703,7 @@ namespace market
             this.bN1.Location = new System.Drawing.Point(3, 2);
             this.bN1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bN1.Name = "bN1";
-            this.bN1.Size = new System.Drawing.Size(111, 34);
+            this.bN1.Size = new System.Drawing.Size(111, 33);
             this.bN1.TabIndex = 1;
             this.bN1.Text = "1";
             this.bN1.UseVisualStyleBackColor = false;
@@ -1733,7 +1734,7 @@ namespace market
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
             this.tableLayoutPanel8.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 16F));
-            this.tableLayoutPanel8.Size = new System.Drawing.Size(357, 191);
+            this.tableLayoutPanel8.Size = new System.Drawing.Size(357, 190);
             this.tableLayoutPanel8.TabIndex = 2;
             // 
             // bTemizle
@@ -1746,7 +1747,7 @@ namespace market
             this.bTemizle.Location = new System.Drawing.Point(179, 142);
             this.bTemizle.Margin = new System.Windows.Forms.Padding(1);
             this.bTemizle.Name = "bTemizle";
-            this.bTemizle.Size = new System.Drawing.Size(177, 48);
+            this.bTemizle.Size = new System.Drawing.Size(177, 47);
             this.bTemizle.TabIndex = 10;
             this.bTemizle.Text = "Temizle";
             this.bTemizle.UseVisualStyleBackColor = false;
@@ -1777,7 +1778,7 @@ namespace market
             this.bAdet.Location = new System.Drawing.Point(1, 142);
             this.bAdet.Margin = new System.Windows.Forms.Padding(1);
             this.bAdet.Name = "bAdet";
-            this.bAdet.Size = new System.Drawing.Size(176, 48);
+            this.bAdet.Size = new System.Drawing.Size(176, 47);
             this.bAdet.TabIndex = 8;
             this.bAdet.Text = "Adet";
             this.bAdet.UseVisualStyleBackColor = false;
@@ -1981,7 +1982,6 @@ namespace market
         private System.Windows.Forms.DataGridViewImageColumn sil;
         private System.Windows.Forms.DataGridViewTextBoxColumn KdvTutari;
         private System.Windows.Forms.DataGridViewTextBoxColumn AlisFiyat;
-        private System.Windows.Forms.Label lKullanici;
         private System.Windows.Forms.Button bnakitkart;
         public System.Windows.Forms.Label lNakit;
         public System.Windows.Forms.Label lKart;
@@ -2024,6 +2024,7 @@ namespace market
         private System.Windows.Forms.Button bh6;
         private System.Windows.Forms.Button bh5;
         private System.Windows.Forms.Button bh4;
+        public System.Windows.Forms.Label lKullanici;
     }
 }
 

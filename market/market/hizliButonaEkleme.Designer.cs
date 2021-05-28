@@ -121,6 +121,7 @@ namespace market
             // gridUrunler
             // 
             this.gridUrunler.AllowUserToAddRows = false;
+            this.gridUrunler.AllowUserToDeleteRows = false;
             this.gridUrunler.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridUrunler.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.gridUrunler.BorderStyle = System.Windows.Forms.BorderStyle.None;
@@ -140,6 +141,7 @@ namespace market
             this.gridUrunler.Location = new System.Drawing.Point(0, 0);
             this.gridUrunler.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gridUrunler.Name = "gridUrunler";
+            this.gridUrunler.ReadOnly = true;
             this.gridUrunler.RowHeadersVisible = false;
             this.gridUrunler.RowHeadersWidth = 51;
             this.gridUrunler.RowTemplate.DefaultCellStyle.Padding = new System.Windows.Forms.Padding(3);
