@@ -104,5 +104,22 @@ namespace market
                 }
             }
         }
+
+        private void bRaporAl_Click(object sender, EventArgs e)
+        {
+            if (cmbIslemTuru.SelectedIndex==0)
+            {
+                Raporlar.Baslik = cmbIslemTuru.Text + " RAPORU";
+                Raporlar.TarihBaslangic = dateBaslangic.Value.ToShortDateString();
+                Raporlar.TarihBitis = dateBitis.Value.ToShortDateString();
+                Raporlar.StokRaporu(gridListe);
+            }
+            else if(cmbIslemTuru.SelectedIndex ==1){
+                Raporlar.Baslik = cmbIslemTuru.Text + " RAPORU";
+                Raporlar.TarihBaslangic = dateBaslangic.Value.ToShortDateString();
+                Raporlar.TarihBitis = dateBitis.Value.ToShortDateString();
+                Raporlar.StokIzlemeRaporu(gridListe);
+            }
+        }
     }
 }

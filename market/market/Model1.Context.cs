@@ -29,11 +29,11 @@ namespace market
         public virtual DbSet<Terazi> Terazi { get; set; }
         public virtual DbSet<HizliUrun> HizliUrun { get; set; }
         public virtual DbSet<Islem> Islem { get; set; }
-        public virtual DbSet<IslemOzet> IslemOzet { get; set; }
         public virtual DbSet<Satislar> Satislar { get; set; }
         public virtual DbSet<UrunGrubu> UrunGrubu { get; set; }
         public virtual DbSet<Barkod> Barkod { get; set; }
         public virtual DbSet<StokHareket> StokHareket { get; set; }
         public virtual DbSet<Sabitlerim> Sabitlerim { get; set; }
+        public virtual DbSet<IslemOzet> IslemOzet { get; set; }
     }
 }

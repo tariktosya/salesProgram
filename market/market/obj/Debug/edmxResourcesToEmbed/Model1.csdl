@@ -23,12 +23,12 @@
     <EntitySet Name="Terazi" EntityType="MarketSatisModel.Terazi" />
     <EntitySet Name="HizliUrun" EntityType="MarketSatisModel.HizliUrun" />
     <EntitySet Name="Islem" EntityType="MarketSatisModel.Islem" />
-    <EntitySet Name="IslemOzet" EntityType="MarketSatisModel.IslemOzet" />
     <EntitySet Name="Satislar" EntityType="MarketSatisModel.Satislar" />
     <EntitySet Name="UrunGrubu" EntityType="MarketSatisModel.UrunGrubu" />
     <EntitySet Name="Barkod" EntityType="MarketSatisModel.Barkod" />
     <EntitySet Name="StokHareket" EntityType="MarketSatisModel.StokHareket" />
     <EntitySet Name="Sabitlerim" EntityType="MarketSatisModel.Sabitlerim" />
+    <EntitySet Name="IslemOzet" EntityType="MarketSatisModel.IslemOzet" />
   </EntityContainer>
   <EntityType Name="Terazi">
     <Key>
@@ -52,23 +52,6 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="dIslemNo" Type="Int32" />
-  </EntityType>
-  <EntityType Name="IslemOzet">
-    <Key>
-      <PropertyRef Name="Id" />
-    </Key>
-    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="dIslemNo" Type="Int32" />
-    <Property Name="dIade" Type="Boolean" />
-    <Property Name="dOdemeSekli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="dNakit" Type="Double" />
-    <Property Name="dKart" Type="Double" />
-    <Property Name="dGelir" Type="Boolean" />
-    <Property Name="dGider" Type="Boolean" />
-    <Property Name="dAlisFiyatToplam" Type="Double" />
-    <Property Name="dAciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
-    <Property Name="dTarih" Type="DateTime" Precision="3" />
-    <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="Satislar">
     <Key>
@@ -123,5 +106,22 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="dKartKomisyonum" Type="Int32" />
+  </EntityType>
+  <EntityType Name="IslemOzet">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dIslemNo" Type="Int32" />
+    <Property Name="dIade" Type="Boolean" />
+    <Property Name="dOdemeSekli" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dNakit" Type="Double" />
+    <Property Name="dKart" Type="Double" />
+    <Property Name="dGelir" Type="Boolean" />
+    <Property Name="dGider" Type="Boolean" />
+    <Property Name="dAlisFiyatToplam" Type="Double" />
+    <Property Name="dAciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="dTarih" Type="DateTime" Precision="3" />
+    <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
 </Schema>

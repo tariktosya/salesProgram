@@ -28,9 +28,17 @@ namespace market
             {
                 if (listFiltreleme.SelectedIndex ==0)
                 {
+                    db.Satislar.Where(x => x.dTarih >= baslangic && x.dTarih <= bitis).Load();
+                    var satisim = db.Satislar.Local.ToBindingList(); 
+
                     db.IslemOzet.Where(x => x.dTarih >= baslangic && x.dTarih <= bitis).OrderByDescending(x => x.dTarih).Load();//tarihe göre tersten. Load headera basınca sıralama işlemi
                     var islemozet = db.IslemOzet.Local.ToBindingList();//veritabanını gereksiz yormadık buraya aldık listeyi O TARİH ARALIĞINDAKİ VERİLERİ
                     gridListe.DataSource = islemozet;
+
+                    tCigkofte.Text = Convert.ToDouble(satisim.Where(x=> x.dUrunAd =="Çiğköfte").Sum(x=> x.dToplam)).ToString("C2");
+                    tDondurma.Text = Convert.ToDouble(satisim.Where(x => x.dUrunAd == "Dondurma").Sum(x => x.dToplam)).ToString("C2");
+                    tDigerurun.Text = Convert.ToDouble(satisim.Where(x => x.dUrunAd == "Barkodsuz Ürün").Sum(x => x.dToplam)).ToString("C2");
+                    tManav.Text = Convert.ToDouble(satisim.Where(x => x.dUrunGrup == "Manav").Sum(x => x.dToplam)).ToString("C2");
 
                     tSatisNakit.Text = Convert.ToDouble(islemozet.Where(x => x.dIade == false && x.dGelir == false && x.dGider == false).Sum(x => x.dNakit)).ToString("C2");
                     tSatisKart.Text = Convert.ToDouble(islemozet.Where(y => y.dIade == false && y.dGelir == false && y.dGider == false).Sum(y => y.dKart)).ToString("C2");
@@ -43,6 +51,8 @@ namespace market
 
                     tGiderNakit.Text = Convert.ToDouble(islemozet.Where(x => x.dGider == true).Sum(x => x.dNakit)).ToString("C2");
                     tGiderKart.Text = Convert.ToDouble(islemozet.Where(x => x.dGider == true).Sum(x => x.dKart)).ToString("C2");
+
+         
 
                     db.Satislar.Where(x => x.dTarih >= baslangic && x.dTarih <= bitis).Load();
                     var satistablosu = db.Satislar.Local.ToBindingList();
@@ -127,6 +137,26 @@ namespace market
                     f.ShowDialog();
                 }
             }
+        }
+
+        private void bRaporAl_Click(object sender, EventArgs e)
+        {
+            Raporlar.Baslik = "GENEL RAPOR";
+            Raporlar.SatisKart = tSatisKart.Text;
+            Raporlar.SatisNakit = tSatisNakit.Text;
+            Raporlar.IadeKart = tIadeKart.Text;
+            Raporlar.IadeNakit = tIadeNakit.Text;
+            Raporlar.GelirKart = tGelirKart.Text;
+            Raporlar.GelirNakit = tGelirNakit.Text;
+            Raporlar.GiderKart = tGiderKart.Text;
+            Raporlar.GiderNakit = tGiderNakit.Text;
+            Raporlar.TarihBaslangic = dateBaslangic.Value.ToShortDateString();
+            Raporlar.TarihBitis = dateBitis.Value.ToShortDateString();
+            Raporlar.KdvToplam = tKdvToplam.Text;
+            Raporlar.KartKomisyon = tKartKomisyon.Text;
+            Raporlar.Cigkofte = tCigkofte.Text;
+            Raporlar.Dondurma = tDondurma.Text;
+            Raporlar.RaporSayfasiRaporu(gridListe);
         }
     }
 }

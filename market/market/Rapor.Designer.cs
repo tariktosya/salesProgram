@@ -32,15 +32,18 @@ namespace market
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.bRaporAl = new market.bStandart();
+            this.lStandart21 = new market.lStandart();
+            this.tManav = new market.tNumeric();
+            this.lStandart20 = new market.lStandart();
+            this.tDigerurun = new market.tNumeric();
+            this.lStandart19 = new market.lStandart();
+            this.tDondurma = new market.tNumeric();
+            this.tCigkofte = new market.tNumeric();
+            this.lStandart18 = new market.lStandart();
+            this.lKullanici = new market.lStandart();
             this.bGiderEkle = new System.Windows.Forms.Button();
             this.bGelirEkle = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dateBitis = new System.Windows.Forms.DateTimePicker();
-            this.dateBaslangic = new System.Windows.Forms.DateTimePicker();
-            this.listFiltreleme = new System.Windows.Forms.ListBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.detayGösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lKullanici = new market.lStandart();
             this.tGiderKart = new market.tNumeric();
             this.tGelirKart = new market.tNumeric();
             this.tIadeKart = new market.tNumeric();
@@ -66,17 +69,23 @@ namespace market
             this.lStandart3 = new market.lStandart();
             this.lStandart2 = new market.lStandart();
             this.bGoster = new market.bStandart();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dateBitis = new System.Windows.Forms.DateTimePicker();
             this.lStandart5 = new market.lStandart();
+            this.dateBaslangic = new System.Windows.Forms.DateTimePicker();
             this.lStandart4 = new market.lStandart();
+            this.listFiltreleme = new System.Windows.Forms.ListBox();
             this.lStandart1 = new market.lStandart();
             this.gridListe = new market.gridGrid();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.detayGösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridListe)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -89,6 +98,15 @@ namespace market
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.bRaporAl);
+            this.splitContainer1.Panel1.Controls.Add(this.lStandart21);
+            this.splitContainer1.Panel1.Controls.Add(this.tManav);
+            this.splitContainer1.Panel1.Controls.Add(this.lStandart20);
+            this.splitContainer1.Panel1.Controls.Add(this.tDigerurun);
+            this.splitContainer1.Panel1.Controls.Add(this.lStandart19);
+            this.splitContainer1.Panel1.Controls.Add(this.tDondurma);
+            this.splitContainer1.Panel1.Controls.Add(this.tCigkofte);
+            this.splitContainer1.Panel1.Controls.Add(this.lStandart18);
             this.splitContainer1.Panel1.Controls.Add(this.lKullanici);
             this.splitContainer1.Panel1.Controls.Add(this.bGiderEkle);
             this.splitContainer1.Panel1.Controls.Add(this.bGelirEkle);
@@ -124,9 +142,127 @@ namespace market
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.gridListe);
-            this.splitContainer1.Size = new System.Drawing.Size(1651, 610);
+            this.splitContainer1.Size = new System.Drawing.Size(2016, 610);
             this.splitContainer1.SplitterDistance = 280;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // bRaporAl
+            // 
+            this.bRaporAl.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.bRaporAl.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bRaporAl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bRaporAl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.bRaporAl.ForeColor = System.Drawing.Color.White;
+            this.bRaporAl.Image = global::market.Properties.Resources.business_report;
+            this.bRaporAl.Location = new System.Drawing.Point(608, 206);
+            this.bRaporAl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bRaporAl.Name = "bRaporAl";
+            this.bRaporAl.Size = new System.Drawing.Size(108, 74);
+            this.bRaporAl.TabIndex = 21;
+            this.bRaporAl.Text = "Rapor Al";
+            this.bRaporAl.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bRaporAl.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bRaporAl.UseVisualStyleBackColor = false;
+            this.bRaporAl.Click += new System.EventHandler(this.bRaporAl_Click);
+            // 
+            // lStandart21
+            // 
+            this.lStandart21.AutoSize = true;
+            this.lStandart21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart21.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart21.Location = new System.Drawing.Point(1682, 197);
+            this.lStandart21.Name = "lStandart21";
+            this.lStandart21.Size = new System.Drawing.Size(72, 25);
+            this.lStandart21.TabIndex = 20;
+            this.lStandart21.Text = "Manav";
+            // 
+            // tManav
+            // 
+            this.tManav.BackColor = System.Drawing.Color.White;
+            this.tManav.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tManav.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tManav.Location = new System.Drawing.Point(1760, 203);
+            this.tManav.Name = "tManav";
+            this.tManav.Size = new System.Drawing.Size(115, 19);
+            this.tManav.TabIndex = 19;
+            this.tManav.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lStandart20
+            // 
+            this.lStandart20.AutoSize = true;
+            this.lStandart20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart20.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart20.Location = new System.Drawing.Point(1651, 155);
+            this.lStandart20.Name = "lStandart20";
+            this.lStandart20.Size = new System.Drawing.Size(105, 25);
+            this.lStandart20.TabIndex = 18;
+            this.lStandart20.Text = "Diğer Ürün";
+            // 
+            // tDigerurun
+            // 
+            this.tDigerurun.BackColor = System.Drawing.Color.White;
+            this.tDigerurun.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tDigerurun.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tDigerurun.Location = new System.Drawing.Point(1760, 161);
+            this.tDigerurun.Name = "tDigerurun";
+            this.tDigerurun.Size = new System.Drawing.Size(115, 19);
+            this.tDigerurun.TabIndex = 17;
+            this.tDigerurun.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lStandart19
+            // 
+            this.lStandart19.AutoSize = true;
+            this.lStandart19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart19.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart19.Location = new System.Drawing.Point(1651, 114);
+            this.lStandart19.Name = "lStandart19";
+            this.lStandart19.Size = new System.Drawing.Size(103, 25);
+            this.lStandart19.TabIndex = 16;
+            this.lStandart19.Text = "Dondurma";
+            // 
+            // tDondurma
+            // 
+            this.tDondurma.BackColor = System.Drawing.Color.White;
+            this.tDondurma.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tDondurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tDondurma.Location = new System.Drawing.Point(1760, 120);
+            this.tDondurma.Name = "tDondurma";
+            this.tDondurma.Size = new System.Drawing.Size(115, 19);
+            this.tDondurma.TabIndex = 15;
+            this.tDondurma.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tCigkofte
+            // 
+            this.tCigkofte.BackColor = System.Drawing.Color.White;
+            this.tCigkofte.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tCigkofte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tCigkofte.Location = new System.Drawing.Point(1760, 82);
+            this.tCigkofte.Name = "tCigkofte";
+            this.tCigkofte.Size = new System.Drawing.Size(115, 19);
+            this.tCigkofte.TabIndex = 14;
+            this.tCigkofte.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // lStandart18
+            // 
+            this.lStandart18.AutoSize = true;
+            this.lStandart18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart18.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart18.Location = new System.Drawing.Point(1670, 76);
+            this.lStandart18.Name = "lStandart18";
+            this.lStandart18.Size = new System.Drawing.Size(84, 25);
+            this.lStandart18.TabIndex = 13;
+            this.lStandart18.Text = "Çiğköfte";
+            // 
+            // lKullanici
+            // 
+            this.lKullanici.AutoSize = true;
+            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lKullanici.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lKullanici.Location = new System.Drawing.Point(35, 234);
+            this.lKullanici.Name = "lKullanici";
+            this.lKullanici.Size = new System.Drawing.Size(89, 25);
+            this.lKullanici.TabIndex = 12;
+            this.lKullanici.Text = "lKullanici";
             // 
             // bGiderEkle
             // 
@@ -151,77 +287,6 @@ namespace market
             this.bGelirEkle.TabIndex = 11;
             this.bGelirEkle.UseVisualStyleBackColor = false;
             this.bGelirEkle.Click += new System.EventHandler(this.bGelirEkle_Click);
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dateBitis);
-            this.panel3.Controls.Add(this.lStandart5);
-            this.panel3.Controls.Add(this.dateBaslangic);
-            this.panel3.Controls.Add(this.lStandart4);
-            this.panel3.Location = new System.Drawing.Point(272, 36);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(305, 186);
-            this.panel3.TabIndex = 5;
-            // 
-            // dateBitis
-            // 
-            this.dateBitis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.dateBitis.Location = new System.Drawing.Point(3, 128);
-            this.dateBitis.Name = "dateBitis";
-            this.dateBitis.Size = new System.Drawing.Size(299, 30);
-            this.dateBitis.TabIndex = 3;
-            // 
-            // dateBaslangic
-            // 
-            this.dateBaslangic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.dateBaslangic.Location = new System.Drawing.Point(3, 44);
-            this.dateBaslangic.Name = "dateBaslangic";
-            this.dateBaslangic.Size = new System.Drawing.Size(299, 30);
-            this.dateBaslangic.TabIndex = 1;
-            // 
-            // listFiltreleme
-            // 
-            this.listFiltreleme.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.listFiltreleme.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.listFiltreleme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.listFiltreleme.FormattingEnabled = true;
-            this.listFiltreleme.ItemHeight = 25;
-            this.listFiltreleme.Items.AddRange(new object[] {
-            "Tümü",
-            "Satışlar",
-            "İadeler",
-            "Gelir(Satış Hariç)",
-            "Gider(İade Hariç)"});
-            this.listFiltreleme.Location = new System.Drawing.Point(23, 50);
-            this.listFiltreleme.Name = "listFiltreleme";
-            this.listFiltreleme.Size = new System.Drawing.Size(223, 150);
-            this.listFiltreleme.TabIndex = 1;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.detayGösterToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(165, 28);
-            // 
-            // detayGösterToolStripMenuItem
-            // 
-            this.detayGösterToolStripMenuItem.Name = "detayGösterToolStripMenuItem";
-            this.detayGösterToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
-            this.detayGösterToolStripMenuItem.Text = "Detay Göster";
-            this.detayGösterToolStripMenuItem.Click += new System.EventHandler(this.detayGösterToolStripMenuItem_Click);
-            // 
-            // lKullanici
-            // 
-            this.lKullanici.AutoSize = true;
-            this.lKullanici.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lKullanici.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lKullanici.Location = new System.Drawing.Point(615, 220);
-            this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(89, 25);
-            this.lKullanici.TabIndex = 12;
-            this.lKullanici.Text = "lKullanici";
             // 
             // tGiderKart
             // 
@@ -494,17 +559,36 @@ namespace market
             this.bGoster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bGoster.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.bGoster.ForeColor = System.Drawing.Color.White;
-            this.bGoster.Image = global::market.Properties.Resources.search__1_;
-            this.bGoster.Location = new System.Drawing.Point(606, 80);
+            this.bGoster.Image = global::market.Properties.Resources.right_arrow;
+            this.bGoster.Location = new System.Drawing.Point(608, 36);
             this.bGoster.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bGoster.Name = "bGoster";
-            this.bGoster.Size = new System.Drawing.Size(144, 120);
+            this.bGoster.Size = new System.Drawing.Size(108, 92);
             this.bGoster.TabIndex = 4;
             this.bGoster.Text = "Göster";
             this.bGoster.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.bGoster.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.bGoster.UseVisualStyleBackColor = false;
             this.bGoster.Click += new System.EventHandler(this.bGoster_Click);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dateBitis);
+            this.panel3.Controls.Add(this.lStandart5);
+            this.panel3.Controls.Add(this.dateBaslangic);
+            this.panel3.Controls.Add(this.lStandart4);
+            this.panel3.Location = new System.Drawing.Point(272, 36);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(305, 186);
+            this.panel3.TabIndex = 5;
+            // 
+            // dateBitis
+            // 
+            this.dateBitis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.dateBitis.Location = new System.Drawing.Point(3, 128);
+            this.dateBitis.Name = "dateBitis";
+            this.dateBitis.Size = new System.Drawing.Size(299, 30);
+            this.dateBitis.TabIndex = 3;
             // 
             // lStandart5
             // 
@@ -517,6 +601,14 @@ namespace market
             this.lStandart5.TabIndex = 2;
             this.lStandart5.Text = "Bitiş Tarihi";
             // 
+            // dateBaslangic
+            // 
+            this.dateBaslangic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.dateBaslangic.Location = new System.Drawing.Point(3, 44);
+            this.dateBaslangic.Name = "dateBaslangic";
+            this.dateBaslangic.Size = new System.Drawing.Size(299, 30);
+            this.dateBaslangic.TabIndex = 1;
+            // 
             // lStandart4
             // 
             this.lStandart4.AutoSize = true;
@@ -527,6 +619,24 @@ namespace market
             this.lStandart4.Size = new System.Drawing.Size(151, 25);
             this.lStandart4.TabIndex = 0;
             this.lStandart4.Text = "Başlangış Tarihi";
+            // 
+            // listFiltreleme
+            // 
+            this.listFiltreleme.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.listFiltreleme.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listFiltreleme.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.listFiltreleme.FormattingEnabled = true;
+            this.listFiltreleme.ItemHeight = 25;
+            this.listFiltreleme.Items.AddRange(new object[] {
+            "Tümü",
+            "Satışlar",
+            "İadeler",
+            "Gelir(Satış Hariç)",
+            "Gider(İade Hariç)"});
+            this.listFiltreleme.Location = new System.Drawing.Point(23, 50);
+            this.listFiltreleme.Name = "listFiltreleme";
+            this.listFiltreleme.Size = new System.Drawing.Size(223, 150);
+            this.listFiltreleme.TabIndex = 1;
             // 
             // lStandart1
             // 
@@ -572,16 +682,31 @@ namespace market
             this.gridListe.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.gridListe.RowTemplate.Height = 30;
             this.gridListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gridListe.Size = new System.Drawing.Size(1651, 326);
+            this.gridListe.Size = new System.Drawing.Size(2016, 326);
             this.gridListe.TabIndex = 1;
             this.gridListe.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.gridListe_CellFormatting);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.detayGösterToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(165, 28);
+            // 
+            // detayGösterToolStripMenuItem
+            // 
+            this.detayGösterToolStripMenuItem.Name = "detayGösterToolStripMenuItem";
+            this.detayGösterToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
+            this.detayGösterToolStripMenuItem.Text = "Detay Göster";
+            this.detayGösterToolStripMenuItem.Click += new System.EventHandler(this.detayGösterToolStripMenuItem_Click);
             // 
             // Rapor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(1651, 610);
+            this.ClientSize = new System.Drawing.Size(2016, 610);
             this.Controls.Add(this.splitContainer1);
             this.Name = "Rapor";
             this.Text = "Rapor Sayfası";
@@ -593,8 +718,8 @@ namespace market
             this.splitContainer1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridListe)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -640,5 +765,14 @@ namespace market
         private lStandart lKullanici;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem detayGösterToolStripMenuItem;
+        private lStandart lStandart19;
+        private tNumeric tDondurma;
+        private tNumeric tCigkofte;
+        private lStandart lStandart18;
+        private lStandart lStandart21;
+        private tNumeric tManav;
+        private lStandart lStandart20;
+        private tNumeric tDigerurun;
+        private bStandart bRaporAl;
     }
 }

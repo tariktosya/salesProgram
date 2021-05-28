@@ -31,15 +31,15 @@ namespace market
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.cmbIslemTuru = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.rdTumu = new System.Windows.Forms.RadioButton();
-            this.rdUrunGrubu = new System.Windows.Forms.RadioButton();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.dateBitis = new System.Windows.Forms.DateTimePicker();
+            this.dateBaslangic = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.cmbUrunGrubu = new System.Windows.Forms.ComboBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dateBaslangic = new System.Windows.Forms.DateTimePicker();
-            this.dateBitis = new System.Windows.Forms.DateTimePicker();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.rdUrunGrubu = new System.Windows.Forms.RadioButton();
+            this.rdTumu = new System.Windows.Forms.RadioButton();
+            this.cmbIslemTuru = new System.Windows.Forms.ComboBox();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.bAra = new market.bStandart();
             this.lStandart5 = new market.lStandart();
@@ -47,6 +47,7 @@ namespace market
             this.lStandart3 = new market.lStandart();
             this.lStandart2 = new market.lStandart();
             this.lStandart1 = new market.lStandart();
+            this.bRaporAl = new market.bStandart();
             this.tUrunAra = new market.tStandart();
             this.lStandart6 = new market.lStandart();
             this.gridListe = new market.gridGrid();
@@ -54,9 +55,9 @@ namespace market
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer2)).BeginInit();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -88,52 +89,32 @@ namespace market
             this.splitContainer1.SplitterDistance = 329;
             this.splitContainer1.TabIndex = 0;
             // 
-            // cmbIslemTuru
+            // panel3
             // 
-            this.cmbIslemTuru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbIslemTuru.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.cmbIslemTuru.FormattingEnabled = true;
-            this.cmbIslemTuru.Items.AddRange(new object[] {
-            "Stok Durumu",
-            "Stok Giriş İzleme"});
-            this.cmbIslemTuru.Location = new System.Drawing.Point(20, 118);
-            this.cmbIslemTuru.Name = "cmbIslemTuru";
-            this.cmbIslemTuru.Size = new System.Drawing.Size(223, 33);
-            this.cmbIslemTuru.TabIndex = 1;
+            this.panel3.Controls.Add(this.dateBitis);
+            this.panel3.Controls.Add(this.lStandart5);
+            this.panel3.Controls.Add(this.dateBaslangic);
+            this.panel3.Controls.Add(this.lStandart4);
+            this.panel3.Location = new System.Drawing.Point(17, 379);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(305, 186);
+            this.panel3.TabIndex = 4;
             // 
-            // panel1
+            // dateBitis
             // 
-            this.panel1.Controls.Add(this.rdUrunGrubu);
-            this.panel1.Controls.Add(this.rdTumu);
-            this.panel1.Controls.Add(this.lStandart2);
-            this.panel1.Location = new System.Drawing.Point(17, 181);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(305, 100);
-            this.panel1.TabIndex = 2;
+            this.dateBitis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.dateBitis.Location = new System.Drawing.Point(3, 128);
+            this.dateBitis.Name = "dateBitis";
+            this.dateBitis.Size = new System.Drawing.Size(299, 30);
+            this.dateBitis.TabIndex = 3;
             // 
-            // rdTumu
+            // dateBaslangic
             // 
-            this.rdTumu.AutoSize = true;
-            this.rdTumu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.rdTumu.Location = new System.Drawing.Point(18, 42);
-            this.rdTumu.Name = "rdTumu";
-            this.rdTumu.Size = new System.Drawing.Size(84, 29);
-            this.rdTumu.TabIndex = 1;
-            this.rdTumu.TabStop = true;
-            this.rdTumu.Text = "Tümü";
-            this.rdTumu.UseVisualStyleBackColor = true;
-            // 
-            // rdUrunGrubu
-            // 
-            this.rdUrunGrubu.AutoSize = true;
-            this.rdUrunGrubu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.rdUrunGrubu.Location = new System.Drawing.Point(18, 69);
-            this.rdUrunGrubu.Name = "rdUrunGrubu";
-            this.rdUrunGrubu.Size = new System.Drawing.Size(199, 29);
-            this.rdUrunGrubu.TabIndex = 2;
-            this.rdUrunGrubu.TabStop = true;
-            this.rdUrunGrubu.Text = "ÜrünGrubuna Göre";
-            this.rdUrunGrubu.UseVisualStyleBackColor = true;
+            this.dateBaslangic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.dateBaslangic.Location = new System.Drawing.Point(3, 44);
+            this.dateBaslangic.Name = "dateBaslangic";
+            this.dateBaslangic.Size = new System.Drawing.Size(299, 30);
+            this.dateBaslangic.TabIndex = 1;
             // 
             // panel2
             // 
@@ -154,32 +135,52 @@ namespace market
             this.cmbUrunGrubu.Size = new System.Drawing.Size(223, 33);
             this.cmbUrunGrubu.TabIndex = 2;
             // 
-            // panel3
+            // panel1
             // 
-            this.panel3.Controls.Add(this.dateBitis);
-            this.panel3.Controls.Add(this.lStandart5);
-            this.panel3.Controls.Add(this.dateBaslangic);
-            this.panel3.Controls.Add(this.lStandart4);
-            this.panel3.Location = new System.Drawing.Point(17, 379);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(305, 186);
-            this.panel3.TabIndex = 4;
+            this.panel1.Controls.Add(this.rdUrunGrubu);
+            this.panel1.Controls.Add(this.rdTumu);
+            this.panel1.Controls.Add(this.lStandart2);
+            this.panel1.Location = new System.Drawing.Point(17, 181);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(305, 100);
+            this.panel1.TabIndex = 2;
             // 
-            // dateBaslangic
+            // rdUrunGrubu
             // 
-            this.dateBaslangic.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.dateBaslangic.Location = new System.Drawing.Point(3, 44);
-            this.dateBaslangic.Name = "dateBaslangic";
-            this.dateBaslangic.Size = new System.Drawing.Size(299, 30);
-            this.dateBaslangic.TabIndex = 1;
+            this.rdUrunGrubu.AutoSize = true;
+            this.rdUrunGrubu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.rdUrunGrubu.Location = new System.Drawing.Point(18, 69);
+            this.rdUrunGrubu.Name = "rdUrunGrubu";
+            this.rdUrunGrubu.Size = new System.Drawing.Size(199, 29);
+            this.rdUrunGrubu.TabIndex = 2;
+            this.rdUrunGrubu.TabStop = true;
+            this.rdUrunGrubu.Text = "ÜrünGrubuna Göre";
+            this.rdUrunGrubu.UseVisualStyleBackColor = true;
             // 
-            // dateBitis
+            // rdTumu
             // 
-            this.dateBitis.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.dateBitis.Location = new System.Drawing.Point(3, 128);
-            this.dateBitis.Name = "dateBitis";
-            this.dateBitis.Size = new System.Drawing.Size(299, 30);
-            this.dateBitis.TabIndex = 3;
+            this.rdTumu.AutoSize = true;
+            this.rdTumu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.rdTumu.Location = new System.Drawing.Point(18, 42);
+            this.rdTumu.Name = "rdTumu";
+            this.rdTumu.Size = new System.Drawing.Size(84, 29);
+            this.rdTumu.TabIndex = 1;
+            this.rdTumu.TabStop = true;
+            this.rdTumu.Text = "Tümü";
+            this.rdTumu.UseVisualStyleBackColor = true;
+            // 
+            // cmbIslemTuru
+            // 
+            this.cmbIslemTuru.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbIslemTuru.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.cmbIslemTuru.FormattingEnabled = true;
+            this.cmbIslemTuru.Items.AddRange(new object[] {
+            "Stok Durumu",
+            "Stok Giriş İzleme"});
+            this.cmbIslemTuru.Location = new System.Drawing.Point(20, 118);
+            this.cmbIslemTuru.Name = "cmbIslemTuru";
+            this.cmbIslemTuru.Size = new System.Drawing.Size(223, 33);
+            this.cmbIslemTuru.TabIndex = 1;
             // 
             // splitContainer2
             // 
@@ -193,6 +194,7 @@ namespace market
             // splitContainer2.Panel1
             // 
             this.splitContainer2.Panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.splitContainer2.Panel1.Controls.Add(this.bRaporAl);
             this.splitContainer2.Panel1.Controls.Add(this.tUrunAra);
             this.splitContainer2.Panel1.Controls.Add(this.lStandart6);
             // 
@@ -211,7 +213,7 @@ namespace market
             this.bAra.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.bAra.ForeColor = System.Drawing.Color.White;
             this.bAra.Image = global::market.Properties.Resources.search;
-            this.bAra.Location = new System.Drawing.Point(102, 584);
+            this.bAra.Location = new System.Drawing.Point(187, 570);
             this.bAra.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bAra.Name = "bAra";
             this.bAra.Size = new System.Drawing.Size(132, 81);
@@ -276,6 +278,25 @@ namespace market
             this.lStandart1.Size = new System.Drawing.Size(104, 25);
             this.lStandart1.TabIndex = 0;
             this.lStandart1.Text = "İşlem Türü";
+            // 
+            // bRaporAl
+            // 
+            this.bRaporAl.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.bRaporAl.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bRaporAl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bRaporAl.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.bRaporAl.ForeColor = System.Drawing.Color.White;
+            this.bRaporAl.Image = global::market.Properties.Resources.business_report;
+            this.bRaporAl.Location = new System.Drawing.Point(752, 2);
+            this.bRaporAl.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bRaporAl.Name = "bRaporAl";
+            this.bRaporAl.Size = new System.Drawing.Size(132, 72);
+            this.bRaporAl.TabIndex = 5;
+            this.bRaporAl.Text = "Rapor Al";
+            this.bRaporAl.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bRaporAl.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bRaporAl.UseVisualStyleBackColor = false;
+            this.bRaporAl.Click += new System.EventHandler(this.bRaporAl_Click);
             // 
             // tUrunAra
             // 
@@ -348,12 +369,12 @@ namespace market
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel1.PerformLayout();
             this.splitContainer2.Panel2.ResumeLayout(false);
@@ -386,5 +407,6 @@ namespace market
         private tStandart tUrunAra;
         private lStandart lStandart6;
         private gridGrid gridListe;
+        private bStandart bRaporAl;
     }
 }
