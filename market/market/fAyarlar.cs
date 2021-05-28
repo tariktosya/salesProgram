@@ -146,6 +146,13 @@ namespace market
             cmbTeraziOnek.ValueMember = "Id";
             cmbTeraziOnek.DataSource = terazionek;
             Cursor.Current = Cursors.Default;
+
+            //işyeri doldur
+            tIsyeriAdSoyad.Text = sabitler.dAdSoyad;
+            tIsyeriUnvan.Text = sabitler.dUnvan;
+            tIsyeriTelefon.Text = sabitler.dTelefon;
+            tIsyeriEposta.Text = sabitler.dEposta;
+            tIsyeriAdres.Text = sabitler.dAdres;
         }
 
         private void bIptal_Click(object sender, EventArgs e)
@@ -279,6 +286,30 @@ namespace market
             else
             {
                 MessageBox.Show("Önek Seçiniz.");
+            }
+        }
+
+        private void bIsyeriKaydet_Click(object sender, EventArgs e)
+        {
+            if (tIsyeriAdSoyad.Text != "" && tIsyeriUnvan.Text !="" && tIsyeriAdres.Text != "" && tIsyeriTelefon.Text !="")
+            {
+                using (var db = new MarketSatisEntities())
+                {
+                    var isyeri = db.Sabitlerim.FirstOrDefault();
+                    isyeri.dAdSoyad = tIsyeriAdSoyad.Text;
+                    isyeri.dUnvan = tIsyeriUnvan.Text;
+                    isyeri.dAdres = tIsyeriAdres.Text;
+                    isyeri.dTelefon = tIsyeriTelefon.Text;
+                    isyeri.dEposta = tIsyeriEposta.Text;
+                    db.SaveChanges();
+                    MessageBox.Show("İşyeri Bilgileri Kaydedilmiştir.");
+                    var yeni = db.Sabitlerim.FirstOrDefault();
+                    tIsyeriAdSoyad.Text = yeni.dAdSoyad;
+                    tIsyeriUnvan.Text = yeni.dUnvan;
+                    tIsyeriTelefon.Text = yeni.dTelefon;
+                    tIsyeriEposta.Text = yeni.dEposta;
+                    tIsyeriAdres.Text = yeni.dAdres;
+                }
             }
         }
     }

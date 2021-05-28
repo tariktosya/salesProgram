@@ -23,7 +23,7 @@ namespace market
             if (e.KeyCode == Keys.Enter)
             {
                 string barkod = BarkodText.Text.Trim();
-                if (barkod.Length<=2) {
+                if (barkod.Length<=1) {
                     MiktarText.Text = barkod;
                     BarkodText.Focus();
                 }
@@ -160,6 +160,12 @@ namespace market
             b50.Text = 50.ToString("C2");
             b100.Text = 100.ToString("C2");
             b200.Text = 200.ToString("C2");
+
+            using (var db = new MarketSatisEntities())
+            {
+                var sabit = db.Sabitlerim.FirstOrDefault();
+                chYazdirmaDurumu.Checked =Convert.ToBoolean(sabit.dYazici);
+            }
         }
         private void HizliButonEkle() {
             var hizliurun = db.HizliUrun.ToList();
@@ -449,7 +455,12 @@ namespace market
                 var islemNoArtir = db.Islem.First();
                 islemNoArtir.dIslemNo += 1;
                 db.SaveChanges();
-                MessageBox.Show("yazdırma işlemi yap");
+                if (chYazdirmaDurumu.Checked)
+                {
+                    //yazdır
+                    Yazdir yazdir = new Yazdir(islemno);
+                    yazdir.YazdirBasla();
+                }
                 Temizle();
             }
         }

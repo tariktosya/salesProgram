@@ -227,6 +227,7 @@
     <Compile Include="UrunGrup.Designer.cs">
       <DependentUpon>UrunGrup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Yazdir.cs" />
     <EmbeddedResource Include="DetayGoster.resx">
       <DependentUpon>DetayGoster.cs</DependentUpon>
     </EmbeddedResource>
