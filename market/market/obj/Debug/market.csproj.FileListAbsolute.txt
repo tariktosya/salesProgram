@@ -127,3 +127,5 @@ C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\mark
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\bin\Debug\rpStokUrun.rdlc
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\bin\Debug\rpStokIzleme.rdlc
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fBaslangic.resources
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fFiyatGuncelle.resources
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fAyarlar.resources

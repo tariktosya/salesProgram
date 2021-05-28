@@ -100,6 +100,12 @@
     <EntitySetMapping Name="Sabitlerim">
       <EntityTypeMapping TypeName="MarketSatisModel.Sabitlerim">
         <MappingFragment StoreEntitySet="Sabitlerim">
+          <ScalarProperty Name="dEposta" ColumnName="dEposta" />
+          <ScalarProperty Name="dTelefon" ColumnName="dTelefon" />
+          <ScalarProperty Name="dAdres" ColumnName="dAdres" />
+          <ScalarProperty Name="dUnvan" ColumnName="dUnvan" />
+          <ScalarProperty Name="dAdSoyad" ColumnName="dAdSoyad" />
+          <ScalarProperty Name="dYazici" ColumnName="dYazici" />
           <ScalarProperty Name="dKartKomisyonum" ColumnName="dKartKomisyonum" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
@@ -119,6 +125,25 @@
           <ScalarProperty Name="dOdemeSekli" ColumnName="dOdemeSekli" />
           <ScalarProperty Name="dIade" ColumnName="dIade" />
           <ScalarProperty Name="dIslemNo" ColumnName="dIslemNo" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Kullanici">
+      <EntityTypeMapping TypeName="MarketSatisModel.Kullanici">
+        <MappingFragment StoreEntitySet="Kullanici">
+          <ScalarProperty Name="dYedekleme" ColumnName="dYedekleme" />
+          <ScalarProperty Name="dFiyatGuncelle" ColumnName="dFiyatGuncelle" />
+          <ScalarProperty Name="dAyarlar" ColumnName="dAyarlar" />
+          <ScalarProperty Name="dUrunGiris" ColumnName="dUrunGiris" />
+          <ScalarProperty Name="dStok" ColumnName="dStok" />
+          <ScalarProperty Name="dRapor" ColumnName="dRapor" />
+          <ScalarProperty Name="dSatis" ColumnName="dSatis" />
+          <ScalarProperty Name="dSifre" ColumnName="dSifre" />
+          <ScalarProperty Name="dKullaniciAd" ColumnName="dKullaniciAd" />
+          <ScalarProperty Name="dEposta" ColumnName="dEposta" />
+          <ScalarProperty Name="dTelefon" ColumnName="dTelefon" />
+          <ScalarProperty Name="dAdSoyad" ColumnName="dAdSoyad" />
           <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>

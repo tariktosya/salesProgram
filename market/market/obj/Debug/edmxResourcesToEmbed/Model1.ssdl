@@ -40,12 +40,36 @@
     <Property Name="dTarih" Type="datetime" />
     <Property Name="dKullanici" Type="nvarchar" MaxLength="50" />
   </EntityType>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dAdSoyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="dTelefon" Type="nvarchar" MaxLength="50" />
+    <Property Name="dEposta" Type="nvarchar" MaxLength="50" />
+    <Property Name="dKullaniciAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="dSifre" Type="nvarchar" MaxLength="50" />
+    <Property Name="dSatis" Type="bit" />
+    <Property Name="dRapor" Type="bit" />
+    <Property Name="dStok" Type="bit" />
+    <Property Name="dUrunGiris" Type="bit" />
+    <Property Name="dAyarlar" Type="bit" />
+    <Property Name="dFiyatGuncelle" Type="bit" />
+    <Property Name="dYedekleme" Type="bit" />
+  </EntityType>
   <EntityType Name="Sabitlerim">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="dKartKomisyonum" Type="int" />
+    <Property Name="dYazici" Type="bit" />
+    <Property Name="dAdSoyad" Type="nvarchar" MaxLength="100" />
+    <Property Name="dUnvan" Type="nvarchar" MaxLength="100" />
+    <Property Name="dAdres" Type="nvarchar" MaxLength="500" />
+    <Property Name="dTelefon" Type="nvarchar" MaxLength="50" />
+    <Property Name="dEposta" Type="nvarchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Satislar">
     <Key>
@@ -117,6 +141,7 @@
     <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Islem" EntityType="Self.Islem" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Kullanici" EntityType="Self.Kullanici" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Sabitlerim" EntityType="Self.Sabitlerim" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Satislar" EntityType="Self.Satislar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="StokHareket" EntityType="Self.StokHareket" Schema="dbo" store:Type="Tables" />

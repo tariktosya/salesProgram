@@ -104,11 +104,23 @@
     <Compile Include="DetayGoster.Designer.cs">
       <DependentUpon>DetayGoster.cs</DependentUpon>
     </Compile>
+    <Compile Include="fAyarlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fAyarlar.Designer.cs">
+      <DependentUpon>fAyarlar.cs</DependentUpon>
+    </Compile>
     <Compile Include="fBaslangic.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fBaslangic.Designer.cs">
       <DependentUpon>fBaslangic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fFiyatGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fFiyatGuncelle.Designer.cs">
+      <DependentUpon>fFiyatGuncelle.cs</DependentUpon>
     </Compile>
     <Compile Include="fRaporGoster.cs">
       <SubType>Form</SubType>
@@ -136,6 +148,9 @@
     </Compile>
     <Compile Include="islemler.cs" />
     <Compile Include="IslemOzet.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
@@ -215,8 +230,14 @@
     <EmbeddedResource Include="DetayGoster.resx">
       <DependentUpon>DetayGoster.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fAyarlar.resx">
+      <DependentUpon>fAyarlar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fBaslangic.resx">
       <DependentUpon>fBaslangic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fFiyatGuncelle.resx">
+      <DependentUpon>fFiyatGuncelle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="fRaporGoster.resx">
       <DependentUpon>fRaporGoster.cs</DependentUpon>

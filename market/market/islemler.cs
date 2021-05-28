@@ -45,6 +45,18 @@ namespace market
                 {
                     switch (dgv.Columns[i].HeaderText)
                     {
+                        case "dAdSoyad":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "Ad Soyad"; break;
+                        case "dTelefon":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "Telefon"; break;
+                        case "dEposta":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "E-Posta"; break;
+                        case "dKullaniciAd":
+                            dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                            dgv.Columns[i].HeaderText = "Kullanıcı Adı"; break;
                         case "dIade":
                             dgv.Columns[i].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                             dgv.Columns[i].HeaderText = "İade"; break;
@@ -156,6 +168,26 @@ namespace market
                 }
             }
             return sonuc;
+        }
+
+        public static void SabitVarsayilan()
+        {
+            using (var db = new MarketSatisEntities())
+            {
+                if (!db.Sabitlerim.Any())
+                {
+                    Sabitlerim s = new Sabitlerim();
+                    s.dKartKomisyonum = 0;
+                    s.dYazici = false;
+                    s.dAdres = "admin";
+                    s.dUnvan = "admin";
+                    s.dAdres = "admin";
+                    s.dTelefon = "admin";
+                    s.dEposta = "admin";
+                    db.Sabitlerim.Add(s);
+                    db.SaveChanges();
+                }
+            }
         }
     }
 }

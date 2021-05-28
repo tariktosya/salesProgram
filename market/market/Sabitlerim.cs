@@ -16,5 +16,11 @@ namespace market
     {
         public int Id { get; set; }
         public Nullable<int> dKartKomisyonum { get; set; }
+        public Nullable<bool> dYazici { get; set; }
+        public string dAdSoyad { get; set; }
+        public string dUnvan { get; set; }
+        public string dAdres { get; set; }
+        public string dTelefon { get; set; }
+        public string dEposta { get; set; }
     }
 }

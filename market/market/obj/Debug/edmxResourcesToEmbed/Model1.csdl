@@ -29,6 +29,7 @@
     <EntitySet Name="StokHareket" EntityType="MarketSatisModel.StokHareket" />
     <EntitySet Name="Sabitlerim" EntityType="MarketSatisModel.Sabitlerim" />
     <EntitySet Name="IslemOzet" EntityType="MarketSatisModel.IslemOzet" />
+    <EntitySet Name="Kullanici" EntityType="MarketSatisModel.Kullanici" />
   </EntityContainer>
   <EntityType Name="Terazi">
     <Key>
@@ -106,6 +107,12 @@
     </Key>
     <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="dKartKomisyonum" Type="Int32" />
+    <Property Name="dYazici" Type="Boolean" />
+    <Property Name="dAdSoyad" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dUnvan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="dAdres" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="dTelefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dEposta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
   <EntityType Name="IslemOzet">
     <Key>
@@ -123,5 +130,23 @@
     <Property Name="dAciklama" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
     <Property Name="dTarih" Type="DateTime" Precision="3" />
     <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Kullanici">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dAdSoyad" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dTelefon" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dEposta" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dKullaniciAd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dSifre" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="dSatis" Type="Boolean" />
+    <Property Name="dRapor" Type="Boolean" />
+    <Property Name="dStok" Type="Boolean" />
+    <Property Name="dUrunGiris" Type="Boolean" />
+    <Property Name="dAyarlar" Type="Boolean" />
+    <Property Name="dFiyatGuncelle" Type="Boolean" />
+    <Property Name="dYedekleme" Type="Boolean" />
   </EntityType>
 </Schema>
