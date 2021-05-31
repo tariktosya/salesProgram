@@ -36,5 +36,6 @@ namespace market
         public virtual DbSet<Sabitlerim> Sabitlerim { get; set; }
         public virtual DbSet<IslemOzet> IslemOzet { get; set; }
         public virtual DbSet<Kullanici> Kullanici { get; set; }
+        public virtual DbSet<Veresiye> Veresiye { get; set; }
     }
 }

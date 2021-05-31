@@ -136,6 +136,15 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="dUrunGrupAd" Type="nvarchar" MaxLength="80" />
   </EntityType>
+  <EntityType Name="Veresiye">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="dAdSoyad" Type="nchar" MaxLength="100" />
+    <Property Name="dTelefon" Type="nchar" MaxLength="50" />
+    <Property Name="dMiktar" Type="float" />
+  </EntityType>
   <EntityContainer Name="MarketSatisModelStoreContainer">
     <EntitySet Name="Barkod" EntityType="Self.Barkod" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" Schema="dbo" store:Type="Tables" />
@@ -148,5 +157,6 @@
     <EntitySet Name="Terazi" EntityType="Self.Terazi" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Urun" EntityType="Self.Urun" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="UrunGrubu" EntityType="Self.UrunGrubu" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Veresiye" EntityType="Self.Veresiye" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

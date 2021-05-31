@@ -30,6 +30,7 @@
     <EntitySet Name="Sabitlerim" EntityType="MarketSatisModel.Sabitlerim" />
     <EntitySet Name="IslemOzet" EntityType="MarketSatisModel.IslemOzet" />
     <EntitySet Name="Kullanici" EntityType="MarketSatisModel.Kullanici" />
+    <EntitySet Name="Veresiye" EntityType="MarketSatisModel.Veresiye" />
   </EntityContainer>
   <EntityType Name="Terazi">
     <Key>
@@ -148,5 +149,14 @@
     <Property Name="dAyarlar" Type="Boolean" />
     <Property Name="dFiyatGuncelle" Type="Boolean" />
     <Property Name="dYedekleme" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Veresiye">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="dAdSoyad" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+    <Property Name="dTelefon" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="dMiktar" Type="Double" />
   </EntityType>
 </Schema>

@@ -63,6 +63,7 @@ namespace market
             this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lStandart16 = new market.lStandart();
             this.lStandart10 = new market.lStandart();
             this.panel3 = new System.Windows.Forms.Panel();
             this.bTeraziOnekSil = new System.Windows.Forms.Button();
@@ -77,6 +78,7 @@ namespace market
             this.panel1 = new System.Windows.Forms.Panel();
             this.chYazmaDurumu = new System.Windows.Forms.CheckBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lStandart15 = new market.lStandart();
             this.bIsyeriKaydet = new market.bStandart();
             this.tIsyeriTelefon = new System.Windows.Forms.MaskedTextBox();
             this.tIsyeriAdres = new market.tStandart();
@@ -88,8 +90,9 @@ namespace market
             this.lStandart11 = new market.lStandart();
             this.tIsyeriAdSoyad = new market.tStandart();
             this.lStandart14 = new market.lStandart();
-            this.lStandart15 = new market.lStandart();
-            this.lStandart16 = new market.lStandart();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.lStandart17 = new market.lStandart();
+            this.bYedektenYukle = new market.bStandart();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -103,6 +106,7 @@ namespace market
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage4.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -110,6 +114,7 @@ namespace market
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
             this.tabControl1.Name = "tabControl1";
@@ -515,6 +520,17 @@ namespace market
             this.tabPage2.Text = "KOMİSYON-YAZICI-TERAZİ";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // lStandart16
+            // 
+            this.lStandart16.AutoSize = true;
+            this.lStandart16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lStandart16.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart16.Location = new System.Drawing.Point(239, 16);
+            this.lStandart16.Name = "lStandart16";
+            this.lStandart16.Size = new System.Drawing.Size(410, 29);
+            this.lStandart16.TabIndex = 4;
+            this.lStandart16.Text = "Yazıcı - Komisyon - Terazi İşlemleri";
+            // 
             // lStandart10
             // 
             this.lStandart10.AutoSize = true;
@@ -683,6 +699,17 @@ namespace market
             this.tabPage3.Text = "İŞYERİ BİLGİLERİ";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // lStandart15
+            // 
+            this.lStandart15.AutoSize = true;
+            this.lStandart15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lStandart15.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart15.Location = new System.Drawing.Point(39, 24);
+            this.lStandart15.Name = "lStandart15";
+            this.lStandart15.Size = new System.Drawing.Size(265, 29);
+            this.lStandart15.TabIndex = 15;
+            this.lStandart15.Text = "İşyeri Bilgi Düzenleme";
+            // 
             // bIsyeriKaydet
             // 
             this.bIsyeriKaydet.BackColor = System.Drawing.SystemColors.WindowFrame;
@@ -804,27 +831,48 @@ namespace market
             this.lStandart14.TabIndex = 8;
             this.lStandart14.Text = "Ad-Soyad";
             // 
-            // lStandart15
+            // tabPage4
             // 
-            this.lStandart15.AutoSize = true;
-            this.lStandart15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lStandart15.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart15.Location = new System.Drawing.Point(39, 24);
-            this.lStandart15.Name = "lStandart15";
-            this.lStandart15.Size = new System.Drawing.Size(265, 29);
-            this.lStandart15.TabIndex = 15;
-            this.lStandart15.Text = "İşyeri Bilgi Düzenleme";
+            this.tabPage4.Controls.Add(this.lStandart17);
+            this.tabPage4.Controls.Add(this.bYedektenYukle);
+            this.tabPage4.Location = new System.Drawing.Point(4, 25);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1552, 765);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "YEDEĞİ YÜKLE";
+            this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // lStandart16
+            // lStandart17
             // 
-            this.lStandart16.AutoSize = true;
-            this.lStandart16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lStandart16.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart16.Location = new System.Drawing.Point(239, 16);
-            this.lStandart16.Name = "lStandart16";
-            this.lStandart16.Size = new System.Drawing.Size(410, 29);
-            this.lStandart16.TabIndex = 4;
-            this.lStandart16.Text = "Yazıcı - Komisyon - Terazi İşlemleri";
+            this.lStandart17.AutoSize = true;
+            this.lStandart17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart17.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart17.Location = new System.Drawing.Point(53, 55);
+            this.lStandart17.Name = "lStandart17";
+            this.lStandart17.Size = new System.Drawing.Size(488, 75);
+            this.lStandart17.TabIndex = 15;
+            this.lStandart17.Text = "Önceden aldığınız yedeği belirleyiniz, butona tıklayarak \r\nyedeğinizi tekrar yükl" +
+    "eyiniz. Bu işlemi yalnızca gerekli \r\ndurumarda yapınız.";
+            // 
+            // bYedektenYukle
+            // 
+            this.bYedektenYukle.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.bYedektenYukle.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bYedektenYukle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bYedektenYukle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.bYedektenYukle.ForeColor = System.Drawing.Color.White;
+            this.bYedektenYukle.Image = global::market.Properties.Resources.backup;
+            this.bYedektenYukle.Location = new System.Drawing.Point(155, 150);
+            this.bYedektenYukle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bYedektenYukle.Name = "bYedektenYukle";
+            this.bYedektenYukle.Size = new System.Drawing.Size(237, 147);
+            this.bYedektenYukle.TabIndex = 14;
+            this.bYedektenYukle.Text = "YEDEKTEN YÜKLE";
+            this.bYedektenYukle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bYedektenYukle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bYedektenYukle.UseVisualStyleBackColor = false;
+            this.bYedektenYukle.Click += new System.EventHandler(this.bYedektenYukle_Click);
             // 
             // fAyarlar
             // 
@@ -856,6 +904,8 @@ namespace market
             this.panel1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -921,5 +971,8 @@ namespace market
         private bStandart bIsyeriKaydet;
         private lStandart lStandart15;
         private lStandart lStandart16;
+        private System.Windows.Forms.TabPage tabPage4;
+        private bStandart bYedektenYukle;
+        private lStandart lStandart17;
     }
 }

@@ -30,7 +30,7 @@ namespace market
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.bRaporAl = new market.bStandart();
             this.lStandart21 = new market.lStandart();
@@ -54,6 +54,8 @@ namespace market
             this.tGelirNakit = new market.tNumeric();
             this.tIadeNakit = new market.tNumeric();
             this.lStandart15 = new market.lStandart();
+            this.tSatisToplam = new market.tNumeric();
+            this.tToplamAlisFiyat = new market.tNumeric();
             this.tSatisNakit = new market.tNumeric();
             this.lStandart14 = new market.lStandart();
             this.lStandart12 = new market.lStandart();
@@ -63,6 +65,7 @@ namespace market
             this.lStandart8 = new market.lStandart();
             this.lStandart10 = new market.lStandart();
             this.lStandart17 = new market.lStandart();
+            this.lStandart24 = new market.lStandart();
             this.lStandart6 = new market.lStandart();
             this.lStandart16 = new market.lStandart();
             this.lStandart7 = new market.lStandart();
@@ -79,6 +82,7 @@ namespace market
             this.gridListe = new market.gridGrid();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.detayGösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lStandart22 = new market.lStandart();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -120,6 +124,8 @@ namespace market
             this.splitContainer1.Panel1.Controls.Add(this.tGelirNakit);
             this.splitContainer1.Panel1.Controls.Add(this.tIadeNakit);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart15);
+            this.splitContainer1.Panel1.Controls.Add(this.tSatisToplam);
+            this.splitContainer1.Panel1.Controls.Add(this.tToplamAlisFiyat);
             this.splitContainer1.Panel1.Controls.Add(this.tSatisNakit);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart14);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart12);
@@ -129,9 +135,11 @@ namespace market
             this.splitContainer1.Panel1.Controls.Add(this.lStandart8);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart10);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart17);
+            this.splitContainer1.Panel1.Controls.Add(this.lStandart24);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart6);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart16);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart7);
+            this.splitContainer1.Panel1.Controls.Add(this.lStandart22);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart3);
             this.splitContainer1.Panel1.Controls.Add(this.lStandart2);
             this.splitContainer1.Panel1.Controls.Add(this.bGoster);
@@ -170,7 +178,7 @@ namespace market
             this.lStandart21.AutoSize = true;
             this.lStandart21.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart21.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart21.Location = new System.Drawing.Point(1682, 197);
+            this.lStandart21.Location = new System.Drawing.Point(1647, 197);
             this.lStandart21.Name = "lStandart21";
             this.lStandart21.Size = new System.Drawing.Size(72, 25);
             this.lStandart21.TabIndex = 20;
@@ -181,7 +189,7 @@ namespace market
             this.tManav.BackColor = System.Drawing.Color.White;
             this.tManav.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tManav.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tManav.Location = new System.Drawing.Point(1760, 203);
+            this.tManav.Location = new System.Drawing.Point(1725, 203);
             this.tManav.Name = "tManav";
             this.tManav.Size = new System.Drawing.Size(115, 19);
             this.tManav.TabIndex = 19;
@@ -192,7 +200,7 @@ namespace market
             this.lStandart20.AutoSize = true;
             this.lStandart20.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart20.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart20.Location = new System.Drawing.Point(1651, 155);
+            this.lStandart20.Location = new System.Drawing.Point(1616, 155);
             this.lStandart20.Name = "lStandart20";
             this.lStandart20.Size = new System.Drawing.Size(105, 25);
             this.lStandart20.TabIndex = 18;
@@ -203,7 +211,7 @@ namespace market
             this.tDigerurun.BackColor = System.Drawing.Color.White;
             this.tDigerurun.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tDigerurun.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tDigerurun.Location = new System.Drawing.Point(1760, 161);
+            this.tDigerurun.Location = new System.Drawing.Point(1725, 161);
             this.tDigerurun.Name = "tDigerurun";
             this.tDigerurun.Size = new System.Drawing.Size(115, 19);
             this.tDigerurun.TabIndex = 17;
@@ -214,7 +222,7 @@ namespace market
             this.lStandart19.AutoSize = true;
             this.lStandart19.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart19.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart19.Location = new System.Drawing.Point(1651, 114);
+            this.lStandart19.Location = new System.Drawing.Point(1616, 114);
             this.lStandart19.Name = "lStandart19";
             this.lStandart19.Size = new System.Drawing.Size(103, 25);
             this.lStandart19.TabIndex = 16;
@@ -225,7 +233,7 @@ namespace market
             this.tDondurma.BackColor = System.Drawing.Color.White;
             this.tDondurma.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tDondurma.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tDondurma.Location = new System.Drawing.Point(1760, 120);
+            this.tDondurma.Location = new System.Drawing.Point(1725, 120);
             this.tDondurma.Name = "tDondurma";
             this.tDondurma.Size = new System.Drawing.Size(115, 19);
             this.tDondurma.TabIndex = 15;
@@ -236,7 +244,7 @@ namespace market
             this.tCigkofte.BackColor = System.Drawing.Color.White;
             this.tCigkofte.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tCigkofte.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tCigkofte.Location = new System.Drawing.Point(1760, 82);
+            this.tCigkofte.Location = new System.Drawing.Point(1725, 82);
             this.tCigkofte.Name = "tCigkofte";
             this.tCigkofte.Size = new System.Drawing.Size(115, 19);
             this.tCigkofte.TabIndex = 14;
@@ -247,7 +255,7 @@ namespace market
             this.lStandart18.AutoSize = true;
             this.lStandart18.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart18.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart18.Location = new System.Drawing.Point(1670, 76);
+            this.lStandart18.Location = new System.Drawing.Point(1635, 76);
             this.lStandart18.Name = "lStandart18";
             this.lStandart18.Size = new System.Drawing.Size(84, 25);
             this.lStandart18.TabIndex = 13;
@@ -327,7 +335,7 @@ namespace market
             this.tKartKomisyon.BackColor = System.Drawing.Color.White;
             this.tKartKomisyon.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tKartKomisyon.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tKartKomisyon.Location = new System.Drawing.Point(1099, 258);
+            this.tKartKomisyon.Location = new System.Drawing.Point(1107, 220);
             this.tKartKomisyon.Name = "tKartKomisyon";
             this.tKartKomisyon.Size = new System.Drawing.Size(115, 19);
             this.tKartKomisyon.TabIndex = 10;
@@ -338,7 +346,7 @@ namespace market
             this.tKdvToplam.BackColor = System.Drawing.Color.White;
             this.tKdvToplam.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tKdvToplam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tKdvToplam.Location = new System.Drawing.Point(886, 258);
+            this.tKdvToplam.Location = new System.Drawing.Point(1107, 256);
             this.tKdvToplam.Name = "tKdvToplam";
             this.tKdvToplam.Size = new System.Drawing.Size(115, 19);
             this.tKdvToplam.TabIndex = 10;
@@ -349,7 +357,7 @@ namespace market
             this.tSatisKart.BackColor = System.Drawing.Color.White;
             this.tSatisKart.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tSatisKart.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tSatisKart.Location = new System.Drawing.Point(886, 118);
+            this.tSatisKart.Location = new System.Drawing.Point(890, 118);
             this.tSatisKart.Name = "tSatisKart";
             this.tSatisKart.Size = new System.Drawing.Size(115, 19);
             this.tSatisKart.TabIndex = 10;
@@ -399,12 +407,34 @@ namespace market
             this.lStandart15.TabIndex = 8;
             this.lStandart15.Text = "Gider";
             // 
+            // tSatisToplam
+            // 
+            this.tSatisToplam.BackColor = System.Drawing.Color.White;
+            this.tSatisToplam.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tSatisToplam.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tSatisToplam.Location = new System.Drawing.Point(890, 155);
+            this.tSatisToplam.Name = "tSatisToplam";
+            this.tSatisToplam.Size = new System.Drawing.Size(115, 19);
+            this.tSatisToplam.TabIndex = 9;
+            this.tSatisToplam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // tToplamAlisFiyat
+            // 
+            this.tToplamAlisFiyat.BackColor = System.Drawing.Color.White;
+            this.tToplamAlisFiyat.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tToplamAlisFiyat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tToplamAlisFiyat.Location = new System.Drawing.Point(809, 234);
+            this.tToplamAlisFiyat.Name = "tToplamAlisFiyat";
+            this.tToplamAlisFiyat.Size = new System.Drawing.Size(115, 19);
+            this.tToplamAlisFiyat.TabIndex = 9;
+            this.tToplamAlisFiyat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // tSatisNakit
             // 
             this.tSatisNakit.BackColor = System.Drawing.Color.White;
             this.tSatisNakit.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tSatisNakit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.tSatisNakit.Location = new System.Drawing.Point(886, 80);
+            this.tSatisNakit.Location = new System.Drawing.Point(890, 80);
             this.tSatisNakit.Name = "tSatisNakit";
             this.tSatisNakit.Size = new System.Drawing.Size(115, 19);
             this.tSatisNakit.TabIndex = 9;
@@ -492,18 +522,29 @@ namespace market
             this.lStandart17.AutoSize = true;
             this.lStandart17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart17.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.lStandart17.Location = new System.Drawing.Point(1082, 220);
+            this.lStandart17.Location = new System.Drawing.Point(961, 218);
             this.lStandart17.Name = "lStandart17";
             this.lStandart17.Size = new System.Drawing.Size(140, 25);
             this.lStandart17.TabIndex = 7;
             this.lStandart17.Text = "Kart Komisyon";
+            // 
+            // lStandart24
+            // 
+            this.lStandart24.AutoSize = true;
+            this.lStandart24.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart24.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            this.lStandart24.Location = new System.Drawing.Point(645, 206);
+            this.lStandart24.Name = "lStandart24";
+            this.lStandart24.Size = new System.Drawing.Size(182, 75);
+            this.lStandart24.TabIndex = 8;
+            this.lStandart24.Text = "Satılan ürünlerin \r\ntoplam alış fiyatı\r\n(Yalnızca Barkodlu)";
             // 
             // lStandart6
             // 
             this.lStandart6.AutoSize = true;
             this.lStandart6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart6.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.lStandart6.Location = new System.Drawing.Point(881, 36);
+            this.lStandart6.Location = new System.Drawing.Point(885, 36);
             this.lStandart6.Name = "lStandart6";
             this.lStandart6.Size = new System.Drawing.Size(127, 25);
             this.lStandart6.TabIndex = 8;
@@ -514,7 +555,7 @@ namespace market
             this.lStandart16.AutoSize = true;
             this.lStandart16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart16.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            this.lStandart16.Location = new System.Drawing.Point(881, 220);
+            this.lStandart16.Location = new System.Drawing.Point(976, 252);
             this.lStandart16.Name = "lStandart16";
             this.lStandart16.Size = new System.Drawing.Size(125, 25);
             this.lStandart16.TabIndex = 7;
@@ -536,7 +577,7 @@ namespace market
             this.lStandart3.AutoSize = true;
             this.lStandart3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart3.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart3.Location = new System.Drawing.Point(832, 116);
+            this.lStandart3.Location = new System.Drawing.Point(836, 116);
             this.lStandart3.Name = "lStandart3";
             this.lStandart3.Size = new System.Drawing.Size(48, 25);
             this.lStandart3.TabIndex = 7;
@@ -547,7 +588,7 @@ namespace market
             this.lStandart2.AutoSize = true;
             this.lStandart2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.lStandart2.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart2.Location = new System.Drawing.Point(824, 78);
+            this.lStandart2.Location = new System.Drawing.Point(828, 78);
             this.lStandart2.Name = "lStandart2";
             this.lStandart2.Size = new System.Drawing.Size(56, 25);
             this.lStandart2.TabIndex = 6;
@@ -659,17 +700,17 @@ namespace market
             this.gridListe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridListe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridListe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.gridListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridListe.ContextMenuStrip = this.contextMenuStrip1;
-            this.gridListe.DefaultCellStyle = dataGridViewCellStyle1;
+            this.gridListe.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridListe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridListe.EnableHeadersVisualStyles = false;
             this.gridListe.Location = new System.Drawing.Point(0, 0);
@@ -701,6 +742,17 @@ namespace market
             this.detayGösterToolStripMenuItem.Size = new System.Drawing.Size(164, 24);
             this.detayGösterToolStripMenuItem.Text = "Detay Göster";
             this.detayGösterToolStripMenuItem.Click += new System.EventHandler(this.detayGösterToolStripMenuItem_Click);
+            // 
+            // lStandart22
+            // 
+            this.lStandart22.AutoSize = true;
+            this.lStandart22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart22.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart22.Location = new System.Drawing.Point(806, 151);
+            this.lStandart22.Name = "lStandart22";
+            this.lStandart22.Size = new System.Drawing.Size(78, 25);
+            this.lStandart22.TabIndex = 7;
+            this.lStandart22.Text = "Toplam";
             // 
             // Rapor
             // 
@@ -775,5 +827,9 @@ namespace market
         private tNumeric tDigerurun;
         private bStandart bRaporAl;
         internal lStandart lKullanici;
+        private tNumeric tToplamAlisFiyat;
+        private lStandart lStandart24;
+        private tNumeric tSatisToplam;
+        private lStandart lStandart22;
     }
 }

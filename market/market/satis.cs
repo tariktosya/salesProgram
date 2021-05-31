@@ -23,7 +23,7 @@ namespace market
             if (e.KeyCode == Keys.Enter)
             {
                 string barkod = BarkodText.Text.Trim();
-                if (barkod.Length<=1) {
+                if (barkod.Length<=2) {
                     MiktarText.Text = barkod;
                     BarkodText.Focus();
                 }
@@ -404,7 +404,7 @@ namespace market
 
                     alisfiyattoplam += islemler.DoubleYap(gridSatisListesi.Rows[i].Cells["AlisFiyat"].Value.ToString()) * islemler.DoubleYap(gridSatisListesi.Rows[i].Cells["miktar"].Value.ToString());
                     //STOK İŞLEMLERİ
-                    if (satis.dBarkod.Length != 1)
+                    if (satis.dUrunAd!="Çiğköfte" && satis.dUrunAd != "çiğköfte" && satis.dUrunAd != "Cigkofte" && satis.dUrunAd != "Dondurma" && satis.dUrunAd != "dondurma")
                     {
                         if (satisiade)
                         {
@@ -574,6 +574,14 @@ namespace market
             }
             
         }
+
+        private void bVeresiye_Click(object sender, EventArgs e)
+        {
+            fVeresiye f = new fVeresiye();
+            f.Show();
+        }
+
+        
     }
 }
 

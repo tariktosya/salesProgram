@@ -148,5 +148,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Veresiye">
+      <EntityTypeMapping TypeName="MarketSatisModel.Veresiye">
+        <MappingFragment StoreEntitySet="Veresiye">
+          <ScalarProperty Name="dMiktar" ColumnName="dMiktar" />
+          <ScalarProperty Name="dTelefon" ColumnName="dTelefon" />
+          <ScalarProperty Name="dAdSoyad" ColumnName="dAdSoyad" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

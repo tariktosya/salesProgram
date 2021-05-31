@@ -52,7 +52,8 @@ namespace market
                     tGiderNakit.Text = Convert.ToDouble(islemozet.Where(x => x.dGider == true).Sum(x => x.dNakit)).ToString("C2");
                     tGiderKart.Text = Convert.ToDouble(islemozet.Where(x => x.dGider == true).Sum(x => x.dKart)).ToString("C2");
 
-         
+                    tToplamAlisFiyat.Text = Convert.ToDouble(db.Satislar.Where(x => x.dTarih >= baslangic && x.dTarih <= bitis && x.dIade == false).Sum(x => x.dAlisFiyat)).ToString("C2");
+                    tSatisToplam.Text = (islemler.DoubleYap(tSatisKart.Text) + islemler.DoubleYap(tSatisNakit.Text)).ToString("C2");
 
                     db.Satislar.Where(x => x.dTarih >= baslangic && x.dTarih <= bitis).Load();
                     var satistablosu = db.Satislar.Local.ToBindingList();
@@ -85,6 +86,7 @@ namespace market
                     var islemozet = db.IslemOzet.Local.ToBindingList();
                     gridListe.DataSource = islemozet;
                 }
+                
             }
             islemler.GridDuzenle(gridListe);
             Cursor.Current = Cursors.Default;
@@ -158,5 +160,7 @@ namespace market
             Raporlar.Dondurma = tDondurma.Text;
             Raporlar.RaporSayfasiRaporu(gridListe);
         }
+
+       
     }
 }

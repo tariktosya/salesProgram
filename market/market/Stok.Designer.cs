@@ -29,8 +29,9 @@ namespace market
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.lKullanici = new System.Windows.Forms.Label();
             this.bAra = new market.bStandart();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dateBitis = new System.Windows.Forms.DateTimePicker();
@@ -51,7 +52,6 @@ namespace market
             this.tUrunAra = new market.tStandart();
             this.lStandart6 = new market.lStandart();
             this.gridListe = new market.gridGrid();
-            this.lKullanici = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -90,6 +90,16 @@ namespace market
             this.splitContainer1.Size = new System.Drawing.Size(1308, 676);
             this.splitContainer1.SplitterDistance = 329;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // lKullanici
+            // 
+            this.lKullanici.AutoSize = true;
+            this.lKullanici.Location = new System.Drawing.Point(74, 25);
+            this.lKullanici.Name = "lKullanici";
+            this.lKullanici.Size = new System.Drawing.Size(46, 17);
+            this.lKullanici.TabIndex = 5;
+            this.lKullanici.Text = "label1";
+            this.lKullanici.Visible = false;
             // 
             // bAra
             // 
@@ -330,16 +340,16 @@ namespace market
             this.gridListe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridListe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridListe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridListe.DefaultCellStyle = dataGridViewCellStyle2;
+            this.gridListe.DefaultCellStyle = dataGridViewCellStyle1;
             this.gridListe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridListe.EnableHeadersVisualStyles = false;
             this.gridListe.Location = new System.Drawing.Point(0, 0);
@@ -355,16 +365,6 @@ namespace market
             this.gridListe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.gridListe.Size = new System.Drawing.Size(975, 596);
             this.gridListe.TabIndex = 0;
-            // 
-            // lKullanici
-            // 
-            this.lKullanici.AutoSize = true;
-            this.lKullanici.Location = new System.Drawing.Point(74, 25);
-            this.lKullanici.Name = "lKullanici";
-            this.lKullanici.Size = new System.Drawing.Size(46, 17);
-            this.lKullanici.TabIndex = 5;
-            this.lKullanici.Text = "label1";
-            this.lKullanici.Visible = false;
             // 
             // Stok
             // 

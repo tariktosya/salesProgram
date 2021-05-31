@@ -119,6 +119,7 @@ namespace market
             this.bYedekleme.Text = "YEDEKLEME";
             this.bYedekleme.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.bYedekleme.UseVisualStyleBackColor = false;
+            this.bYedekleme.Click += new System.EventHandler(this.bYedekleme_Click);
             // 
             // bFiyatGuncelle
             // 

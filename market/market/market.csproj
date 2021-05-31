@@ -122,11 +122,23 @@
     <Compile Include="fFiyatGuncelle.Designer.cs">
       <DependentUpon>fFiyatGuncelle.cs</DependentUpon>
     </Compile>
+    <Compile Include="fLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fLogin.Designer.cs">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="fRaporGoster.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="fRaporGoster.Designer.cs">
       <DependentUpon>fRaporGoster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fVeresiye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fVeresiye.Designer.cs">
+      <DependentUpon>fVeresiye.cs</DependentUpon>
     </Compile>
     <Compile Include="GelirGider.cs">
       <SubType>Form</SubType>
@@ -227,6 +239,9 @@
     <Compile Include="UrunGrup.Designer.cs">
       <DependentUpon>UrunGrup.cs</DependentUpon>
     </Compile>
+    <Compile Include="Veresiye.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Yazdir.cs" />
     <EmbeddedResource Include="DetayGoster.resx">
       <DependentUpon>DetayGoster.cs</DependentUpon>
@@ -240,8 +255,14 @@
     <EmbeddedResource Include="fFiyatGuncelle.resx">
       <DependentUpon>fFiyatGuncelle.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="fLogin.resx">
+      <DependentUpon>fLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="fRaporGoster.resx">
       <DependentUpon>fRaporGoster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fVeresiye.resx">
+      <DependentUpon>fVeresiye.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GelirGider.resx">
       <DependentUpon>GelirGider.cs</DependentUpon>

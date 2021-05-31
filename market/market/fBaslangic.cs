@@ -76,5 +76,10 @@ namespace market
             f.ShowDialog();
             Cursor.Current = Cursors.Default;
         }
+
+        private void bYedekleme_Click(object sender, EventArgs e)
+        {
+            islemler.BackUp();
+        }
     }
 }

@@ -155,9 +155,8 @@ namespace market
             this.lAlisFiyat.ForeColor = System.Drawing.Color.DarkCyan;
             this.lAlisFiyat.Location = new System.Drawing.Point(158, 208);
             this.lAlisFiyat.Name = "lAlisFiyat";
-            this.lAlisFiyat.Size = new System.Drawing.Size(59, 25);
+            this.lAlisFiyat.Size = new System.Drawing.Size(0, 25);
             this.lAlisFiyat.TabIndex = 2;
-            this.lAlisFiyat.Text = "Fiyat";
             this.lAlisFiyat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lStandart2
@@ -178,9 +177,8 @@ namespace market
             this.lFiyat.ForeColor = System.Drawing.Color.DarkCyan;
             this.lFiyat.Location = new System.Drawing.Point(158, 183);
             this.lFiyat.Name = "lFiyat";
-            this.lFiyat.Size = new System.Drawing.Size(59, 25);
+            this.lFiyat.Size = new System.Drawing.Size(0, 25);
             this.lFiyat.TabIndex = 2;
-            this.lFiyat.Text = "Fiyat";
             this.lFiyat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lUrunAdi
@@ -190,9 +188,8 @@ namespace market
             this.lUrunAdi.ForeColor = System.Drawing.Color.DarkCyan;
             this.lUrunAdi.Location = new System.Drawing.Point(158, 158);
             this.lUrunAdi.Name = "lUrunAdi";
-            this.lUrunAdi.Size = new System.Drawing.Size(88, 25);
+            this.lUrunAdi.Size = new System.Drawing.Size(0, 25);
             this.lUrunAdi.TabIndex = 2;
-            this.lUrunAdi.Text = "Ürün Adı";
             // 
             // lBarkod
             // 
@@ -201,9 +198,8 @@ namespace market
             this.lBarkod.ForeColor = System.Drawing.Color.DarkCyan;
             this.lBarkod.Location = new System.Drawing.Point(158, 133);
             this.lBarkod.Name = "lBarkod";
-            this.lBarkod.Size = new System.Drawing.Size(90, 25);
+            this.lBarkod.Size = new System.Drawing.Size(0, 25);
             this.lBarkod.TabIndex = 2;
-            this.lBarkod.Text = "lStandart";
             // 
             // lStandart1
             // 

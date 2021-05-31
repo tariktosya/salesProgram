@@ -141,6 +141,15 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="dUrunGrupAd" Type="nvarchar" MaxLength="80" />
         </EntityType>
+        <EntityType Name="Veresiye">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="dAdSoyad" Type="nchar" MaxLength="100" />
+          <Property Name="dTelefon" Type="nchar" MaxLength="50" />
+          <Property Name="dMiktar" Type="float" />
+        </EntityType>
         <EntityContainer Name="MarketSatisModelStoreContainer">
           <EntitySet Name="Barkod" EntityType="Self.Barkod" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" Schema="dbo" store:Type="Tables" />
@@ -153,6 +162,7 @@
           <EntitySet Name="Terazi" EntityType="Self.Terazi" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Urun" EntityType="Self.Urun" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="UrunGrubu" EntityType="Self.UrunGrubu" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Veresiye" EntityType="Self.Veresiye" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema></edmx:StorageModels>
     <!-- CSDL content -->
@@ -188,6 +198,7 @@
           <EntitySet Name="Sabitlerim" EntityType="MarketSatisModel.Sabitlerim" />
           <EntitySet Name="IslemOzet" EntityType="MarketSatisModel.IslemOzet" />
           <EntitySet Name="Kullanici" EntityType="MarketSatisModel.Kullanici" />
+          <EntitySet Name="Veresiye" EntityType="MarketSatisModel.Veresiye" />
         </EntityContainer>
         <EntityType Name="Terazi">
           <Key>
@@ -306,6 +317,15 @@
           <Property Name="dAyarlar" Type="Boolean" />
           <Property Name="dFiyatGuncelle" Type="Boolean" />
           <Property Name="dYedekleme" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="Veresiye">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="dAdSoyad" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
+          <Property Name="dTelefon" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+          <Property Name="dMiktar" Type="Double" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -454,6 +474,16 @@
                 <ScalarProperty Name="dSifre" ColumnName="dSifre" />
                 <ScalarProperty Name="dKullaniciAd" ColumnName="dKullaniciAd" />
                 <ScalarProperty Name="dEposta" ColumnName="dEposta" />
+                <ScalarProperty Name="dTelefon" ColumnName="dTelefon" />
+                <ScalarProperty Name="dAdSoyad" ColumnName="dAdSoyad" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Veresiye">
+            <EntityTypeMapping TypeName="MarketSatisModel.Veresiye">
+              <MappingFragment StoreEntitySet="Veresiye">
+                <ScalarProperty Name="dMiktar" ColumnName="dMiktar" />
                 <ScalarProperty Name="dTelefon" ColumnName="dTelefon" />
                 <ScalarProperty Name="dAdSoyad" ColumnName="dAdSoyad" />
                 <ScalarProperty Name="Id" ColumnName="Id" />

@@ -24,7 +24,6 @@ C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\bin\Debug\Enti
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\bin\Debug\EntityFramework.xml
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.csprojAssemblyReference.cache
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.Properties.Resources.resources
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.satis.resources
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.csproj.GenerateResource.cache
@@ -129,3 +128,6 @@ C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\bin\Debug\rpSt
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fBaslangic.resources
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fFiyatGuncelle.resources
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fAyarlar.resources
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.csproj.AssemblyReference.cache
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fLogin.resources
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fVeresiye.resources

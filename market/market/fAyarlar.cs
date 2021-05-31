@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -311,6 +312,12 @@ namespace market
                     tIsyeriAdres.Text = yeni.dAdres;
                 }
             }
+        }
+
+        private void bYedektenYukle_Click(object sender, EventArgs e)
+        {
+            Process.Start(Application.StartupPath + @"\ProgramRestore.exe");
+            Application.Exit();
         }
     }
 }

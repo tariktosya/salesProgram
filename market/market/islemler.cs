@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -186,6 +188,36 @@ namespace market
                     s.dEposta = "admin";
                     db.Sabitlerim.Add(s);
                     db.SaveChanges();
+                }
+            }
+        }
+        public static void BackUp()
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            save.Filter = "Veri yedek dosyası|0.bak";
+            save.FileName = "Barkodlu_Satis_Programi_" + DateTime.Now.ToShortDateString();
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    Cursor.Current = Cursors.WaitCursor;
+                    if (File.Exists(save.FileName))
+                    {
+                        File.Delete(save.FileName);
+                    }
+                    var dbHedef = save.FileName;
+                    string dbKaynak = Application.StartupPath + @"\MarketSatis.mdf";
+                    using (var db=new MarketSatisEntities())
+                    {
+                        var cmd = @"BACKUP DATABASE[" + dbKaynak + "] TO DISK='" + dbHedef + "'";
+                        db.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction, cmd);
+                    }
+                    Cursor.Current = Cursors.Default;
+                    MessageBox.Show("Yedekleme Tamamlanmıştır.");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.ToString());
                 }
             }
         }
