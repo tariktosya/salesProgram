@@ -29,6 +29,7 @@ namespace market
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fFiyatGuncelle));
             this.bGelirEkle = new System.Windows.Forms.Button();
             this.bAlisFiyat = new System.Windows.Forms.Button();
             this.tAlisFiyat = new market.tNumeric();
@@ -155,8 +156,9 @@ namespace market
             this.lAlisFiyat.ForeColor = System.Drawing.Color.DarkCyan;
             this.lAlisFiyat.Location = new System.Drawing.Point(158, 208);
             this.lAlisFiyat.Name = "lAlisFiyat";
-            this.lAlisFiyat.Size = new System.Drawing.Size(0, 25);
+            this.lAlisFiyat.Size = new System.Drawing.Size(99, 25);
             this.lAlisFiyat.TabIndex = 2;
+            this.lAlisFiyat.Text = "lStandart";
             this.lAlisFiyat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lStandart2
@@ -177,8 +179,9 @@ namespace market
             this.lFiyat.ForeColor = System.Drawing.Color.DarkCyan;
             this.lFiyat.Location = new System.Drawing.Point(158, 183);
             this.lFiyat.Name = "lFiyat";
-            this.lFiyat.Size = new System.Drawing.Size(0, 25);
+            this.lFiyat.Size = new System.Drawing.Size(99, 25);
             this.lFiyat.TabIndex = 2;
+            this.lFiyat.Text = "lStandart";
             this.lFiyat.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lUrunAdi
@@ -188,8 +191,9 @@ namespace market
             this.lUrunAdi.ForeColor = System.Drawing.Color.DarkCyan;
             this.lUrunAdi.Location = new System.Drawing.Point(158, 158);
             this.lUrunAdi.Name = "lUrunAdi";
-            this.lUrunAdi.Size = new System.Drawing.Size(0, 25);
+            this.lUrunAdi.Size = new System.Drawing.Size(90, 25);
             this.lUrunAdi.TabIndex = 2;
+            this.lUrunAdi.Text = "lStandart";
             // 
             // lBarkod
             // 
@@ -198,8 +202,9 @@ namespace market
             this.lBarkod.ForeColor = System.Drawing.Color.DarkCyan;
             this.lBarkod.Location = new System.Drawing.Point(158, 133);
             this.lBarkod.Name = "lBarkod";
-            this.lBarkod.Size = new System.Drawing.Size(0, 25);
+            this.lBarkod.Size = new System.Drawing.Size(90, 25);
             this.lBarkod.TabIndex = 2;
+            this.lBarkod.Text = "lStandart";
             // 
             // lStandart1
             // 
@@ -244,6 +249,7 @@ namespace market
             this.Controls.Add(this.lBarkod);
             this.Controls.Add(this.lStandart1);
             this.Controls.Add(this.tBarkod);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fFiyatGuncelle";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ÜRÜN FİYAT GÜNCELLE";

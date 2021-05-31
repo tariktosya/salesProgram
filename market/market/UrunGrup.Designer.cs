@@ -29,6 +29,7 @@ namespace market
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UrunGrup));
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.tUrunGrupAd = new market.tStandart();
             this.lStandart1 = new market.lStandart();
@@ -115,6 +116,7 @@ namespace market
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.tUrunGrupAd);
             this.Controls.Add(this.lStandart1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UrunGrup";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "UrunGrup";

@@ -27,5 +27,6 @@ namespace market
         public Nullable<double> dMiktar { get; set; }
         public Nullable<System.DateTime> dTarih { get; set; }
         public string dKullanici { get; set; }
+        public Nullable<bool> dOnay { get; set; }
     }
 }

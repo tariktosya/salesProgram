@@ -30,7 +30,8 @@ namespace market
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rapor));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.bRaporAl = new market.bStandart();
             this.lStandart21 = new market.lStandart();
@@ -69,6 +70,7 @@ namespace market
             this.lStandart6 = new market.lStandart();
             this.lStandart16 = new market.lStandart();
             this.lStandart7 = new market.lStandart();
+            this.lStandart22 = new market.lStandart();
             this.lStandart3 = new market.lStandart();
             this.lStandart2 = new market.lStandart();
             this.bGoster = new market.bStandart();
@@ -82,7 +84,6 @@ namespace market
             this.gridListe = new market.gridGrid();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.detayGösterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lStandart22 = new market.lStandart();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -572,6 +573,17 @@ namespace market
             this.lStandart7.TabIndex = 6;
             this.lStandart7.Text = "Nakit";
             // 
+            // lStandart22
+            // 
+            this.lStandart22.AutoSize = true;
+            this.lStandart22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart22.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart22.Location = new System.Drawing.Point(806, 151);
+            this.lStandart22.Name = "lStandart22";
+            this.lStandart22.Size = new System.Drawing.Size(78, 25);
+            this.lStandart22.TabIndex = 7;
+            this.lStandart22.Text = "Toplam";
+            // 
             // lStandart3
             // 
             this.lStandart3.AutoSize = true;
@@ -700,17 +712,17 @@ namespace market
             this.gridListe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.gridListe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.gridListe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridListe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.gridListe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridListe.ContextMenuStrip = this.contextMenuStrip1;
-            this.gridListe.DefaultCellStyle = dataGridViewCellStyle2;
+            this.gridListe.DefaultCellStyle = dataGridViewCellStyle1;
             this.gridListe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridListe.EnableHeadersVisualStyles = false;
             this.gridListe.Location = new System.Drawing.Point(0, 0);
@@ -743,17 +755,6 @@ namespace market
             this.detayGösterToolStripMenuItem.Text = "Detay Göster";
             this.detayGösterToolStripMenuItem.Click += new System.EventHandler(this.detayGösterToolStripMenuItem_Click);
             // 
-            // lStandart22
-            // 
-            this.lStandart22.AutoSize = true;
-            this.lStandart22.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart22.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart22.Location = new System.Drawing.Point(806, 151);
-            this.lStandart22.Name = "lStandart22";
-            this.lStandart22.Size = new System.Drawing.Size(78, 25);
-            this.lStandart22.TabIndex = 7;
-            this.lStandart22.Text = "Toplam";
-            // 
             // Rapor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -761,6 +762,7 @@ namespace market
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(2016, 610);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Rapor";
             this.Text = "Rapor Sayfası";
             this.Load += new System.EventHandler(this.Rapor_Load);

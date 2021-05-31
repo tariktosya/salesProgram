@@ -29,6 +29,7 @@ namespace market
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NakitKart));
             this.tNakit = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.tableLayoutPanel12 = new System.Windows.Forms.TableLayoutPanel();
@@ -330,6 +331,7 @@ namespace market
             this.Controls.Add(this.tableLayoutPanel12);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.tNakit);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(448, 334);
             this.Name = "NakitKart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

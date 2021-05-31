@@ -63,7 +63,7 @@ namespace market
             this.tSifre.Name = "tSifre";
             this.tSifre.PasswordChar = '*';
             this.tSifre.Size = new System.Drawing.Size(233, 36);
-            this.tSifre.TabIndex = 0;
+            this.tSifre.TabIndex = 1;
             // 
             // label2
             // 
@@ -88,6 +88,7 @@ namespace market
             this.bGiris.TabIndex = 2;
             this.bGiris.Text = "GİRİŞ";
             this.bGiris.UseVisualStyleBackColor = false;
+            this.bGiris.Click += new System.EventHandler(this.bGiris_Click);
             // 
             // fLogin
             // 
@@ -102,12 +103,14 @@ namespace market
             this.Controls.Add(this.tKullanici);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "fLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.fLogin_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

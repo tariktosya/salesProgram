@@ -30,6 +30,7 @@ namespace market
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Stok));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lKullanici = new System.Windows.Forms.Label();
             this.bAra = new market.bStandart();
@@ -373,6 +374,7 @@ namespace market
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1308, 676);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Stok";
             this.Text = "Stok ";
             this.Load += new System.EventHandler(this.Stok_Load);

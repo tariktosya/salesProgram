@@ -29,6 +29,7 @@ namespace market
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fBaslangic));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.bCikis = new System.Windows.Forms.Button();
             this.bKullaniciDegistir = new System.Windows.Forms.Button();
@@ -41,6 +42,7 @@ namespace market
             this.bSatisIslemi = new System.Windows.Forms.Button();
             this.lKullanici = new System.Windows.Forms.Label();
             this.lIsyeri = new System.Windows.Forms.Label();
+            this.bYedektenYukle = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -102,6 +104,7 @@ namespace market
             this.bKullaniciDegistir.Text = " KULLANICI \r\nDEĞİŞTİR";
             this.bKullaniciDegistir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.bKullaniciDegistir.UseVisualStyleBackColor = false;
+            this.bKullaniciDegistir.Click += new System.EventHandler(this.bKullaniciDegistir_Click);
             // 
             // bYedekleme
             // 
@@ -251,17 +254,35 @@ namespace market
             this.lIsyeri.TabIndex = 1;
             this.lIsyeri.Text = "Tarık Tosya";
             // 
+            // bYedektenYukle
+            // 
+            this.bYedektenYukle.BackColor = System.Drawing.Color.Crimson;
+            this.bYedektenYukle.FlatAppearance.BorderColor = System.Drawing.Color.Crimson;
+            this.bYedektenYukle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bYedektenYukle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.bYedektenYukle.ForeColor = System.Drawing.Color.White;
+            this.bYedektenYukle.Location = new System.Drawing.Point(724, 581);
+            this.bYedektenYukle.Name = "bYedektenYukle";
+            this.bYedektenYukle.Size = new System.Drawing.Size(327, 84);
+            this.bYedektenYukle.TabIndex = 9;
+            this.bYedektenYukle.Text = "Yedekten Yükle";
+            this.bYedektenYukle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bYedektenYukle.UseVisualStyleBackColor = false;
+            this.bYedektenYukle.Click += new System.EventHandler(this.bYedektenYukle_Click);
+            // 
             // fBaslangic
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1033, 619);
+            this.ClientSize = new System.Drawing.Size(1051, 666);
             this.ControlBox = false;
+            this.Controls.Add(this.bYedektenYukle);
             this.Controls.Add(this.lIsyeri);
             this.Controls.Add(this.lKullanici);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(1051, 666);
             this.Name = "fBaslangic";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -275,16 +296,17 @@ namespace market
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button bSatisIslemi;
-        private System.Windows.Forms.Button bCikis;
-        private System.Windows.Forms.Button bKullaniciDegistir;
-        private System.Windows.Forms.Button bYedekleme;
-        private System.Windows.Forms.Button bFiyatGuncelle;
-        private System.Windows.Forms.Button bAyarlar;
-        private System.Windows.Forms.Button dUrunGiris;
-        private System.Windows.Forms.Button bStok;
-        private System.Windows.Forms.Button bGenelRapor;
-        private System.Windows.Forms.Label lKullanici;
-        private System.Windows.Forms.Label lIsyeri;
+        public System.Windows.Forms.Button bSatisIslemi;
+        public System.Windows.Forms.Button bCikis;
+        public System.Windows.Forms.Button bKullaniciDegistir;
+        public System.Windows.Forms.Button bYedekleme;
+        public System.Windows.Forms.Button bFiyatGuncelle;
+        public System.Windows.Forms.Button bAyarlar;
+        public System.Windows.Forms.Button dUrunGiris;
+        public System.Windows.Forms.Button bStok;
+        public System.Windows.Forms.Button bGenelRapor;
+        public System.Windows.Forms.Label lKullanici;
+        public System.Windows.Forms.Button bYedektenYukle;
+        public System.Windows.Forms.Label lIsyeri;
     }
 }

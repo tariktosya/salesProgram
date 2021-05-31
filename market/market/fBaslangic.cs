@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -80,6 +81,22 @@ namespace market
         private void bYedekleme_Click(object sender, EventArgs e)
         {
             islemler.BackUp();
+        }
+
+        
+
+        private void bKullaniciDegistir_Click(object sender, EventArgs e)
+        {
+            
+            fLogin login = new fLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        private void bYedektenYukle_Click(object sender, EventArgs e)
+        {
+            Process.Start(Application.StartupPath + @"\ProgramRestore.exe");
+            Application.Exit();
         }
     }
 }

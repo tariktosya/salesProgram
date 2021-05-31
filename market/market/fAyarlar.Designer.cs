@@ -31,7 +31,38 @@ namespace market
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fAyarlar));
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.lStandart15 = new market.lStandart();
+            this.bIsyeriKaydet = new market.bStandart();
+            this.tIsyeriTelefon = new System.Windows.Forms.MaskedTextBox();
+            this.tIsyeriAdres = new market.tStandart();
+            this.tIsyeriEposta = new market.tStandart();
+            this.tIsyeriUnvan = new market.tStandart();
+            this.tIsyeriAdSoyad = new market.tStandart();
+            this.asdasd = new market.lStandart();
+            this.lStandart12 = new market.lStandart();
+            this.lStandart13 = new market.lStandart();
+            this.lStandart11 = new market.lStandart();
+            this.lStandart14 = new market.lStandart();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.lStandart16 = new market.lStandart();
+            this.lStandart10 = new market.lStandart();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.bTeraziOnekSil = new System.Windows.Forms.Button();
+            this.cmbTeraziOnek = new System.Windows.Forms.ComboBox();
+            this.bTeraziOnekKaydet = new System.Windows.Forms.Button();
+            this.tTeraziOnek = new market.tNumeric();
+            this.lStandart9 = new market.lStandart();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.bKartKomisyon = new System.Windows.Forms.Button();
+            this.tKartKomisyon = new market.tNumeric();
+            this.lStandart8 = new market.lStandart();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.chYazmaDurumu = new System.Windows.Forms.CheckBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lId = new market.lStandart();
@@ -59,68 +90,371 @@ namespace market
             this.Yetkiler = new market.lStandart();
             this.lStandart1 = new market.lStandart();
             this.gridListeKullanici = new market.gridGrid();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.lStandart16 = new market.lStandart();
-            this.lStandart10 = new market.lStandart();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.bTeraziOnekSil = new System.Windows.Forms.Button();
-            this.cmbTeraziOnek = new System.Windows.Forms.ComboBox();
-            this.bTeraziOnekKaydet = new System.Windows.Forms.Button();
-            this.tTeraziOnek = new market.tNumeric();
-            this.lStandart9 = new market.lStandart();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bKartKomisyon = new System.Windows.Forms.Button();
-            this.tKartKomisyon = new market.tNumeric();
-            this.lStandart8 = new market.lStandart();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.chYazmaDurumu = new System.Windows.Forms.CheckBox();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.lStandart15 = new market.lStandart();
-            this.bIsyeriKaydet = new market.bStandart();
-            this.tIsyeriTelefon = new System.Windows.Forms.MaskedTextBox();
-            this.tIsyeriAdres = new market.tStandart();
-            this.tIsyeriEposta = new market.tStandart();
-            this.asdasd = new market.lStandart();
-            this.lStandart12 = new market.lStandart();
-            this.lStandart13 = new market.lStandart();
-            this.tIsyeriUnvan = new market.tStandart();
-            this.lStandart11 = new market.lStandart();
-            this.tIsyeriAdSoyad = new market.tStandart();
-            this.lStandart14 = new market.lStandart();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.lStandart17 = new market.lStandart();
-            this.bYedektenYukle = new market.bStandart();
-            this.tabControl1.SuspendLayout();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.contextMenuStrip1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridListeKullanici)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.tabPage4.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tabControl1
+            // contextMenuStrip1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
-            this.tabControl1.Controls.Add(this.tabPage4);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1560, 794);
-            this.tabControl1.TabIndex = 0;
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.düzenleToolStripMenuItem,
+            this.silToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(133, 52);
+            // 
+            // düzenleToolStripMenuItem
+            // 
+            this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
+            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.düzenleToolStripMenuItem.Text = "Düzenle";
+            this.düzenleToolStripMenuItem.Click += new System.EventHandler(this.düzenleToolStripMenuItem_Click);
+            // 
+            // silToolStripMenuItem
+            // 
+            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.silToolStripMenuItem.Text = "Sil";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.lStandart15);
+            this.tabPage3.Controls.Add(this.bIsyeriKaydet);
+            this.tabPage3.Controls.Add(this.tIsyeriTelefon);
+            this.tabPage3.Controls.Add(this.tIsyeriAdres);
+            this.tabPage3.Controls.Add(this.tIsyeriEposta);
+            this.tabPage3.Controls.Add(this.tIsyeriUnvan);
+            this.tabPage3.Controls.Add(this.tIsyeriAdSoyad);
+            this.tabPage3.Controls.Add(this.asdasd);
+            this.tabPage3.Controls.Add(this.lStandart12);
+            this.tabPage3.Controls.Add(this.lStandart13);
+            this.tabPage3.Controls.Add(this.lStandart11);
+            this.tabPage3.Controls.Add(this.lStandart14);
+            this.tabPage3.Location = new System.Drawing.Point(4, 25);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(1552, 765);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "İŞYERİ BİLGİLERİ";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // lStandart15
+            // 
+            this.lStandart15.AutoSize = true;
+            this.lStandart15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lStandart15.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart15.Location = new System.Drawing.Point(39, 24);
+            this.lStandart15.Name = "lStandart15";
+            this.lStandart15.Size = new System.Drawing.Size(265, 29);
+            this.lStandart15.TabIndex = 15;
+            this.lStandart15.Text = "İşyeri Bilgi Düzenleme";
+            // 
+            // bIsyeriKaydet
+            // 
+            this.bIsyeriKaydet.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.bIsyeriKaydet.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
+            this.bIsyeriKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bIsyeriKaydet.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.bIsyeriKaydet.ForeColor = System.Drawing.Color.White;
+            this.bIsyeriKaydet.Image = global::market.Properties.Resources.floppy_disk;
+            this.bIsyeriKaydet.Location = new System.Drawing.Point(178, 562);
+            this.bIsyeriKaydet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.bIsyeriKaydet.Name = "bIsyeriKaydet";
+            this.bIsyeriKaydet.Size = new System.Drawing.Size(116, 74);
+            this.bIsyeriKaydet.TabIndex = 14;
+            this.bIsyeriKaydet.Text = "KAYDET";
+            this.bIsyeriKaydet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.bIsyeriKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.bIsyeriKaydet.UseVisualStyleBackColor = false;
+            this.bIsyeriKaydet.Click += new System.EventHandler(this.bIsyeriKaydet_Click);
+            // 
+            // tIsyeriTelefon
+            // 
+            this.tIsyeriTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.tIsyeriTelefon.Location = new System.Drawing.Point(44, 276);
+            this.tIsyeriTelefon.Mask = "(999) 000-0000";
+            this.tIsyeriTelefon.Name = "tIsyeriTelefon";
+            this.tIsyeriTelefon.Size = new System.Drawing.Size(250, 30);
+            this.tIsyeriTelefon.TabIndex = 7;
+            // 
+            // tIsyeriAdres
+            // 
+            this.tIsyeriAdres.BackColor = System.Drawing.Color.White;
+            this.tIsyeriAdres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tIsyeriAdres.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.tIsyeriAdres.Location = new System.Drawing.Point(44, 432);
+            this.tIsyeriAdres.Multiline = true;
+            this.tIsyeriAdres.Name = "tIsyeriAdres";
+            this.tIsyeriAdres.Size = new System.Drawing.Size(250, 108);
+            this.tIsyeriAdres.TabIndex = 9;
+            // 
+            // tIsyeriEposta
+            // 
+            this.tIsyeriEposta.BackColor = System.Drawing.Color.White;
+            this.tIsyeriEposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tIsyeriEposta.Location = new System.Drawing.Point(44, 355);
+            this.tIsyeriEposta.Name = "tIsyeriEposta";
+            this.tIsyeriEposta.Size = new System.Drawing.Size(250, 30);
+            this.tIsyeriEposta.TabIndex = 9;
+            // 
+            // tIsyeriUnvan
+            // 
+            this.tIsyeriUnvan.BackColor = System.Drawing.Color.White;
+            this.tIsyeriUnvan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tIsyeriUnvan.Location = new System.Drawing.Point(44, 204);
+            this.tIsyeriUnvan.Name = "tIsyeriUnvan";
+            this.tIsyeriUnvan.Size = new System.Drawing.Size(250, 30);
+            this.tIsyeriUnvan.TabIndex = 6;
+            // 
+            // tIsyeriAdSoyad
+            // 
+            this.tIsyeriAdSoyad.BackColor = System.Drawing.Color.White;
+            this.tIsyeriAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tIsyeriAdSoyad.Location = new System.Drawing.Point(44, 131);
+            this.tIsyeriAdSoyad.Name = "tIsyeriAdSoyad";
+            this.tIsyeriAdSoyad.Size = new System.Drawing.Size(250, 30);
+            this.tIsyeriAdSoyad.TabIndex = 6;
+            // 
+            // asdasd
+            // 
+            this.asdasd.AutoSize = true;
+            this.asdasd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.asdasd.ForeColor = System.Drawing.Color.DarkCyan;
+            this.asdasd.Location = new System.Drawing.Point(44, 404);
+            this.asdasd.Name = "asdasd";
+            this.asdasd.Size = new System.Drawing.Size(64, 25);
+            this.asdasd.TabIndex = 11;
+            this.asdasd.Text = "Adres";
+            // 
+            // lStandart12
+            // 
+            this.lStandart12.AutoSize = true;
+            this.lStandart12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart12.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart12.Location = new System.Drawing.Point(44, 327);
+            this.lStandart12.Name = "lStandart12";
+            this.lStandart12.Size = new System.Drawing.Size(80, 25);
+            this.lStandart12.TabIndex = 11;
+            this.lStandart12.Text = "E-posta";
+            // 
+            // lStandart13
+            // 
+            this.lStandart13.AutoSize = true;
+            this.lStandart13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart13.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart13.Location = new System.Drawing.Point(44, 248);
+            this.lStandart13.Name = "lStandart13";
+            this.lStandart13.Size = new System.Drawing.Size(78, 25);
+            this.lStandart13.TabIndex = 10;
+            this.lStandart13.Text = "Telefon";
+            // 
+            // lStandart11
+            // 
+            this.lStandart11.AutoSize = true;
+            this.lStandart11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart11.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart11.Location = new System.Drawing.Point(44, 176);
+            this.lStandart11.Name = "lStandart11";
+            this.lStandart11.Size = new System.Drawing.Size(69, 25);
+            this.lStandart11.TabIndex = 8;
+            this.lStandart11.Text = "Ünvan";
+            // 
+            // lStandart14
+            // 
+            this.lStandart14.AutoSize = true;
+            this.lStandart14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart14.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart14.Location = new System.Drawing.Point(44, 103);
+            this.lStandart14.Name = "lStandart14";
+            this.lStandart14.Size = new System.Drawing.Size(101, 25);
+            this.lStandart14.TabIndex = 8;
+            this.lStandart14.Text = "Ad-Soyad";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.lStandart16);
+            this.tabPage2.Controls.Add(this.lStandart10);
+            this.tabPage2.Controls.Add(this.panel3);
+            this.tabPage2.Controls.Add(this.lStandart9);
+            this.tabPage2.Controls.Add(this.panel2);
+            this.tabPage2.Controls.Add(this.lStandart8);
+            this.tabPage2.Controls.Add(this.panel1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1552, 765);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "KOMİSYON-YAZICI-TERAZİ";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // lStandart16
+            // 
+            this.lStandart16.AutoSize = true;
+            this.lStandart16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
+            this.lStandart16.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart16.Location = new System.Drawing.Point(239, 16);
+            this.lStandart16.Name = "lStandart16";
+            this.lStandart16.Size = new System.Drawing.Size(410, 29);
+            this.lStandart16.TabIndex = 4;
+            this.lStandart16.Text = "Yazıcı - Komisyon - Terazi İşlemleri";
+            // 
+            // lStandart10
+            // 
+            this.lStandart10.AutoSize = true;
+            this.lStandart10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart10.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart10.Location = new System.Drawing.Point(592, 76);
+            this.lStandart10.Name = "lStandart10";
+            this.lStandart10.Size = new System.Drawing.Size(127, 25);
+            this.lStandart10.TabIndex = 3;
+            this.lStandart10.Text = "Terazi Ön Ek";
+            // 
+            // panel3
+            // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.bTeraziOnekSil);
+            this.panel3.Controls.Add(this.cmbTeraziOnek);
+            this.panel3.Controls.Add(this.bTeraziOnekKaydet);
+            this.panel3.Controls.Add(this.tTeraziOnek);
+            this.panel3.Location = new System.Drawing.Point(597, 104);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(254, 136);
+            this.panel3.TabIndex = 2;
+            // 
+            // bTeraziOnekSil
+            // 
+            this.bTeraziOnekSil.BackColor = System.Drawing.Color.Red;
+            this.bTeraziOnekSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bTeraziOnekSil.Image = global::market.Properties.Resources.cancel;
+            this.bTeraziOnekSil.Location = new System.Drawing.Point(135, 3);
+            this.bTeraziOnekSil.Name = "bTeraziOnekSil";
+            this.bTeraziOnekSil.Size = new System.Drawing.Size(73, 45);
+            this.bTeraziOnekSil.TabIndex = 14;
+            this.bTeraziOnekSil.UseVisualStyleBackColor = false;
+            this.bTeraziOnekSil.Click += new System.EventHandler(this.bTeraziOnekSil_Click);
+            // 
+            // cmbTeraziOnek
+            // 
+            this.cmbTeraziOnek.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTeraziOnek.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.cmbTeraziOnek.FormattingEnabled = true;
+            this.cmbTeraziOnek.Location = new System.Drawing.Point(8, 9);
+            this.cmbTeraziOnek.Name = "cmbTeraziOnek";
+            this.cmbTeraziOnek.Size = new System.Drawing.Size(121, 33);
+            this.cmbTeraziOnek.TabIndex = 13;
+            // 
+            // bTeraziOnekKaydet
+            // 
+            this.bTeraziOnekKaydet.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.bTeraziOnekKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bTeraziOnekKaydet.Image = global::market.Properties.Resources.floppy_disk;
+            this.bTeraziOnekKaydet.Location = new System.Drawing.Point(135, 72);
+            this.bTeraziOnekKaydet.Name = "bTeraziOnekKaydet";
+            this.bTeraziOnekKaydet.Size = new System.Drawing.Size(73, 45);
+            this.bTeraziOnekKaydet.TabIndex = 12;
+            this.bTeraziOnekKaydet.UseVisualStyleBackColor = false;
+            this.bTeraziOnekKaydet.Click += new System.EventHandler(this.bTeraziOnekKaydet_Click);
+            // 
+            // tTeraziOnek
+            // 
+            this.tTeraziOnek.BackColor = System.Drawing.Color.White;
+            this.tTeraziOnek.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tTeraziOnek.Location = new System.Drawing.Point(8, 76);
+            this.tTeraziOnek.Name = "tTeraziOnek";
+            this.tTeraziOnek.Size = new System.Drawing.Size(121, 30);
+            this.tTeraziOnek.TabIndex = 0;
+            this.tTeraziOnek.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lStandart9
+            // 
+            this.lStandart9.AutoSize = true;
+            this.lStandart9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart9.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart9.Location = new System.Drawing.Point(297, 76);
+            this.lStandart9.Name = "lStandart9";
+            this.lStandart9.Size = new System.Drawing.Size(140, 25);
+            this.lStandart9.TabIndex = 1;
+            this.lStandart9.Text = "Kart Komisyon";
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.bKartKomisyon);
+            this.panel2.Controls.Add(this.tKartKomisyon);
+            this.panel2.Location = new System.Drawing.Point(302, 104);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(254, 56);
+            this.panel2.TabIndex = 0;
+            // 
+            // bKartKomisyon
+            // 
+            this.bKartKomisyon.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.bKartKomisyon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bKartKomisyon.Image = global::market.Properties.Resources.floppy_disk;
+            this.bKartKomisyon.Location = new System.Drawing.Point(135, 3);
+            this.bKartKomisyon.Name = "bKartKomisyon";
+            this.bKartKomisyon.Size = new System.Drawing.Size(73, 45);
+            this.bKartKomisyon.TabIndex = 12;
+            this.bKartKomisyon.UseVisualStyleBackColor = false;
+            this.bKartKomisyon.Click += new System.EventHandler(this.bKartKomisyon_Click);
+            // 
+            // tKartKomisyon
+            // 
+            this.tKartKomisyon.BackColor = System.Drawing.Color.White;
+            this.tKartKomisyon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.tKartKomisyon.Location = new System.Drawing.Point(14, 7);
+            this.tKartKomisyon.Name = "tKartKomisyon";
+            this.tKartKomisyon.Size = new System.Drawing.Size(115, 30);
+            this.tKartKomisyon.TabIndex = 0;
+            this.tKartKomisyon.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // lStandart8
+            // 
+            this.lStandart8.AutoSize = true;
+            this.lStandart8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart8.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart8.Location = new System.Drawing.Point(20, 76);
+            this.lStandart8.Name = "lStandart8";
+            this.lStandart8.Size = new System.Drawing.Size(156, 25);
+            this.lStandart8.TabIndex = 1;
+            this.lStandart8.Text = "Yazıcı Aktif/Pasif";
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.chYazmaDurumu);
+            this.panel1.Location = new System.Drawing.Point(25, 104);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(241, 56);
+            this.panel1.TabIndex = 0;
+            // 
+            // chYazmaDurumu
+            // 
+            this.chYazmaDurumu.Appearance = System.Windows.Forms.Appearance.Button;
+            this.chYazmaDurumu.AutoSize = true;
+            this.chYazmaDurumu.BackColor = System.Drawing.Color.DarkOliveGreen;
+            this.chYazmaDurumu.FlatAppearance.CheckedBackColor = System.Drawing.Color.Firebrick;
+            this.chYazmaDurumu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.chYazmaDurumu.ForeColor = System.Drawing.Color.White;
+            this.chYazmaDurumu.Location = new System.Drawing.Point(3, 3);
+            this.chYazmaDurumu.Name = "chYazmaDurumu";
+            this.chYazmaDurumu.Size = new System.Drawing.Size(205, 30);
+            this.chYazmaDurumu.TabIndex = 0;
+            this.chYazmaDurumu.Text = "Yazma Durumu PASİF";
+            this.chYazmaDurumu.UseVisualStyleBackColor = false;
+            this.chYazmaDurumu.CheckedChanged += new System.EventHandler(this.chYazmaDurumu_CheckedChanged);
             // 
             // tabPage1
             // 
@@ -481,398 +815,17 @@ namespace market
             this.gridListeKullanici.Size = new System.Drawing.Size(957, 759);
             this.gridListeKullanici.TabIndex = 2;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.düzenleToolStripMenuItem,
-            this.silToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(133, 52);
-            // 
-            // düzenleToolStripMenuItem
-            // 
-            this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
-            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
-            this.düzenleToolStripMenuItem.Text = "Düzenle";
-            this.düzenleToolStripMenuItem.Click += new System.EventHandler(this.düzenleToolStripMenuItem_Click);
-            // 
-            // silToolStripMenuItem
-            // 
-            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
-            this.silToolStripMenuItem.Text = "Sil";
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.lStandart16);
-            this.tabPage2.Controls.Add(this.lStandart10);
-            this.tabPage2.Controls.Add(this.panel3);
-            this.tabPage2.Controls.Add(this.lStandart9);
-            this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Controls.Add(this.lStandart8);
-            this.tabPage2.Controls.Add(this.panel1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1552, 765);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "KOMİSYON-YAZICI-TERAZİ";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // lStandart16
-            // 
-            this.lStandart16.AutoSize = true;
-            this.lStandart16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lStandart16.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart16.Location = new System.Drawing.Point(239, 16);
-            this.lStandart16.Name = "lStandart16";
-            this.lStandart16.Size = new System.Drawing.Size(410, 29);
-            this.lStandart16.TabIndex = 4;
-            this.lStandart16.Text = "Yazıcı - Komisyon - Terazi İşlemleri";
-            // 
-            // lStandart10
-            // 
-            this.lStandart10.AutoSize = true;
-            this.lStandart10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart10.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart10.Location = new System.Drawing.Point(592, 76);
-            this.lStandart10.Name = "lStandart10";
-            this.lStandart10.Size = new System.Drawing.Size(127, 25);
-            this.lStandart10.TabIndex = 3;
-            this.lStandart10.Text = "Terazi Ön Ek";
-            // 
-            // panel3
-            // 
-            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel3.Controls.Add(this.bTeraziOnekSil);
-            this.panel3.Controls.Add(this.cmbTeraziOnek);
-            this.panel3.Controls.Add(this.bTeraziOnekKaydet);
-            this.panel3.Controls.Add(this.tTeraziOnek);
-            this.panel3.Location = new System.Drawing.Point(597, 104);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(254, 136);
-            this.panel3.TabIndex = 2;
-            // 
-            // bTeraziOnekSil
-            // 
-            this.bTeraziOnekSil.BackColor = System.Drawing.Color.Red;
-            this.bTeraziOnekSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bTeraziOnekSil.Image = global::market.Properties.Resources.cancel;
-            this.bTeraziOnekSil.Location = new System.Drawing.Point(135, 3);
-            this.bTeraziOnekSil.Name = "bTeraziOnekSil";
-            this.bTeraziOnekSil.Size = new System.Drawing.Size(73, 45);
-            this.bTeraziOnekSil.TabIndex = 14;
-            this.bTeraziOnekSil.UseVisualStyleBackColor = false;
-            this.bTeraziOnekSil.Click += new System.EventHandler(this.bTeraziOnekSil_Click);
-            // 
-            // cmbTeraziOnek
-            // 
-            this.cmbTeraziOnek.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTeraziOnek.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.cmbTeraziOnek.FormattingEnabled = true;
-            this.cmbTeraziOnek.Location = new System.Drawing.Point(8, 9);
-            this.cmbTeraziOnek.Name = "cmbTeraziOnek";
-            this.cmbTeraziOnek.Size = new System.Drawing.Size(121, 33);
-            this.cmbTeraziOnek.TabIndex = 13;
-            // 
-            // bTeraziOnekKaydet
-            // 
-            this.bTeraziOnekKaydet.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.bTeraziOnekKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bTeraziOnekKaydet.Image = global::market.Properties.Resources.floppy_disk;
-            this.bTeraziOnekKaydet.Location = new System.Drawing.Point(135, 72);
-            this.bTeraziOnekKaydet.Name = "bTeraziOnekKaydet";
-            this.bTeraziOnekKaydet.Size = new System.Drawing.Size(73, 45);
-            this.bTeraziOnekKaydet.TabIndex = 12;
-            this.bTeraziOnekKaydet.UseVisualStyleBackColor = false;
-            this.bTeraziOnekKaydet.Click += new System.EventHandler(this.bTeraziOnekKaydet_Click);
-            // 
-            // tTeraziOnek
-            // 
-            this.tTeraziOnek.BackColor = System.Drawing.Color.White;
-            this.tTeraziOnek.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tTeraziOnek.Location = new System.Drawing.Point(8, 76);
-            this.tTeraziOnek.Name = "tTeraziOnek";
-            this.tTeraziOnek.Size = new System.Drawing.Size(121, 30);
-            this.tTeraziOnek.TabIndex = 0;
-            this.tTeraziOnek.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // lStandart9
-            // 
-            this.lStandart9.AutoSize = true;
-            this.lStandart9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart9.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart9.Location = new System.Drawing.Point(297, 76);
-            this.lStandart9.Name = "lStandart9";
-            this.lStandart9.Size = new System.Drawing.Size(140, 25);
-            this.lStandart9.TabIndex = 1;
-            this.lStandart9.Text = "Kart Komisyon";
-            // 
-            // panel2
-            // 
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.bKartKomisyon);
-            this.panel2.Controls.Add(this.tKartKomisyon);
-            this.panel2.Location = new System.Drawing.Point(302, 104);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(254, 56);
-            this.panel2.TabIndex = 0;
-            // 
-            // bKartKomisyon
-            // 
-            this.bKartKomisyon.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.bKartKomisyon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bKartKomisyon.Image = global::market.Properties.Resources.floppy_disk;
-            this.bKartKomisyon.Location = new System.Drawing.Point(135, 3);
-            this.bKartKomisyon.Name = "bKartKomisyon";
-            this.bKartKomisyon.Size = new System.Drawing.Size(73, 45);
-            this.bKartKomisyon.TabIndex = 12;
-            this.bKartKomisyon.UseVisualStyleBackColor = false;
-            this.bKartKomisyon.Click += new System.EventHandler(this.bKartKomisyon_Click);
-            // 
-            // tKartKomisyon
-            // 
-            this.tKartKomisyon.BackColor = System.Drawing.Color.White;
-            this.tKartKomisyon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tKartKomisyon.Location = new System.Drawing.Point(14, 7);
-            this.tKartKomisyon.Name = "tKartKomisyon";
-            this.tKartKomisyon.Size = new System.Drawing.Size(115, 30);
-            this.tKartKomisyon.TabIndex = 0;
-            this.tKartKomisyon.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // lStandart8
-            // 
-            this.lStandart8.AutoSize = true;
-            this.lStandart8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart8.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart8.Location = new System.Drawing.Point(20, 76);
-            this.lStandart8.Name = "lStandart8";
-            this.lStandart8.Size = new System.Drawing.Size(156, 25);
-            this.lStandart8.TabIndex = 1;
-            this.lStandart8.Text = "Yazıcı Aktif/Pasif";
-            // 
-            // panel1
-            // 
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.chYazmaDurumu);
-            this.panel1.Location = new System.Drawing.Point(25, 104);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(241, 56);
-            this.panel1.TabIndex = 0;
-            // 
-            // chYazmaDurumu
-            // 
-            this.chYazmaDurumu.Appearance = System.Windows.Forms.Appearance.Button;
-            this.chYazmaDurumu.AutoSize = true;
-            this.chYazmaDurumu.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.chYazmaDurumu.FlatAppearance.CheckedBackColor = System.Drawing.Color.Firebrick;
-            this.chYazmaDurumu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.chYazmaDurumu.ForeColor = System.Drawing.Color.White;
-            this.chYazmaDurumu.Location = new System.Drawing.Point(3, 3);
-            this.chYazmaDurumu.Name = "chYazmaDurumu";
-            this.chYazmaDurumu.Size = new System.Drawing.Size(205, 30);
-            this.chYazmaDurumu.TabIndex = 0;
-            this.chYazmaDurumu.Text = "Yazma Durumu PASİF";
-            this.chYazmaDurumu.UseVisualStyleBackColor = false;
-            this.chYazmaDurumu.CheckedChanged += new System.EventHandler(this.chYazmaDurumu_CheckedChanged);
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.lStandart15);
-            this.tabPage3.Controls.Add(this.bIsyeriKaydet);
-            this.tabPage3.Controls.Add(this.tIsyeriTelefon);
-            this.tabPage3.Controls.Add(this.tIsyeriAdres);
-            this.tabPage3.Controls.Add(this.tIsyeriEposta);
-            this.tabPage3.Controls.Add(this.asdasd);
-            this.tabPage3.Controls.Add(this.lStandart12);
-            this.tabPage3.Controls.Add(this.lStandart13);
-            this.tabPage3.Controls.Add(this.tIsyeriUnvan);
-            this.tabPage3.Controls.Add(this.lStandart11);
-            this.tabPage3.Controls.Add(this.tIsyeriAdSoyad);
-            this.tabPage3.Controls.Add(this.lStandart14);
-            this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1552, 765);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "İŞYERİ BİLGİLERİ";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // lStandart15
-            // 
-            this.lStandart15.AutoSize = true;
-            this.lStandart15.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F);
-            this.lStandart15.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart15.Location = new System.Drawing.Point(39, 24);
-            this.lStandart15.Name = "lStandart15";
-            this.lStandart15.Size = new System.Drawing.Size(265, 29);
-            this.lStandart15.TabIndex = 15;
-            this.lStandart15.Text = "İşyeri Bilgi Düzenleme";
-            // 
-            // bIsyeriKaydet
-            // 
-            this.bIsyeriKaydet.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.bIsyeriKaydet.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bIsyeriKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bIsyeriKaydet.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.bIsyeriKaydet.ForeColor = System.Drawing.Color.White;
-            this.bIsyeriKaydet.Image = global::market.Properties.Resources.floppy_disk;
-            this.bIsyeriKaydet.Location = new System.Drawing.Point(178, 562);
-            this.bIsyeriKaydet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bIsyeriKaydet.Name = "bIsyeriKaydet";
-            this.bIsyeriKaydet.Size = new System.Drawing.Size(116, 74);
-            this.bIsyeriKaydet.TabIndex = 14;
-            this.bIsyeriKaydet.Text = "KAYDET";
-            this.bIsyeriKaydet.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.bIsyeriKaydet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bIsyeriKaydet.UseVisualStyleBackColor = false;
-            this.bIsyeriKaydet.Click += new System.EventHandler(this.bIsyeriKaydet_Click);
-            // 
-            // tIsyeriTelefon
-            // 
-            this.tIsyeriTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tIsyeriTelefon.Location = new System.Drawing.Point(44, 276);
-            this.tIsyeriTelefon.Mask = "(999) 000-0000";
-            this.tIsyeriTelefon.Name = "tIsyeriTelefon";
-            this.tIsyeriTelefon.Size = new System.Drawing.Size(250, 30);
-            this.tIsyeriTelefon.TabIndex = 7;
-            // 
-            // tIsyeriAdres
-            // 
-            this.tIsyeriAdres.BackColor = System.Drawing.Color.White;
-            this.tIsyeriAdres.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tIsyeriAdres.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.tIsyeriAdres.Location = new System.Drawing.Point(44, 432);
-            this.tIsyeriAdres.Multiline = true;
-            this.tIsyeriAdres.Name = "tIsyeriAdres";
-            this.tIsyeriAdres.Size = new System.Drawing.Size(250, 108);
-            this.tIsyeriAdres.TabIndex = 9;
-            // 
-            // tIsyeriEposta
-            // 
-            this.tIsyeriEposta.BackColor = System.Drawing.Color.White;
-            this.tIsyeriEposta.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tIsyeriEposta.Location = new System.Drawing.Point(44, 355);
-            this.tIsyeriEposta.Name = "tIsyeriEposta";
-            this.tIsyeriEposta.Size = new System.Drawing.Size(250, 30);
-            this.tIsyeriEposta.TabIndex = 9;
-            // 
-            // asdasd
-            // 
-            this.asdasd.AutoSize = true;
-            this.asdasd.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.asdasd.ForeColor = System.Drawing.Color.DarkCyan;
-            this.asdasd.Location = new System.Drawing.Point(44, 404);
-            this.asdasd.Name = "asdasd";
-            this.asdasd.Size = new System.Drawing.Size(64, 25);
-            this.asdasd.TabIndex = 11;
-            this.asdasd.Text = "Adres";
-            // 
-            // lStandart12
-            // 
-            this.lStandart12.AutoSize = true;
-            this.lStandart12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart12.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart12.Location = new System.Drawing.Point(44, 327);
-            this.lStandart12.Name = "lStandart12";
-            this.lStandart12.Size = new System.Drawing.Size(80, 25);
-            this.lStandart12.TabIndex = 11;
-            this.lStandart12.Text = "E-posta";
-            // 
-            // lStandart13
-            // 
-            this.lStandart13.AutoSize = true;
-            this.lStandart13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart13.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart13.Location = new System.Drawing.Point(44, 248);
-            this.lStandart13.Name = "lStandart13";
-            this.lStandart13.Size = new System.Drawing.Size(78, 25);
-            this.lStandart13.TabIndex = 10;
-            this.lStandart13.Text = "Telefon";
-            // 
-            // tIsyeriUnvan
-            // 
-            this.tIsyeriUnvan.BackColor = System.Drawing.Color.White;
-            this.tIsyeriUnvan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tIsyeriUnvan.Location = new System.Drawing.Point(44, 204);
-            this.tIsyeriUnvan.Name = "tIsyeriUnvan";
-            this.tIsyeriUnvan.Size = new System.Drawing.Size(250, 30);
-            this.tIsyeriUnvan.TabIndex = 6;
-            // 
-            // lStandart11
-            // 
-            this.lStandart11.AutoSize = true;
-            this.lStandart11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart11.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart11.Location = new System.Drawing.Point(44, 176);
-            this.lStandart11.Name = "lStandart11";
-            this.lStandart11.Size = new System.Drawing.Size(69, 25);
-            this.lStandart11.TabIndex = 8;
-            this.lStandart11.Text = "Ünvan";
-            // 
-            // tIsyeriAdSoyad
-            // 
-            this.tIsyeriAdSoyad.BackColor = System.Drawing.Color.White;
-            this.tIsyeriAdSoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.tIsyeriAdSoyad.Location = new System.Drawing.Point(44, 131);
-            this.tIsyeriAdSoyad.Name = "tIsyeriAdSoyad";
-            this.tIsyeriAdSoyad.Size = new System.Drawing.Size(250, 30);
-            this.tIsyeriAdSoyad.TabIndex = 6;
-            // 
-            // lStandart14
-            // 
-            this.lStandart14.AutoSize = true;
-            this.lStandart14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart14.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart14.Location = new System.Drawing.Point(44, 103);
-            this.lStandart14.Name = "lStandart14";
-            this.lStandart14.Size = new System.Drawing.Size(101, 25);
-            this.lStandart14.TabIndex = 8;
-            this.lStandart14.Text = "Ad-Soyad";
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.lStandart17);
-            this.tabPage4.Controls.Add(this.bYedektenYukle);
-            this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1552, 765);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "YEDEĞİ YÜKLE";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // lStandart17
-            // 
-            this.lStandart17.AutoSize = true;
-            this.lStandart17.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart17.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart17.Location = new System.Drawing.Point(53, 55);
-            this.lStandart17.Name = "lStandart17";
-            this.lStandart17.Size = new System.Drawing.Size(488, 75);
-            this.lStandart17.TabIndex = 15;
-            this.lStandart17.Text = "Önceden aldığınız yedeği belirleyiniz, butona tıklayarak \r\nyedeğinizi tekrar yükl" +
-    "eyiniz. Bu işlemi yalnızca gerekli \r\ndurumarda yapınız.";
-            // 
-            // bYedektenYukle
-            // 
-            this.bYedektenYukle.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.bYedektenYukle.FlatAppearance.BorderColor = System.Drawing.SystemColors.MenuHighlight;
-            this.bYedektenYukle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.bYedektenYukle.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.bYedektenYukle.ForeColor = System.Drawing.Color.White;
-            this.bYedektenYukle.Image = global::market.Properties.Resources.backup;
-            this.bYedektenYukle.Location = new System.Drawing.Point(155, 150);
-            this.bYedektenYukle.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bYedektenYukle.Name = "bYedektenYukle";
-            this.bYedektenYukle.Size = new System.Drawing.Size(237, 147);
-            this.bYedektenYukle.TabIndex = 14;
-            this.bYedektenYukle.Text = "YEDEKTEN YÜKLE";
-            this.bYedektenYukle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.bYedektenYukle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.bYedektenYukle.UseVisualStyleBackColor = false;
-            this.bYedektenYukle.Click += new System.EventHandler(this.bYedektenYukle_Click);
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1560, 794);
+            this.tabControl1.TabIndex = 0;
             // 
             // fAyarlar
             // 
@@ -881,19 +834,14 @@ namespace market
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1560, 794);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "fAyarlar";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "fAyarlar";
             this.Load += new System.EventHandler(this.fAyarlar_Load);
-            this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridListeKullanici)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -902,21 +850,62 @@ namespace market
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
+            this.tabPage1.ResumeLayout(false);
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridListeKullanici)).EndInit();
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem düzenleToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
+        private System.Windows.Forms.TabPage tabPage3;
+        private lStandart lStandart15;
+        private bStandart bIsyeriKaydet;
+        private System.Windows.Forms.MaskedTextBox tIsyeriTelefon;
+        private tStandart tIsyeriAdres;
+        private tStandart tIsyeriEposta;
+        private tStandart tIsyeriUnvan;
+        private tStandart tIsyeriAdSoyad;
+        private lStandart asdasd;
+        private lStandart lStandart12;
+        private lStandart lStandart13;
+        private lStandart lStandart11;
+        private lStandart lStandart14;
+        private System.Windows.Forms.TabPage tabPage2;
+        private lStandart lStandart16;
+        private lStandart lStandart10;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button bTeraziOnekSil;
+        private System.Windows.Forms.ComboBox cmbTeraziOnek;
+        private System.Windows.Forms.Button bTeraziOnekKaydet;
+        private tNumeric tTeraziOnek;
+        private lStandart lStandart9;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button bKartKomisyon;
+        private tNumeric tKartKomisyon;
+        private lStandart lStandart8;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.CheckBox chYazmaDurumu;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private lStandart lStandart1;
-        private System.Windows.Forms.TabPage tabPage2;
+        private lStandart lId;
+        private System.Windows.Forms.CheckBox chStok;
+        private System.Windows.Forms.CheckBox chUrunGiris;
+        private System.Windows.Forms.CheckBox chYedekleme;
+        private System.Windows.Forms.CheckBox chFiyatGuncelle;
+        private System.Windows.Forms.CheckBox chSatisEkrani;
+        private System.Windows.Forms.CheckBox chAyarlar;
+        private System.Windows.Forms.CheckBox chRaporEkrani;
+        private bStandart bIptal;
+        private bStandart bKaydet;
         private System.Windows.Forms.MaskedTextBox tTelefon;
         private tStandart tSifreTekrar;
         private lStandart lStandart7;
@@ -929,50 +918,9 @@ namespace market
         private lStandart lStandart3;
         private tStandart tAdSoyad;
         private lStandart lStandart2;
-        private bStandart bIptal;
-        private bStandart bKaydet;
-        private System.Windows.Forms.CheckBox chStok;
-        private System.Windows.Forms.CheckBox chUrunGiris;
-        private System.Windows.Forms.CheckBox chYedekleme;
-        private System.Windows.Forms.CheckBox chFiyatGuncelle;
-        private System.Windows.Forms.CheckBox chSatisEkrani;
-        private System.Windows.Forms.CheckBox chAyarlar;
-        private System.Windows.Forms.CheckBox chRaporEkrani;
         private lStandart Yetkiler;
+        private lStandart lStandart1;
         private gridGrid gridListeKullanici;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem düzenleToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem silToolStripMenuItem;
-        private lStandart lId;
-        private lStandart lStandart8;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.CheckBox chYazmaDurumu;
-        private lStandart lStandart9;
-        private System.Windows.Forms.Panel panel2;
-        private tNumeric tKartKomisyon;
-        private System.Windows.Forms.Button bKartKomisyon;
-        private lStandart lStandart10;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button bTeraziOnekKaydet;
-        private tNumeric tTeraziOnek;
-        private System.Windows.Forms.ComboBox cmbTeraziOnek;
-        private System.Windows.Forms.Button bTeraziOnekSil;
-        private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.MaskedTextBox tIsyeriTelefon;
-        private tStandart tIsyeriAdres;
-        private tStandart tIsyeriEposta;
-        private lStandart asdasd;
-        private lStandart lStandart12;
-        private lStandart lStandart13;
-        private tStandart tIsyeriUnvan;
-        private lStandart lStandart11;
-        private tStandart tIsyeriAdSoyad;
-        private lStandart lStandart14;
-        private bStandart bIsyeriKaydet;
-        private lStandart lStandart15;
-        private lStandart lStandart16;
-        private System.Windows.Forms.TabPage tabPage4;
-        private bStandart bYedektenYukle;
-        private lStandart lStandart17;
+        private System.Windows.Forms.TabControl tabControl1;
     }
 }

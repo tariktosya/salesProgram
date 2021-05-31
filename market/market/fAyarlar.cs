@@ -313,11 +313,5 @@ namespace market
                 }
             }
         }
-
-        private void bYedektenYukle_Click(object sender, EventArgs e)
-        {
-            Process.Start(Application.StartupPath + @"\ProgramRestore.exe");
-            Application.Exit();
-        }
     }
 }

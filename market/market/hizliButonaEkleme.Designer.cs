@@ -30,6 +30,7 @@ namespace market
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hizliButonaEkleme));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.chcTumu = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -160,6 +161,7 @@ namespace market
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(1244, 610);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "hizliButonaEkleme";
             this.Text = "Barkodsuz Ürün ekleme";
             this.Load += new System.EventHandler(this.hizliButonaEkleme_Load);

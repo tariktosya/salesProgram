@@ -52,7 +52,7 @@ namespace market
                     tGiderNakit.Text = Convert.ToDouble(islemozet.Where(x => x.dGider == true).Sum(x => x.dNakit)).ToString("C2");
                     tGiderKart.Text = Convert.ToDouble(islemozet.Where(x => x.dGider == true).Sum(x => x.dKart)).ToString("C2");
 
-                    tToplamAlisFiyat.Text = Convert.ToDouble(db.Satislar.Where(x => x.dTarih >= baslangic && x.dTarih <= bitis && x.dIade == false).Sum(x => x.dAlisFiyat)).ToString("C2");
+                    tToplamAlisFiyat.Text = Convert.ToDouble(db.IslemOzet.Where(x => x.dTarih >= baslangic && x.dTarih <= bitis && x.dIade == false && x.dGelir==false && x.dGider==false).Sum(x => x.dAlisFiyatToplam)).ToString("C2");
                     tSatisToplam.Text = (islemler.DoubleYap(tSatisKart.Text) + islemler.DoubleYap(tSatisNakit.Text)).ToString("C2");
 
                     db.Satislar.Where(x => x.dTarih >= baslangic && x.dTarih <= bitis).Load();

@@ -32,13 +32,16 @@ namespace market
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UrunGiris));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.chUrunType = new System.Windows.Forms.CheckBox();
             this.lKullanici = new System.Windows.Forms.Label();
             this.tBarkod = new System.Windows.Forms.TextBox();
             this.bBarkodOlustur = new System.Windows.Forms.Button();
             this.tUrunSayisi = new System.Windows.Forms.TextBox();
+            this.lStandart10 = new market.lStandart();
             this.tUrunAra = new System.Windows.Forms.TextBox();
+            this.lStandart9 = new market.lStandart();
             this.bRaporAl = new System.Windows.Forms.Button();
             this.bUrunGrubuEkle = new System.Windows.Forms.Button();
             this.bIptal = new System.Windows.Forms.Button();
@@ -47,29 +50,27 @@ namespace market
             this.tMiktar = new System.Windows.Forms.TextBox();
             this.tSatisFiyati = new System.Windows.Forms.TextBox();
             this.tAlisFiyati = new System.Windows.Forms.TextBox();
-            this.tAciklama = new System.Windows.Forms.TextBox();
-            this.tUrunAdi = new System.Windows.Forms.TextBox();
-            this.cmbUrunGrubu = new System.Windows.Forms.ComboBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lStandart10 = new market.lStandart();
-            this.lStandart9 = new market.lStandart();
             this.lStandart8 = new market.lStandart();
             this.lStandart7 = new market.lStandart();
             this.lStandart6 = new market.lStandart();
             this.lStandart5 = new market.lStandart();
+            this.tAciklama = new System.Windows.Forms.TextBox();
+            this.tUrunAdi = new System.Windows.Forms.TextBox();
             this.lStandart4 = new market.lStandart();
+            this.cmbUrunGrubu = new System.Windows.Forms.ComboBox();
             this.lStandart3 = new market.lStandart();
             this.lStandart2 = new market.lStandart();
             this.lStandart1 = new market.lStandart();
             this.gridUrunListesi = new market.gridGrid();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.silToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.düzenleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridUrunListesi)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -188,6 +189,17 @@ namespace market
             this.tUrunSayisi.TabStop = false;
             this.tUrunSayisi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // lStandart10
+            // 
+            this.lStandart10.AutoSize = true;
+            this.lStandart10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart10.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart10.Location = new System.Drawing.Point(548, 346);
+            this.lStandart10.Name = "lStandart10";
+            this.lStandart10.Size = new System.Drawing.Size(112, 25);
+            this.lStandart10.TabIndex = 26;
+            this.lStandart10.Text = "Ürün Sayısı";
+            // 
             // tUrunAra
             // 
             this.tUrunAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
@@ -196,6 +208,17 @@ namespace market
             this.tUrunAra.Size = new System.Drawing.Size(323, 30);
             this.tUrunAra.TabIndex = 12;
             this.tUrunAra.TextChanged += new System.EventHandler(this.tUrunAra_TextChanged);
+            // 
+            // lStandart9
+            // 
+            this.lStandart9.AutoSize = true;
+            this.lStandart9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.lStandart9.ForeColor = System.Drawing.Color.DarkCyan;
+            this.lStandart9.Location = new System.Drawing.Point(42, 348);
+            this.lStandart9.Name = "lStandart9";
+            this.lStandart9.Size = new System.Drawing.Size(90, 25);
+            this.lStandart9.TabIndex = 24;
+            this.lStandart9.Text = "Ürün Ara";
             // 
             // bRaporAl
             // 
@@ -317,76 +340,6 @@ namespace market
             this.tAlisFiyati.Text = "0";
             this.tAlisFiyati.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // tAciklama
-            // 
-            this.tAciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tAciklama.Location = new System.Drawing.Point(138, 158);
-            this.tAciklama.Name = "tAciklama";
-            this.tAciklama.Size = new System.Drawing.Size(323, 30);
-            this.tAciklama.TabIndex = 2;
-            // 
-            // tUrunAdi
-            // 
-            this.tUrunAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.tUrunAdi.Location = new System.Drawing.Point(138, 111);
-            this.tUrunAdi.Name = "tUrunAdi";
-            this.tUrunAdi.Size = new System.Drawing.Size(323, 30);
-            this.tUrunAdi.TabIndex = 1;
-            // 
-            // cmbUrunGrubu
-            // 
-            this.cmbUrunGrubu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.cmbUrunGrubu.FormattingEnabled = true;
-            this.cmbUrunGrubu.Location = new System.Drawing.Point(138, 205);
-            this.cmbUrunGrubu.Name = "cmbUrunGrubu";
-            this.cmbUrunGrubu.Size = new System.Drawing.Size(323, 33);
-            this.cmbUrunGrubu.TabIndex = 3;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.silToolStripMenuItem,
-            this.düzenleToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(133, 52);
-            // 
-            // silToolStripMenuItem
-            // 
-            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
-            this.silToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
-            this.silToolStripMenuItem.Text = "Sil";
-            this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
-            // 
-            // düzenleToolStripMenuItem
-            // 
-            this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
-            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
-            this.düzenleToolStripMenuItem.Text = "Düzenle";
-            this.düzenleToolStripMenuItem.Click += new System.EventHandler(this.düzenleToolStripMenuItem_Click);
-            // 
-            // lStandart10
-            // 
-            this.lStandart10.AutoSize = true;
-            this.lStandart10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart10.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart10.Location = new System.Drawing.Point(548, 346);
-            this.lStandart10.Name = "lStandart10";
-            this.lStandart10.Size = new System.Drawing.Size(112, 25);
-            this.lStandart10.TabIndex = 26;
-            this.lStandart10.Text = "Ürün Sayısı";
-            // 
-            // lStandart9
-            // 
-            this.lStandart9.AutoSize = true;
-            this.lStandart9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lStandart9.ForeColor = System.Drawing.Color.DarkCyan;
-            this.lStandart9.Location = new System.Drawing.Point(42, 348);
-            this.lStandart9.Name = "lStandart9";
-            this.lStandart9.Size = new System.Drawing.Size(90, 25);
-            this.lStandart9.TabIndex = 24;
-            this.lStandart9.Text = "Ürün Ara";
-            // 
             // lStandart8
             // 
             this.lStandart8.AutoSize = true;
@@ -431,6 +384,22 @@ namespace market
             this.lStandart5.TabIndex = 8;
             this.lStandart5.Text = "Alış Fiyatı";
             // 
+            // tAciklama
+            // 
+            this.tAciklama.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.tAciklama.Location = new System.Drawing.Point(138, 158);
+            this.tAciklama.Name = "tAciklama";
+            this.tAciklama.Size = new System.Drawing.Size(323, 30);
+            this.tAciklama.TabIndex = 2;
+            // 
+            // tUrunAdi
+            // 
+            this.tUrunAdi.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.tUrunAdi.Location = new System.Drawing.Point(138, 111);
+            this.tUrunAdi.Name = "tUrunAdi";
+            this.tUrunAdi.Size = new System.Drawing.Size(323, 30);
+            this.tUrunAdi.TabIndex = 1;
+            // 
             // lStandart4
             // 
             this.lStandart4.AutoSize = true;
@@ -441,6 +410,15 @@ namespace market
             this.lStandart4.Size = new System.Drawing.Size(108, 25);
             this.lStandart4.TabIndex = 4;
             this.lStandart4.Text = "ÜrünGrubu";
+            // 
+            // cmbUrunGrubu
+            // 
+            this.cmbUrunGrubu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
+            this.cmbUrunGrubu.FormattingEnabled = true;
+            this.cmbUrunGrubu.Location = new System.Drawing.Point(138, 205);
+            this.cmbUrunGrubu.Name = "cmbUrunGrubu";
+            this.cmbUrunGrubu.Size = new System.Drawing.Size(323, 33);
+            this.cmbUrunGrubu.TabIndex = 3;
             // 
             // lStandart3
             // 
@@ -515,6 +493,29 @@ namespace market
             this.gridUrunListesi.Size = new System.Drawing.Size(1228, 157);
             this.gridUrunListesi.TabIndex = 0;
             // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.silToolStripMenuItem,
+            this.düzenleToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(133, 52);
+            // 
+            // silToolStripMenuItem
+            // 
+            this.silToolStripMenuItem.Name = "silToolStripMenuItem";
+            this.silToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.silToolStripMenuItem.Text = "Sil";
+            this.silToolStripMenuItem.Click += new System.EventHandler(this.silToolStripMenuItem_Click);
+            // 
+            // düzenleToolStripMenuItem
+            // 
+            this.düzenleToolStripMenuItem.Name = "düzenleToolStripMenuItem";
+            this.düzenleToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.düzenleToolStripMenuItem.Text = "Düzenle";
+            this.düzenleToolStripMenuItem.Click += new System.EventHandler(this.düzenleToolStripMenuItem_Click);
+            // 
             // UrunGiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -522,6 +523,7 @@ namespace market
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(1228, 553);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UrunGiris";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ÜRÜN GİRİŞİ";
@@ -531,8 +533,8 @@ namespace market
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridUrunListesi)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

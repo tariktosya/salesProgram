@@ -30,6 +30,7 @@ namespace market
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DetayGoster));
             this.lislemno = new market.lStandart();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.gridListe = new market.gridGrid();
@@ -112,6 +113,7 @@ namespace market
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(871, 384);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DetayGoster";
             this.Text = "Detay Göster";
             this.Load += new System.EventHandler(this.DetayGoster_Load);

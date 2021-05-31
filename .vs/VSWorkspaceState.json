@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\market"
+    "\\market",
+    "\\market\\market"
   ],
-  "SelectedNode": "\\market\\market.sln",
+  "SelectedNode": "\\market\\market\\satis.cs",
   "PreviewInSolutionExplorer": false
 }

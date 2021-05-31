@@ -4,6 +4,7 @@
     <EntitySetMapping Name="Urun">
       <EntityTypeMapping TypeName="MarketSatisModel.Urun">
         <MappingFragment StoreEntitySet="Urun">
+          <ScalarProperty Name="dOnay" ColumnName="dOnay" />
           <ScalarProperty Name="dUrunId" ColumnName="dUrunId" />
           <ScalarProperty Name="dBarkod" ColumnName="dBarkod" />
           <ScalarProperty Name="dUrunAd" ColumnName="dUrunAd" />

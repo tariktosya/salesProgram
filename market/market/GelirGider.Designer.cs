@@ -29,6 +29,7 @@ namespace market
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GelirGider));
             this.lStandart1 = new market.lStandart();
             this.cmbOdemeTuru = new System.Windows.Forms.ComboBox();
             this.lGelirGider = new market.lStandart();
@@ -201,6 +202,7 @@ namespace market
             this.Controls.Add(this.lGelirGider);
             this.Controls.Add(this.cmbOdemeTuru);
             this.Controls.Add(this.lStandart1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(371, 715);
             this.Name = "GelirGider";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

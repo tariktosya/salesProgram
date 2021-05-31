@@ -133,6 +133,7 @@
           <Property Name="dMiktar" Type="float" />
           <Property Name="dTarih" Type="datetime" />
           <Property Name="dKullanici" Type="nvarchar" MaxLength="50" />
+          <Property Name="dOnay" Type="bit" />
         </EntityType>
         <EntityType Name="UrunGrubu">
           <Key>
@@ -185,6 +186,7 @@
           <Property Name="dMiktar" Type="Double" />
           <Property Name="dTarih" Type="DateTime" Precision="3" />
           <Property Name="dKullanici" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="dOnay" Type="Boolean" />
         </EntityType>
         <EntityContainer Name="MarketSatisEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Urun" EntityType="Self.Urun" />
@@ -336,6 +338,7 @@
           <EntitySetMapping Name="Urun">
             <EntityTypeMapping TypeName="MarketSatisModel.Urun">
               <MappingFragment StoreEntitySet="Urun">
+                <ScalarProperty Name="dOnay" ColumnName="dOnay" />
                 <ScalarProperty Name="dUrunId" ColumnName="dUrunId" />
                 <ScalarProperty Name="dBarkod" ColumnName="dBarkod" />
                 <ScalarProperty Name="dUrunAd" ColumnName="dUrunAd" />

@@ -77,7 +77,7 @@ namespace market
                 {
                     if (gridSatisListesi.Rows[i].Cells["Barkod"].Value.ToString() == barkod)
                     {
-                        if (barkod.Length <= 2 && numbers.Text != "")
+                        if (urun.dUrunGrup =="Barkodsuz" && numbers.Text != "")
                         {
                             gridSatisListesi.Rows[i].Cells["Miktar"].Value = miktar + Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Miktar"].Value);
                             gridSatisListesi.Rows[i].Cells["Toplam"].Value = ((Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Toplam"].Value))+(Convert.ToDouble(numbers.Text)));
@@ -87,6 +87,8 @@ namespace market
                         else {
                             gridSatisListesi.Rows[i].Cells["Miktar"].Value = miktar + Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Miktar"].Value);
                             gridSatisListesi.Rows[i].Cells["Toplam"].Value = Math.Round((Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Miktar"].Value) * Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Fiyat"].Value)), 2);
+                            double dblKdvTutari = (double)urun.dKdvTutari;
+                            gridSatisListesi.Rows[i].Cells["KdvTutari"].Value = Convert.ToDouble(gridSatisListesi.Rows[i].Cells["Miktar"].Value)* dblKdvTutari;
                             eklenmismi = true;
                         }
                         
@@ -102,7 +104,7 @@ namespace market
                 gridSatisListesi.Rows[satirsayisi].Cells["Birim"].Value = urun.dBirim;
                 gridSatisListesi.Rows[satirsayisi].Cells["fiyat"].Value = urun.dSatisFiyat;
                 gridSatisListesi.Rows[satirsayisi].Cells["miktar"].Value = miktar;
-                if (barkod.Length <= 2 && numbers.Text != "")
+                if (urun.dUrunGrup == "Barkodsuz"&& numbers.Text != "")
                 {
                     gridSatisListesi.Rows[satirsayisi].Cells["toplam"].Value = Convert.ToDouble(numbers.Text);
                 }
@@ -335,7 +337,6 @@ namespace market
                 GenelToplam();
                 if (odenenText.Text != "")
                 {
-                    
                     double sonuc = islemler.DoubleYap(odenenText.Text) - islemler.DoubleYap(genelToplam.Text);
                     paraustuText.Text = sonuc.ToString("C2");
                 }
@@ -404,7 +405,7 @@ namespace market
 
                     alisfiyattoplam += islemler.DoubleYap(gridSatisListesi.Rows[i].Cells["AlisFiyat"].Value.ToString()) * islemler.DoubleYap(gridSatisListesi.Rows[i].Cells["miktar"].Value.ToString());
                     //STOK İŞLEMLERİ
-                    if (satis.dUrunAd!="Çiğköfte" && satis.dUrunAd != "çiğköfte" && satis.dUrunAd != "Cigkofte" && satis.dUrunAd != "Dondurma" && satis.dUrunAd != "dondurma")
+                    if (satis.dUrunGrup!="Barkodsuz" && satis.dBarkod != "0")
                     {
                         if (satisiade)
                         {
@@ -581,7 +582,17 @@ namespace market
             f.Show();
         }
 
-        
+        private void SatisIade_CheckedChanged(object sender, EventArgs e)
+        {
+            if (SatisIade.Checked)
+            {
+                SatisIade.Text = "SATIŞ YAPILIYOR";
+            }
+            else
+            {
+                SatisIade.Text = "İADE İŞLEMİ";
+            }
+        }
     }
 }
 
