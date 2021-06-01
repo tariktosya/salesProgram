@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "market", "market\market.csp
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BarkodluSatisSetup", "BarkodluSatisSetup\BarkodluSatisSetup.vdproj", "{0A929DB5-7B65-4017-81A5-B9E102B9A747}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lisans", "Lisans\Lisans.csproj", "{5A703AF5-B764-4206-AA04-084999077A2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{655032EB-7BF4-476E-84FA-AE65A786065D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{0A929DB5-7B65-4017-81A5-B9E102B9A747}.Debug|Any CPU.ActiveCfg = Debug
 		{0A929DB5-7B65-4017-81A5-B9E102B9A747}.Release|Any CPU.ActiveCfg = Release
+		{5A703AF5-B764-4206-AA04-084999077A2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A703AF5-B764-4206-AA04-084999077A2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A703AF5-B764-4206-AA04-084999077A2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A703AF5-B764-4206-AA04-084999077A2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

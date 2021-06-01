@@ -1,0 +1,9 @@
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\Lisans\bin\Debug\Lisans.pdb
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\Lisans\obj\Debug\Lisans.Form1.resources
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\Lisans\obj\Debug\Lisans.Properties.Resources.resources
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\Lisans\obj\Debug\Lisans.csproj.GenerateResource.cache
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\Lisans\obj\Debug\Lisans.csproj.CoreCompileInputs.cache
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\Lisans\obj\Debug\Lisans.pdb
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\Lisans\bin\Debug\Lisans.dll.config
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\Lisans\bin\Debug\Lisans.dll
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\Lisans\obj\Debug\Lisans.dll

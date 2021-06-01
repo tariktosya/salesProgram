@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Lisans;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Globalization;
@@ -220,6 +221,125 @@ namespace market
                     MessageBox.Show(ex.ToString());
                 }
             }
+        }
+    }
+    public class Kontol
+    {
+        MarketSatisEntities db = new MarketSatisEntities();
+        Depom depom = new Depom();
+        Lic lic = new Lic();
+        public bool KontrolYap()
+        {
+            bool durum = false;
+            if (db.Depom.Count() == 0)
+            {
+                LisansFormuAc();
+            }
+            else
+            {
+                Lic lic = new Lic();
+                var guvenlik = db.Depom.First();
+                if (lic.TarihCoz(guvenlik.baslangic)< DateTime.Now)
+                {
+                    guvenlik.baslangic = lic.TarihSifrele(DateTime.Now);
+                    db.SaveChanges();
+                    durum = true;
+                }
+                if (lic.TarihKontrol(lic.TarihCoz(guvenlik.baslangic), lic.TarihCoz(guvenlik.bitis)))
+                {
+                    durum = true;
+                }
+                else
+                {
+                    durum = false;
+                    LisansFormuAc();
+                }
+            }
+            return durum;
+        }
+        public void LisansFormuAc()
+        {
+            fLisans f = new fLisans();
+            Lic lic = new Lic();
+            f.lKontrolNo.Text = lic.EkrandaGoster().ToString();
+            f.Show();
+        }
+        public void Lisansla(string kod) {
+            int durum = lic.GirilenLisansiKontrolEt(kod);
+            if (durum == 0)
+            {
+                MessageBox.Show("Geçersiz Lisans Kodu");
+            }
+            else if (durum == 1)
+            {
+                DemoOlustur();
+            }
+            else if (durum == 2)
+            {
+                YillikOlustur();
+            }
+        }
+
+        public int GuvenlikEkliMi()
+        {
+            return db.Depom.Count();
+        }
+        public void guvenlikEkle(string baslangic, string bitis)
+        {
+            depom.baslangic = baslangic;
+            depom.bitis = bitis;
+            db.Depom.Add(depom);
+            db.SaveChanges();
+        }
+        public void guvenlikGuncelle(string baslangic, string bitis)
+        {
+            var depomguncelle = db.Depom.First();
+            depomguncelle.baslangic = baslangic;
+            depomguncelle.bitis = bitis;
+            db.SaveChanges();
+        }
+        private void DemoOlustur()
+        {
+            try
+            {
+                if (GuvenlikEkliMi() == 0)
+                {
+                    guvenlikEkle(lic.TarihSifrele(DateTime.Now), lic.TarihSifrele(lic.demoTarihiOlustur(10)));
+                }
+                else
+                {
+                    guvenlikGuncelle(lic.TarihSifrele(DateTime.Now), lic.TarihSifrele(lic.demoTarihiOlustur(10)));
+                }
+                MessageBox.Show("Programınız 10 günlük kullanıma açılmıştır. \n Programı tekrar çalıştırınız....");
+                Application.Exit();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            
+        }
+        public void YillikOlustur()
+        {
+            try
+            {
+                if (GuvenlikEkliMi() == 0)
+                {
+                    guvenlikEkle(lic.TarihSifrele(DateTime.Now), lic.TarihSifrele(lic.YillikTarihOlustur()));
+                }
+                else
+                {
+                    guvenlikGuncelle(lic.TarihSifrele(DateTime.Now), lic.TarihSifrele(lic.YillikTarihOlustur()));
+                }
+                MessageBox.Show("Programınız 1 yıllık kullanıma açılmıştır. \n Programı tekrar çalıştırınız....");
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            
         }
     }
 }

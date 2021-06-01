@@ -130,3 +130,7 @@ C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\mark
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fAyarlar.resources
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fLogin.resources
 C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fVeresiye.resources
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\bin\Debug\Lisans.dll
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\bin\Debug\Lisans.pdb
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\bin\Debug\Lisans.dll.config
+C:\Users\tarik\Source\Repos\tariktosya\salesProgram\market\market\obj\Debug\market.fLisans.resources

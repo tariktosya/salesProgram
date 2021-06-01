@@ -32,6 +32,7 @@
     <EntitySet Name="IslemOzet" EntityType="MarketSatisModel.IslemOzet" />
     <EntitySet Name="Kullanici" EntityType="MarketSatisModel.Kullanici" />
     <EntitySet Name="Veresiye" EntityType="MarketSatisModel.Veresiye" />
+    <EntitySet Name="Depom" EntityType="MarketSatisModel.Depom" />
   </EntityContainer>
   <EntityType Name="Terazi">
     <Key>
@@ -159,5 +160,13 @@
     <Property Name="dAdSoyad" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
     <Property Name="dTelefon" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
     <Property Name="dMiktar" Type="Double" />
+  </EntityType>
+  <EntityType Name="Depom">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baslangic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="bitis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
   </EntityType>
 </Schema>

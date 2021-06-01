@@ -159,5 +159,14 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Depom">
+      <EntityTypeMapping TypeName="MarketSatisModel.Depom">
+        <MappingFragment StoreEntitySet="Depom">
+          <ScalarProperty Name="bitis" ColumnName="bitis" />
+          <ScalarProperty Name="baslangic" ColumnName="baslangic" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

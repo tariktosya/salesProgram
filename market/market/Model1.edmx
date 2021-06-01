@@ -12,6 +12,14 @@
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="dBarkodNo" Type="int" />
         </EntityType>
+        <EntityType Name="Depom">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="baslangic" Type="nvarchar" MaxLength="50" />
+          <Property Name="bitis" Type="nvarchar" MaxLength="50" />
+        </EntityType>
         <EntityType Name="HizliUrun">
           <Key>
             <PropertyRef Name="Id" />
@@ -153,6 +161,7 @@
         </EntityType>
         <EntityContainer Name="MarketSatisModelStoreContainer">
           <EntitySet Name="Barkod" EntityType="Self.Barkod" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Depom" EntityType="Self.Depom" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Islem" EntityType="Self.Islem" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" Schema="dbo" store:Type="Tables" />
@@ -201,6 +210,7 @@
           <EntitySet Name="IslemOzet" EntityType="MarketSatisModel.IslemOzet" />
           <EntitySet Name="Kullanici" EntityType="MarketSatisModel.Kullanici" />
           <EntitySet Name="Veresiye" EntityType="MarketSatisModel.Veresiye" />
+          <EntitySet Name="Depom" EntityType="MarketSatisModel.Depom" />
         </EntityContainer>
         <EntityType Name="Terazi">
           <Key>
@@ -328,6 +338,14 @@
           <Property Name="dAdSoyad" Type="String" MaxLength="100" FixedLength="true" Unicode="true" />
           <Property Name="dTelefon" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="dMiktar" Type="Double" />
+        </EntityType>
+        <EntityType Name="Depom">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="baslangic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="bitis" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
         </EntityType>
       </Schema>
     </edmx:ConceptualModels>
@@ -489,6 +507,15 @@
                 <ScalarProperty Name="dMiktar" ColumnName="dMiktar" />
                 <ScalarProperty Name="dTelefon" ColumnName="dTelefon" />
                 <ScalarProperty Name="dAdSoyad" ColumnName="dAdSoyad" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Depom">
+            <EntityTypeMapping TypeName="MarketSatisModel.Depom">
+              <MappingFragment StoreEntitySet="Depom">
+                <ScalarProperty Name="bitis" ColumnName="bitis" />
+                <ScalarProperty Name="baslangic" ColumnName="baslangic" />
                 <ScalarProperty Name="Id" ColumnName="Id" />
               </MappingFragment>
             </EntityTypeMapping>

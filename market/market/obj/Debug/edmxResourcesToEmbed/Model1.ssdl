@@ -7,6 +7,14 @@
     <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="dBarkodNo" Type="int" />
   </EntityType>
+  <EntityType Name="Depom">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="baslangic" Type="nvarchar" MaxLength="50" />
+    <Property Name="bitis" Type="nvarchar" MaxLength="50" />
+  </EntityType>
   <EntityType Name="HizliUrun">
     <Key>
       <PropertyRef Name="Id" />
@@ -148,6 +156,7 @@
   </EntityType>
   <EntityContainer Name="MarketSatisModelStoreContainer">
     <EntitySet Name="Barkod" EntityType="Self.Barkod" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Depom" EntityType="Self.Depom" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="HizliUrun" EntityType="Self.HizliUrun" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Islem" EntityType="Self.Islem" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="IslemOzet" EntityType="Self.IslemOzet" Schema="dbo" store:Type="Tables" />

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Lisans;
 
 namespace market
 {
@@ -30,25 +31,29 @@ namespace market
                             if (bak != null)
                             {
                                 Cursor.Current = Cursors.WaitCursor;
-                                fBaslangic f = new fBaslangic();
-                                f.bSatisIslemi.Enabled = (bool)bak.dSatis;
-                                f.bGenelRapor.Enabled = (bool)bak.dRapor;
-                                f.bStok.Enabled = (bool)bak.dStok;
-                                f.dUrunGiris.Enabled = (bool)bak.dUrunGiris;
-                                f.bFiyatGuncelle.Enabled = (bool)bak.dFiyatGuncelle;
-                                f.bYedekleme.Enabled = (bool)bak.dYedekleme;
-                                f.bYedektenYukle.Enabled = false;
-                                f.bYedektenYukle.Visible = false;
-                                var isyeri = db.Sabitlerim.FirstOrDefault();
-                                f.lIsyeri.Text = isyeri.dUnvan;
-                                if (bak.dKullaniciAd == "admingiris" && bak.dSifre == "admingiris")
+                                Kontol kontrol = new Kontol();
+                                if (kontrol.KontrolYap())
                                 {
-                                    f.bYedektenYukle.Enabled = true;
-                                    f.bYedektenYukle.Visible = true;
+                                    fBaslangic f = new fBaslangic();
+                                    f.bSatisIslemi.Enabled = (bool)bak.dSatis;
+                                    f.bGenelRapor.Enabled = (bool)bak.dRapor;
+                                    f.bStok.Enabled = (bool)bak.dStok;
+                                    f.dUrunGiris.Enabled = (bool)bak.dUrunGiris;
+                                    f.bFiyatGuncelle.Enabled = (bool)bak.dFiyatGuncelle;
+                                    f.bYedekleme.Enabled = (bool)bak.dYedekleme;
+                                    f.bYedektenYukle.Enabled = false;
+                                    f.bYedektenYukle.Visible = false;
+                                    var isyeri = db.Sabitlerim.FirstOrDefault();
+                                    f.lIsyeri.Text = isyeri.dUnvan;
+                                    if (bak.dKullaniciAd == "admingiris" && bak.dSifre == "admingiris")
+                                    {
+                                        f.bYedektenYukle.Enabled = true;
+                                        f.bYedektenYukle.Visible = true;
+                                    }
+                                    f.lKullanici.Text = bak.dAdSoyad;
+                                    f.Show();
+                                    this.Hide();
                                 }
-                                f.lKullanici.Text = bak.dAdSoyad;
-                                f.Show();
-                                this.Hide();
                                 Cursor.Current = Cursors.Default;
                             }
                             else
@@ -117,5 +122,7 @@ namespace market
                 girisYap();
             }
         }
+
+        
     }
 }

@@ -17,6 +17,7 @@
         <EntityTypeShape EntityType="MarketSatisModel.IslemOzet" Width="1.5" PointX="0.75" PointY="5.75" />
         <EntityTypeShape EntityType="MarketSatisModel.Kullanici" Width="1.5" PointX="8.375" PointY="6.75" />
         <EntityTypeShape EntityType="MarketSatisModel.Veresiye" Width="1.5" PointX="10.375" PointY="0.75" />
+        <EntityTypeShape EntityType="MarketSatisModel.Depom" Width="1.5" PointX="0.75" PointY="10.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
